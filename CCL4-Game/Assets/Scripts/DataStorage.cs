@@ -79,10 +79,4 @@ public class DataStorage : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         }
     }
-    
-    
-    
-    
-
-    
 }
