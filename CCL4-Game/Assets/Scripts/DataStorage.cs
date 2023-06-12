@@ -14,6 +14,32 @@ public class DataStorage : MonoBehaviour
         get;
         private set;
     }
+    
+    [field: SerializeField] private int requiredMaps;
+    
+    public int scoreMaps
+    {
+        get;
+        private set;
+    }
+    
+    public int scoreCoins
+    {
+        get;
+        private set;
+    }
+    public int scorePotions
+    {
+        get;
+        private set;
+    }
+
+    [field: SerializeField]
+    public int Health
+    {
+        get;
+        private set;
+    }
 
     public void Start()
     {
@@ -26,6 +52,42 @@ public class DataStorage : MonoBehaviour
     {
         playTime += Time.deltaTime;
     }
+    
+    public void IncreaseCoins()
+    {
+        scoreCoins++;
+        Debug.Log("Coins: " + scoreCoins);
+    }
+    
+    public void IncreaseMaps()
+    {
+        scoreMaps++;
+        Debug.Log("Maps: " + scoreMaps);
+        if (scoreMaps == requiredMaps)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+    }
+    
+    public void IncreasePotions()
+    {
+        scorePotions++;
+        Debug.Log("Potions: " + scorePotions);
+    }
+    
+    public void DecreaseHealth(int decreaseBy)
+    {
+        Health -= decreaseBy;
+        Debug.Log("Health: " + Health);
+        if (Health <= 0)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+    }
+    
+    
+    
+    
 
     
 }
