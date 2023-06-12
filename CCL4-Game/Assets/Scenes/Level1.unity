@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 74568330}
   - component: {fileID: 74568329}
   - component: {fileID: 74568333}
+  - component: {fileID: 74568334}
   m_Layer: 0
   m_Name: Potion
   m_TagString: Untagged
@@ -234,6 +235,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30969a75bf735ba4eb3cedc8ba940731, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &74568334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74568328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6307f55622d5e724c904bb0a22a5cb8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementDistance: {x: 0, y: 1, z: 0}
+  timeForMovement: 2
 --- !u!1 &116524195
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,6 +262,7 @@ GameObject:
   - component: {fileID: 116524197}
   - component: {fileID: 116524196}
   - component: {fileID: 116524200}
+  - component: {fileID: 116524201}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -345,6 +361,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23f99c89ecca6504b8f6bf430a368e15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &116524201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116524195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6307f55622d5e724c904bb0a22a5cb8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementDistance: {x: 0, y: 1, z: 0}
+  timeForMovement: 2
 --- !u!1 &213121479
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,6 +1041,7 @@ GameObject:
   - component: {fileID: 1723115048}
   - component: {fileID: 1723115047}
   - component: {fileID: 1723115051}
+  - component: {fileID: 1723115052}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -1109,6 +1140,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23f99c89ecca6504b8f6bf430a368e15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1723115052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723115046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6307f55622d5e724c904bb0a22a5cb8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementDistance: {x: 0, y: 1, z: 0}
+  timeForMovement: 2
 --- !u!1 &1968865959
 GameObject:
   m_ObjectHideFlags: 0
