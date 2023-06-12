@@ -28,11 +28,6 @@ public class DataStorage : MonoBehaviour
         get;
         private set;
     }
-    public int scorePotions
-    {
-        get;
-        private set;
-    }
 
     [field: SerializeField]
     public int Health
@@ -71,8 +66,8 @@ public class DataStorage : MonoBehaviour
     
     public void IncreasePotions()
     {
-        scorePotions++;
-        Debug.Log("Potions: " + scorePotions);
+        Health++;
+        Debug.Log("Health: " + Health);
     }
     
     public void DecreaseHealth(int decreaseBy)
