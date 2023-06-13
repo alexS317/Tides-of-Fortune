@@ -22,6 +22,19 @@ public class DataStorage : MonoBehaviour
         private set;
     }
     
+    [field: SerializeField]
+    public int requiredKey
+    {
+        get;
+        private set;
+    }
+    
+    public int foundKey
+    {
+        get;
+        private set;
+    }
+    
     public int scoreMaps
     {
         get;
@@ -83,14 +96,20 @@ public class DataStorage : MonoBehaviour
     
     public void FoundTreasure()
     {
-        if (scoreMaps >= requiredMaps)
+        if (foundKey == requiredKey)
         {
             SceneManager.LoadScene("Success");
             Destroy(this.gameObject);
         }
         else
         {
-            Debug.Log("Not enough Maps");
+            Debug.Log("Can't open without a key");
         }
+    }
+    
+    public void Key()
+    {
+        foundKey++;
+        Debug.Log("Congrats, you found the key");
     }
 }
