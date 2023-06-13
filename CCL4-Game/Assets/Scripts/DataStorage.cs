@@ -64,12 +64,12 @@ public class DataStorage : MonoBehaviour
         }
     }
     
-    public void IncreaseHealthPotions()
+    public void HealthPotions()
     {
         Health++;
         Debug.Log("Health: " + Health);
     }
-    
+
     public void DecreaseHealth(int decreaseBy)
     {
         Health -= decreaseBy;
