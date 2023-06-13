@@ -64,7 +64,7 @@ public class DataStorage : MonoBehaviour
         }
     }
     
-    public void IncreasePotions()
+    public void IncreaseHealthPotions()
     {
         Health++;
         Debug.Log("Health: " + Health);

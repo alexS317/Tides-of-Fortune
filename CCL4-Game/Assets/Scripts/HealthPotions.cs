@@ -10,7 +10,7 @@ public class HealthPotions : MonoBehaviour
         
         if (other.CompareTag("Player"))
         {
-            DataStorage.instance.IncreasePotions();
+            DataStorage.instance.IncreaseHealthPotions();
             Destroy(this.gameObject);
         }
     }
