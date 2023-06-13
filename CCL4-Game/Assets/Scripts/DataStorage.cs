@@ -15,7 +15,12 @@ public class DataStorage : MonoBehaviour
         private set;
     }
     
-    [field: SerializeField] private int requiredMaps;
+    [field: SerializeField]
+    public int requiredMaps
+    {
+        get;
+        private set;
+    }
     
     public int scoreMaps
     {
@@ -58,10 +63,6 @@ public class DataStorage : MonoBehaviour
     {
         scoreMaps++;
         Debug.Log("Maps: " + scoreMaps);
-        if (scoreMaps == requiredMaps)
-        {
-            SceneManager.LoadScene("GameOver");
-        }
     }
     
     public void HealthPotions()
@@ -82,6 +83,14 @@ public class DataStorage : MonoBehaviour
     
     public void FoundTreasure()
     {
-        SceneManager.LoadScene("Success");
+        if (scoreMaps >= requiredMaps)
+        {
+            SceneManager.LoadScene("Success");
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            Debug.Log("Not enough Maps");
+        }
     }
 }

@@ -6,11 +6,9 @@ public class TreasureChest : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        
         if (other.CompareTag("Player"))
         {
             DataStorage.instance.FoundTreasure();
-            Destroy(this.gameObject);
         }
     }
 }
