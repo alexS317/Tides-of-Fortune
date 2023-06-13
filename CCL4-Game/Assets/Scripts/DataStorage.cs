@@ -79,4 +79,9 @@ public class DataStorage : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         }
     }
+    
+    public void FoundTreasure()
+    {
+        SceneManager.LoadScene("Success");
+    }
 }
