@@ -1,27 +1,32 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.LowLevel;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float speed = 0.1f;
+    [SerializeField] private float speed = 5f;
+    [SerializeField] private float jumpStrength = 5f;
     [SerializeField] private MovementType movementType;
 
-    //[SerializeField] private Animator animator;
+    [SerializeField] private Animator animator;
 
     private Vector3 moveBy;
     private bool isMoving;
     private bool isJumpingOrFalling;
 
-    // Start is called before the first frame update
+    private Rigidbody rigidBody;
 
+    // Start is called before the first frame update
     void Start()
     {
+        rigidBody = GetComponent<Rigidbody>();
+    }
 
+    void Update()
+    {
+        ExecuteMovement();
     }
 
     void OnMovement(InputValue input)
@@ -32,27 +37,19 @@ public class PlayerMovement : MonoBehaviour
 
     void OnJump(InputValue input)
     {
-        if (isJumpingOrFalling)
-            return;
-        GetComponent<Rigidbody>().AddForce(0, 8, 0, ForceMode.VelocityChange);
+        if (isJumpingOrFalling) return;
+        rigidBody.AddForce(Vector3.up * jumpStrength, ForceMode.VelocityChange);
     }
 
-    void Update()
-    {
-        ExecuteMovement();
-    }
 
     void ExecuteMovement()
     {
-        isJumpingOrFalling = GetComponent<Rigidbody>().velocity.y < -.035 ||
-                             GetComponent<Rigidbody>().velocity.y > 0.00001;
+        isJumpingOrFalling = rigidBody.velocity.y < -.035 || rigidBody.velocity.y > 0.00001;
 
-        if (moveBy == Vector3.zero)
-            isMoving = false;
-        else
-            isMoving = true;
+        if (moveBy == Vector3.zero) isMoving = false;
+        else isMoving = true;
 
-        //animator.SetBool("walk", isMoving);
+        animator.SetBool("run", isMoving);
         //animator.SetBool("jump", isJumpingOrFalling);
 
         if (!isMoving)
@@ -69,10 +66,8 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (movementType == MovementType.PhysicsBased)
         {
-            var rigidbody = this.GetComponent<Rigidbody>();
-            rigidbody.AddForce(moveBy * 2, ForceMode.Acceleration);
+            rigidBody.AddForce(moveBy * 2, ForceMode.Acceleration);
         }
-
     }
 
     private void RotatePlayerFigure(Vector3 rotateVector)
@@ -86,8 +81,7 @@ public class PlayerMovement : MonoBehaviour
             transform.Rotate(0, 180, 0);
             rotationY *= -1;
         }
-        
+
         transform.Rotate(0, rotationY, 0);
     }
-    
 }
