@@ -694,7 +694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3326e303352a7b4e864f7b26eeb2568, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <requiredMaps>k__BackingField: 3
+  <requiredMaps>k__BackingField: 1
   <requiredKey>k__BackingField: 1
   <Health>k__BackingField: 2
 --- !u!4 &792893767 stripped
@@ -1548,6 +1548,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a2956fa9ba3c794ba0daaa221ece88a, type: 3}
+--- !u!1001 &1706327337
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5243372302073932447, guid: 816a27a4ea18c5043a867a146ebf185a,
+        type: 3}
+      propertyPath: m_Name
+      value: Map (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243372302073932451, guid: 816a27a4ea18c5043a867a146ebf185a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243372302073932451, guid: 816a27a4ea18c5043a867a146ebf185a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243372302073932451, guid: 816a27a4ea18c5043a867a146ebf185a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243372302073932451, guid: 816a27a4ea18c5043a867a146ebf185a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243372302073932451, guid: 816a27a4ea18c5043a867a146ebf185a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243372302073932451, guid: 816a27a4ea18c5043a867a146ebf185a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243372302073932451, guid: 816a27a4ea18c5043a867a146ebf185a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243372302073932451, guid: 816a27a4ea18c5043a867a146ebf185a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243372302073932451, guid: 816a27a4ea18c5043a867a146ebf185a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243372302073932451, guid: 816a27a4ea18c5043a867a146ebf185a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243372302073932451, guid: 816a27a4ea18c5043a867a146ebf185a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 816a27a4ea18c5043a867a146ebf185a, type: 3}
 --- !u!1001 &1783957023
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2402,6 +2471,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5891103713937414171, guid: b61e2e598121d4e40a5e3b1b1fda580f,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6218308768237895666, guid: b61e2e598121d4e40a5e3b1b1fda580f,
         type: 3}
       propertyPath: m_RootOrder
@@ -2461,6 +2535,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GrasslandPortal
+      objectReference: {fileID: 0}
+    - target: {fileID: 6701371966855865672, guid: b61e2e598121d4e40a5e3b1b1fda580f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b61e2e598121d4e40a5e3b1b1fda580f, type: 3}

@@ -23,8 +23,16 @@ public class LevelChange : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("HI");
-            SceneManager.LoadSceneAsync(level);
+            DataStorage dataStorage = FindObjectOfType<DataStorage>();
+
+            if (dataStorage.scoreMaps == dataStorage.requiredMaps)
+            {
+                SceneManager.LoadSceneAsync(level);
+            }
+            else
+            {
+                Debug.Log("Please find a map first");
+            }
         }
     }
 }

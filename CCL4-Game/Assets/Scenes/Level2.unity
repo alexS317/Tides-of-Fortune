@@ -479,6 +479,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: IcelandPortal
       objectReference: {fileID: 0}
+    - target: {fileID: 8180805870097274329, guid: 818fe2bbd92a4c94a91fd665db5e631c,
+        type: 3}
+      propertyPath: m_TagString
+      value: IcePortal
+      objectReference: {fileID: 0}
     - target: {fileID: 8846159510958788451, guid: 818fe2bbd92a4c94a91fd665db5e631c,
         type: 3}
       propertyPath: m_RootOrder
