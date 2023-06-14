@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
         rigidBody = GetComponent<Rigidbody>();
     }
 
+    // Update is called once per frame
     void Update()
     {
         ExecuteMovement();

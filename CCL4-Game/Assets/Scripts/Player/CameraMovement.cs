@@ -6,20 +6,19 @@ using UnityEngine.InputSystem;
 
 public class CameraMovement : MonoBehaviour
 {
-
     [SerializeField] private GameObject playerObject;
     [SerializeField] private float closestDistanceToPlayer;
     [SerializeField] private float maxAngle;
 
     private float maximumDistanceFromPlayer;
-    private Vector3 previousPlayerPostion;
+    private Vector3 previousPlayerPosition;
     private Transform playerTransform;
 
     // Start is called before the first frame update
     void Start()
     {
-        previousPlayerPostion = playerObject.transform.position;
-        maximumDistanceFromPlayer = Vector3.Distance(transform.position, previousPlayerPostion);
+        previousPlayerPosition = playerObject.transform.position;
+        maximumDistanceFromPlayer = Vector3.Distance(transform.position, previousPlayerPosition);
         maximumDistanceFromPlayer = Mathf.Abs(maximumDistanceFromPlayer);
         playerTransform = playerObject.GetComponent<Transform>();
     }
@@ -28,9 +27,9 @@ public class CameraMovement : MonoBehaviour
     void Update()
     {
         var currentPlayerPosition = playerObject.transform.position;
-        var deltaPlayerPosition = currentPlayerPosition - previousPlayerPostion;
+        var deltaPlayerPosition = currentPlayerPosition - previousPlayerPosition;
         transform.position += deltaPlayerPosition;
-        previousPlayerPostion = currentPlayerPosition;
+        previousPlayerPosition = currentPlayerPosition;
     }
 
     void OnCameraMovement(InputValue inputValue)
@@ -39,33 +38,33 @@ public class CameraMovement : MonoBehaviour
         CameraRotationYAxis(inputVector);
         CameraRotationXAxis(inputVector);
     }
-    
+
     void CameraRotationYAxis(Vector2 inputVector)
     {
-        this.transform.RotateAround(playerTransform.position, new Vector3(0,1,0),  inputVector.x);
+        this.transform.RotateAround(playerTransform.position, new Vector3(0, 1, 0), inputVector.x);
     }
-    
+
     void CameraRotationXAxis(Vector2 inputVector)
     {
         var upValue = inputVector.y * 0.2f;
         var originalPos = transform.position;
         var originalRotation = transform.rotation;
-        
+
         this.transform.RotateAround(playerTransform.position, transform.right, upValue);
-       
+
         if (Vector3.Angle(playerTransform.forward, transform.forward) > maxAngle)
         {
             transform.position = originalPos;
             transform.rotation = originalRotation;
         }
     }
-    
+
     void OnCameraZoom(InputValue inputValue)
     {
         Vector2 inputVector = inputValue.Get<Vector2>();
         CameraZoom(inputVector);
     }
-    
+
     void CameraZoom(Vector2 inputVector)
     {
         var shiftValue = inputVector.y * 0.03f;
@@ -79,5 +78,4 @@ public class CameraMovement : MonoBehaviour
             transform.Translate(new Vector3(0, 0, -shiftValue));
         }
     }
-    
 }
