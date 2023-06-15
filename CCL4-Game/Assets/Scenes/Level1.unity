@@ -1028,6 +1028,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: snowgolem
       objectReference: {fileID: 0}
+    - target: {fileID: 3615734640453589312, guid: 44fc3fce621c75245a8d6ab4296c0467,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4136129454038565882, guid: 44fc3fce621c75245a8d6ab4296c0467,
         type: 3}
       propertyPath: m_RootOrder
@@ -2954,21 +2959,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4415633240283673865, guid: fbf3fda8be4abdf45840e43549f72887,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4415633240283673865, guid: fbf3fda8be4abdf45840e43549f72887,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4415633240283673865, guid: fbf3fda8be4abdf45840e43549f72887,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4415633240283673865, guid: fbf3fda8be4abdf45840e43549f72887,
-        type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.06
       objectReference: {fileID: 0}
@@ -3016,11 +3006,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4415633240283673865, guid: fbf3fda8be4abdf45840e43549f72887,
-        type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbf3fda8be4abdf45840e43549f72887, type: 3}
@@ -3594,6 +3579,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: map
+      objectReference: {fileID: 0}
+    - target: {fileID: 891409120603181293, guid: 33e2ebf1e355374488bddfa1908890dc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33e2ebf1e355374488bddfa1908890dc, type: 3}
