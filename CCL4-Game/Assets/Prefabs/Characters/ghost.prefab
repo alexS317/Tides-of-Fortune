@@ -87,6 +87,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ghost
       objectReference: {fileID: 0}
+    - target: {fileID: 4167280743394806330, guid: 9f3054e413907734ba4b79282ffdad50,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.47
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 9f3054e413907734ba4b79282ffdad50,
         type: 3}
       propertyPath: m_Controller
@@ -100,6 +105,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2847438594753566496}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &7367833617876353387
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3117981335185730161}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3737775, y: 2.7041936, z: 2.9934583}
+  m_Center: {x: -0.002578795, y: 2.4482367, z: -0.21792507}
 --- !u!195 &-7034683129484181938
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -122,3 +140,16 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1160708473358101013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3117981335185730161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3ccd601920db584398879e44aeb7c86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
