@@ -8,6 +8,6 @@ public class EnemyHittingPlayer : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
-            DataStorage.instance.DecreaseHealth(decreasePlayerHealthBy);
+            DataStorage.Instance.DecreaseHealth(decreasePlayerHealthBy);
     }
 }

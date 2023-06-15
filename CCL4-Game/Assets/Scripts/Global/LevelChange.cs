@@ -7,25 +7,12 @@ using UnityEngine.SceneManagement;
 public class LevelChange : MonoBehaviour
 {
     [SerializeField] private string level;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            DataStorage dataStorage = FindObjectOfType<DataStorage>();
-
-            if (dataStorage.scoreMaps == dataStorage.requiredMaps)
+            if (DataStorage.Instance.scoreMaps == DataStorage.Instance.requiredMaps)
             {
                 SceneManager.LoadSceneAsync(level);
             }

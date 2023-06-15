@@ -207,9 +207,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1308593935}
-        m_TargetAssemblyTypeName: BackToMenu, Assembly-CSharp
-        m_MethodName: StartMenu
+      - m_Target: {fileID: 1308593934}
+        m_TargetAssemblyTypeName: MainScreenActions, Assembly-CSharp
+        m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1084,9 +1084,8 @@ GameObject:
   - component: {fileID: 1308593931}
   - component: {fileID: 1308593930}
   - component: {fileID: 1308593934}
-  - component: {fileID: 1308593935}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1187,18 +1186,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac7a2aea08b62cd41b5fbc75a74baf57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1308593935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308593929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da5b3dcb84c198a489a2da20f34d3456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2096313279

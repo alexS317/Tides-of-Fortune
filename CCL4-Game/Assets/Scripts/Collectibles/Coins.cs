@@ -10,7 +10,7 @@ public class Coins : MonoBehaviour
         
         if (other.CompareTag("Player"))
         {
-            DataStorage.instance.IncreaseCoins();
+            DataStorage.Instance.IncreaseCoins();
             Destroy(this.gameObject);
         }
     }

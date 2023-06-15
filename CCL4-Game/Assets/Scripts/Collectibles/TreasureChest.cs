@@ -8,7 +8,7 @@ public class TreasureChest : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // DataStorage.instance.FoundTreasure();
+            // DataStorage.Instance.FoundTreasure();
             
             this.GetComponent<Animator>().SetBool("opened", true);
         }

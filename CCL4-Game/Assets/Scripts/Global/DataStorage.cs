@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class DataStorage : MonoBehaviour
 {
-    public static DataStorage instance;
+    public static DataStorage Instance;
     
     public float playTime
     {
@@ -56,8 +56,9 @@ public class DataStorage : MonoBehaviour
 
     public void Start()
     {
-        if (instance == null)
-            instance = this;
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
+        
         DontDestroyOnLoad(this.gameObject);
     }
    

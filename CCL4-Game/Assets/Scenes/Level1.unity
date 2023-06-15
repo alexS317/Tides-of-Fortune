@@ -905,6 +905,7 @@ GameObject:
   m_Component:
   - component: {fileID: 725847087}
   - component: {fileID: 725847088}
+  - component: {fileID: 725847089}
   m_Layer: 0
   m_Name: GlobalData
   m_TagString: Untagged
@@ -942,6 +943,18 @@ MonoBehaviour:
   <requiredMaps>k__BackingField: 1
   <requiredKey>k__BackingField: 1
   <Health>k__BackingField: 2
+--- !u!114 &725847089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725847086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28a3e0015d80eff4fad86123ccc00957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &792893767 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7477219159893923529, guid: eb61646957569f643b8c7741a84a696f,

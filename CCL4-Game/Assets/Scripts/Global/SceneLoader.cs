@@ -5,21 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    public static SceneLoader instance;
+    public static SceneLoader Instance;
     
-    public void LoadLevel(string levelName)
-    {
-        SceneManager.LoadSceneAsync(levelName);
-    }
     // Start is called before the first frame update
     void Start()
     {
-        instance = this;
+        Instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void LoadLevel(string levelName)
     {
-        
+        SceneManager.LoadSceneAsync(levelName);
     }
 }

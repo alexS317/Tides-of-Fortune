@@ -10,7 +10,7 @@ public class Maps : MonoBehaviour
         
         if (other.CompareTag("Player"))
         {
-            DataStorage.instance.IncreaseMaps();
+            DataStorage.Instance.IncreaseMaps();
             Destroy(this.gameObject);
         }
     }
