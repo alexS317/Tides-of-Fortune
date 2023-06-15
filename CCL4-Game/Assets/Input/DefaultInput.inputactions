@@ -22,6 +22,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Attack",
+                    "type": "Button",
+                    "id": "771682ed-2a60-437c-a0aa-1c6b5b645ab2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -90,6 +99,17 @@
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2b93d500-0f9f-402f-a72e-f2f8981ce8b1",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -97,15 +117,6 @@
             "name": "Camera",
             "id": "d8bc03de-f688-4186-ad3a-723ac73391c9",
             "actions": [
-                {
-                    "name": "New action",
-                    "type": "Button",
-                    "id": "5f93c102-6b75-452e-806d-24f3f3ef47f0",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
                 {
                     "name": "CameraMovement",
                     "type": "Value",
@@ -126,17 +137,6 @@
                 }
             ],
             "bindings": [
-                {
-                    "name": "",
-                    "id": "e64b0785-309b-4b7a-88de-a164048bf314",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "New action",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
                 {
                     "name": "",
                     "id": "97b70113-d70b-42b8-b36f-81a9c3ee25eb",

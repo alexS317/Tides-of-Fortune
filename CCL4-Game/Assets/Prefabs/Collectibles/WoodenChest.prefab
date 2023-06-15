@@ -9,7 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4415633240283673865}
-  - component: {fileID: 6591426738821132822}
+  - component: {fileID: 5557286578614242306}
+  - component: {fileID: 1492481880258765957}
+  - component: {fileID: 6445571266001902264}
+  - component: {fileID: 7743146958364254629}
   m_Layer: 0
   m_Name: WoodenChest
   m_TagString: Untagged
@@ -34,7 +37,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &6591426738821132822
+--- !u!95 &5557286578614242306
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3894676506738405299}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: bc072c9d61627cc4c87e53db20abad3a, type: 3}
+  m_Controller: {fileID: 9100000, guid: 0e7ffdfab52e25a48a3d98355bfe5706, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &1492481880258765957
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -45,8 +69,33 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9225605, y: 0.7289618, z: 0.5952027}
-  m_Center: {x: 0.000000029802322, y: 0.3607977, z: 0.01583992}
+  m_Size: {x: 1, y: 0.5133607, z: 0.60119855}
+  m_Center: {x: 0, y: 0.2609122, z: 0.020627677}
+--- !u!65 &6445571266001902264
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3894676506738405299}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.6542818, z: 1.2796195}
+  m_Center: {x: 0, y: 0.32678875, z: 0.35983813}
+--- !u!114 &7743146958364254629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3894676506738405299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea333e197957407498fcc6a5de4c679b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4266514928244481969
 GameObject:
   m_ObjectHideFlags: 0
