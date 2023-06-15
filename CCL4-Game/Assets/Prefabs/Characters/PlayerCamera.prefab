@@ -134,7 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerObject: {fileID: 6140161153706021628}
   closestDistanceToPlayer: 3
-  maxAngle: 10
+  maxAngle: 20
 --- !u!114 &3762484620821518318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,7 +208,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1998925681747670311}
-  - component: {fileID: 6187342648653003462}
+  - component: {fileID: 6804023406548406639}
   - component: {fileID: 1583473559794121677}
   - component: {fileID: 4967118938772357840}
   - component: {fileID: 1228743376785634409}
@@ -235,7 +235,7 @@ Transform:
   m_Father: {fileID: 3762484621804947510}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6187342648653003462
+--- !u!114 &6804023406548406639
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
