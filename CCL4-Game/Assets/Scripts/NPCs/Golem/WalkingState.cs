@@ -10,13 +10,14 @@ public class WalkingState : StateMachineBehaviour
     NavMeshAgent agent;
     Transform player;
     private float chaseRange = 10;
-    private float attackRange = 5;
+    private float attackRange = 3;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         timer = 0;
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        
         
 
         GameObject goTo = GameObject.FindGameObjectWithTag("WayPoints");
@@ -44,6 +45,7 @@ public class WalkingState : StateMachineBehaviour
         }
         else
         {
+            agent.speed = 1.2f;
             if (timer > 8)
             {
                 animator.SetBool("isWalking", false);
