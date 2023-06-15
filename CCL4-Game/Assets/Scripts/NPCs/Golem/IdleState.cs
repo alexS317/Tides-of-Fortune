@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class IdleState : StateMachineBehaviour
 {
-
+    Transform player;
     private float timer;
+    private float chaseRange = 10;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         timer = 0;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -21,6 +23,13 @@ public class IdleState : StateMachineBehaviour
         {
             animator.SetBool("isWalking", true);
         }
+
+        float distanceToPlayer = Vector3.Distance(player.position, animator.transform.position);
+        if (distanceToPlayer < chaseRange)
+        {
+            animator.SetBool("isWalking", true);
+        }
+            
         
     }
 
