@@ -7,6 +7,8 @@ public class MainScreenActions : MonoBehaviour
 {
     public void StartGame()
     {
+        Destroy(GameObject.Find("GlobalData"));
+        
         SceneManager.LoadSceneAsync("Level1");
     }
 

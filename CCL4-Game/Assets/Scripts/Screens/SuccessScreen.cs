@@ -14,11 +14,4 @@ public class SuccessScreen : MonoBehaviour
         var roundedTime = Math.Round(DataStorage.Instance.playTime, 2);
         time.text = roundedTime.ToString();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 }

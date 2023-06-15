@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyHittingPlayer : MonoBehaviour
 {
-    [SerializeField] private int decreasePlayerHealthBy; 
+    [SerializeField] private float decreasePlayerHealthBy; 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))

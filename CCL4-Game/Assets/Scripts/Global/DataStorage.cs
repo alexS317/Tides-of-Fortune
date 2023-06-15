@@ -48,11 +48,13 @@ public class DataStorage : MonoBehaviour
     }
 
     [field: SerializeField]
-    public int Health
+    public float PlayerHealth
     {
         get;
         private set;
     }
+
+    private float maxHealth;
 
     public void Start()
     {
@@ -60,6 +62,8 @@ public class DataStorage : MonoBehaviour
         else Destroy(gameObject);
         
         DontDestroyOnLoad(this.gameObject);
+
+        maxHealth = PlayerHealth;
     }
    
     public void Update()
@@ -81,15 +85,15 @@ public class DataStorage : MonoBehaviour
     
     public void HealthPotions()
     {
-        Health++;
-        Debug.Log("Health: " + Health);
+        if(PlayerHealth < maxHealth) PlayerHealth++;
+        Debug.Log("Health: " + PlayerHealth);
     }
 
-    public void DecreaseHealth(int decreaseBy)
+    public void DecreaseHealth(float decreaseBy)
     {
-        Health -= decreaseBy;
-        Debug.Log("Health: " + Health);
-        if (Health <= 0)
+        PlayerHealth -= decreaseBy;
+        Debug.Log("Health: " + PlayerHealth);
+        if (PlayerHealth <= 0)
         {
             SceneManager.LoadScene("GameOver");
         }
