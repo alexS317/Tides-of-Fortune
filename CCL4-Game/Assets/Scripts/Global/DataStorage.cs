@@ -94,7 +94,7 @@ public class DataStorage : MonoBehaviour
         Debug.Log("Health: " + PlayerHealth);
         if (PlayerHealth <= 0)
         {
-            SceneManager.LoadScene("GameOver");
+            SceneManager.LoadSceneAsync("GameOver");
         }
     }
     
@@ -102,8 +102,7 @@ public class DataStorage : MonoBehaviour
     {
         if (foundKey == requiredKey)
         {
-            SceneManager.LoadScene("Success");
-            Destroy(this.gameObject);
+            SceneManager.LoadSceneAsync("Success");
         }
         else
         {
