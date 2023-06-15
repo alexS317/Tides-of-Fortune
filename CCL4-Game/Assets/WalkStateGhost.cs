@@ -3,22 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class WalkingState : StateMachineBehaviour
+public class WalkStateGhost : StateMachineBehaviour
 {
-    private float timer;
+
+    //private float timer;
     List<Transform> wayPoints = new List<Transform>();
     NavMeshAgent agent;
     Transform player;
-    private float chaseRange = 10;
-    private float attackRange = 3;
+    private float chaseRange = 15;
+    
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        timer = 0;
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        
-        
 
         GameObject goTo = GameObject.FindGameObjectWithTag("WayPoints");
         foreach (Transform t in goTo.transform)
@@ -26,33 +24,23 @@ public class WalkingState : StateMachineBehaviour
 
         agent = animator.GetComponent<NavMeshAgent>();
         agent.SetDestination(wayPoints[Random.Range(0, wayPoints.Count)].position);
+
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        timer += Time.deltaTime;
-        
+        //timer += Time.deltaTime;
+
         float distanceToPlayer = Vector3.Distance(player.position, animator.transform.position);
         if (distanceToPlayer < chaseRange)
         {
-            agent.speed =  2f;
-            agent.SetDestination(player.position);
-            if (distanceToPlayer < attackRange)
-            {
-                animator.SetBool("isAttacking", true);
-            }
+            animator.SetBool("isAttacking", true);
         }
-        else
+        else if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
         {
-            agent.speed = 1.2f;
-            if (timer > 8)
-            {
-                animator.SetBool("isWalking", false);
-            }
-
-            if (agent.remainingDistance <= agent.stoppingDistance)
-                agent.SetDestination(wayPoints[Random.Range(0, wayPoints.Count)].position);
+            int nextWaypointIndex = Random.Range(0, wayPoints.Count);
+            agent.SetDestination(wayPoints[nextWaypointIndex].position);
         }
 
     }
