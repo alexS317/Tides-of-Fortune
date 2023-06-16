@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4096615932089623124}
   - component: {fileID: 8138860394860388088}
+  - component: {fileID: 8076828203101664765}
   m_Layer: 0
   m_Name: LevelData
   m_TagString: Untagged
@@ -44,3 +45,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ef61734133d4da38f11300595c62cad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8076828203101664765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8113435800781373433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9854a7c4b1f35474ea46b0b2293d4381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueDisplay: {fileID: 0}
+  textElement: {fileID: 0}
+  answer1Button: {fileID: 0}
+  dialogueElements: []

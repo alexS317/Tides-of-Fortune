@@ -11,9 +11,17 @@ public class Inventory : MonoBehaviour
 
     [SerializeField] private GameObject keySlot;
 
+    private TextMeshProUGUI coinText;
+    private TextMeshProUGUI mapText;
+    private TextMeshProUGUI keyText;
+
     // Start is called before the first frame update
     void Start()
     {
+        coinText = coinSlot.GetComponentInChildren<TextMeshProUGUI>();
+        mapText = mapSlot.GetComponentInChildren<TextMeshProUGUI>();
+        keyText = keySlot.GetComponentInChildren<TextMeshProUGUI>();
+
         coinSlot.SetActive(false);
         mapSlot.SetActive(false);
         coinSlot.SetActive(false);
@@ -22,17 +30,17 @@ public class Inventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ShowIcon(coinSlot, DataStorage.Instance.TotalCoins);
-        ShowIcon(mapSlot, DataStorage.Instance.TotalMaps);
-        ShowIcon(keySlot, DataStorage.Instance.KeyNr);
+        ShowIcon(coinSlot, coinText, DataStorage.Instance.TotalCoins);
+        ShowIcon(mapSlot, mapText, DataStorage.Instance.TotalMaps);
+        ShowIcon(keySlot, keyText, DataStorage.Instance.KeyNr);
     }
 
-    void ShowIcon(GameObject slot, int itemCount)
+    void ShowIcon(GameObject slot, TextMeshProUGUI textField, int itemCount)
     {
         if (itemCount > 0)
         {
             slot.SetActive(true);
-            slot.GetComponentInChildren<TextMeshProUGUI>().text = itemCount.ToString();
+            textField.text = itemCount.ToString();
         }
         else slot.SetActive(false);
     }

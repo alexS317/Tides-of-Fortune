@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5578839130276315334}
   - component: {fileID: 7676653744242275340}
   - component: {fileID: 9027859394772674702}
+  - component: {fileID: 5949256270317957740}
   - component: {fileID: 9027859394772674701}
   - component: {fileID: 8865043822101750299}
   m_Layer: 0
@@ -103,6 +104,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: Level3
   requiredMaps: 2
+--- !u!114 &5949256270317957740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8180805870097274329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9854a7c4b1f35474ea46b0b2293d4381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueDisplay: {fileID: 0}
+  textElement: {fileID: 0}
+  answerButton: {fileID: 0}
+  dialogueElements: []
 --- !u!65 &9027859394772674701
 BoxCollider:
   m_ObjectHideFlags: 0
