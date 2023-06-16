@@ -4,54 +4,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Global data storage
 public class DataStorage : MonoBehaviour
 {
     public static DataStorage Instance;
-    
-    public float playTime
-    {
-        get;
-        private set;
-    }
-    
-    [field: SerializeField]
-    public int requiredMaps
-    {
-        get;
-        private set;
-    }
-    
-    [field: SerializeField]
-    public int requiredKey
-    {
-        get;
-        private set;
-    }
-    
-    public int foundKey
-    {
-        get;
-        private set;
-    }
-    
-    public int scoreMaps
-    {
-        get;
-        private set;
-    }
-    
-    public int scoreCoins
-    {
-        get;
-        private set;
-    }
 
-    [field: SerializeField]
-    public float PlayerHealth
-    {
-        get;
-        private set;
-    }
+    public float PlayTime { get; private set; }
+
+    public int TotalCoins { get; private set; }
+
+    public int TotalMaps { get; private set; }
+
+    public bool KeyFound { get; private set; } = false;
+
+    [field: SerializeField] public float PlayerHealth { get; private set; }
 
     private float maxHealth;
 
@@ -59,32 +25,32 @@ public class DataStorage : MonoBehaviour
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
-        
+
         DontDestroyOnLoad(this.gameObject);
 
         maxHealth = PlayerHealth;
     }
-   
+
     public void Update()
     {
-        playTime += Time.deltaTime;
+        PlayTime += Time.deltaTime;
     }
-    
+
     public void IncreaseCoins()
     {
-        scoreCoins++;
-        Debug.Log("Coins: " + scoreCoins);
+        TotalCoins++;
+        Debug.Log("Coins: " + TotalCoins);
     }
-    
-    public void IncreaseMaps()
+
+    public void IncreaseTotalMaps()
     {
-        scoreMaps++;
-        Debug.Log("Maps: " + scoreMaps);
+        TotalMaps++;
+        Debug.Log("Maps: " + TotalMaps);
     }
-    
-    public void HealthPotions()
+
+    public void IncreaseHealth()
     {
-        if(PlayerHealth < maxHealth) PlayerHealth++;
+        if (PlayerHealth < maxHealth) PlayerHealth++;   // Only add health if the player doesn't have max health
         Debug.Log("Health: " + PlayerHealth);
     }
 
@@ -92,27 +58,17 @@ public class DataStorage : MonoBehaviour
     {
         PlayerHealth -= decreaseBy;
         Debug.Log("Health: " + PlayerHealth);
+        
+        // If health is 0, player dies
         if (PlayerHealth <= 0)
         {
             SceneManager.LoadSceneAsync("GameOver");
         }
     }
-    
-    public void FoundTreasure()
+
+    public void CollectKey()
     {
-        if (foundKey == requiredKey)
-        {
-            SceneManager.LoadSceneAsync("Success");
-        }
-        else
-        {
-            Debug.Log("Can't open without a key");
-        }
-    }
-    
-    public void Key()
-    {
-        foundKey++;
+        KeyFound = true;
         Debug.Log("Congrats, you found the key");
     }
 }

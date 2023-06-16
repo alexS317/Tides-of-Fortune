@@ -8,7 +8,7 @@ public class Key : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            DataStorage.Instance.Key();
+            DataStorage.Instance.CollectKey();
             Destroy(this.gameObject);
         }
     }

@@ -102,7 +102,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 880f504a349ee9044913599566959d19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: Level2
+  levelName: Level2
+  requiredMaps: 1
 --- !u!65 &5891103713937414171
 BoxCollider:
   m_ObjectHideFlags: 0

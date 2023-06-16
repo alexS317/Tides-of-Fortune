@@ -3,13 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthPotions : MonoBehaviour
+public class Map : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            DataStorage.Instance.HealthPotions();
+            // Count both total maps and maps per level
+            LevelStorage.Instance.IncreaseMaps();
+            DataStorage.Instance.IncreaseTotalMaps();
             Destroy(this.gameObject);
         }
     }

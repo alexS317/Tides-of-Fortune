@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class FinalTreasure : MonoBehaviour
 {
+    // Animation event function (wait for animation to complete before loading the scene)
     void FullyOpened(int nr)
     {
         SceneManager.LoadSceneAsync("Success");
@@ -13,10 +14,11 @@ public class FinalTreasure : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (DataStorage.Instance.foundKey == DataStorage.Instance.requiredKey)
+        // Only open if the player has the key
+        if (DataStorage.Instance.KeyFound)
         {
-            this.GetComponent<Animator>().SetBool("opened", true);
+            GetComponent<Animator>().SetBool("opened", true);
         }
-        else Debug.Log("Can't open without a key");
+        else Debug.Log("Can't open without a key.");
     }
 }

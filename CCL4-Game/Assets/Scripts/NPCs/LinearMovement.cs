@@ -4,18 +4,17 @@ using UnityEngine;
 
 public class LinearMovement : MonoBehaviour
 {
-    [SerializeField] 
-    private Vector3 movementDistance;
-    [SerializeField] 
-    private float timeForMovement;
+    [SerializeField] private Vector3 movementDistance;
+    [SerializeField] private float timeForMovement;
 
-    
+
     private Vector3 originalStartPosition;
     private Vector3 originalTargetPosition;
     private Vector3 currentStartPosition;
     private Vector3 currentTargetPosition;
     private float passedMovementTime;
     private bool moveForward = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,8 +45,8 @@ public class LinearMovement : MonoBehaviour
             currentStartPosition = originalTargetPosition;
             currentTargetPosition = originalStartPosition;
         }
+
         passedMovementTime = 0;
         moveForward = !moveForward;
     }
-
 }

@@ -11,7 +11,7 @@ public class SuccessScreen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        var roundedTime = Math.Round(DataStorage.Instance.playTime, 2);
+        var roundedTime = Math.Round(DataStorage.Instance.PlayTime, 2);
         time.text = roundedTime.ToString();
     }
 }
