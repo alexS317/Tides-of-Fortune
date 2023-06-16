@@ -29,6 +29,9 @@ public class Ghost : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             print("BOOOOMM!!!");
+
+            Instantiate(deathParticels, transform.position, Quaternion.identity);
+
             Destroy(this.gameObject);
             DataStorage.Instance.DecreaseHealth(damage);
             
