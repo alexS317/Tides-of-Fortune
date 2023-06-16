@@ -7,6 +7,8 @@ public class Ghost : MonoBehaviour
     [SerializeField]
     private float damage;
 
+    public ParticleSystem deathParticels;
+
 
     // Start is called before the first frame update
     void Start()
