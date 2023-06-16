@@ -73,10 +73,13 @@ public class Dialogue : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             wasTriggered = true;
-            OpenDialogue();
-            playerReference = other.gameObject;
-            playerReference.GetComponent<PlayerInput>().enabled = false;
-            Camera.main.GetComponent<PlayerInput>().enabled = false;
+            if (DataStorage.Instance.KeyFound == false)
+            {
+                OpenDialogue();
+                playerReference = other.gameObject;
+                playerReference.GetComponent<PlayerInput>().enabled = false;
+                Camera.main.GetComponent<PlayerInput>().enabled = false;
+            }
         }
     }
 
