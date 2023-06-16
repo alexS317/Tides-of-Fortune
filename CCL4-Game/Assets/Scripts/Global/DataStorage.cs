@@ -16,6 +16,8 @@ public class DataStorage : MonoBehaviour
     public int TotalMaps { get; private set; }
 
     public bool KeyFound { get; private set; } = false;
+    
+    public int KeyNr { get; private set; }
 
     [field: SerializeField] public float PlayerHealth { get; private set; }
 
@@ -50,7 +52,7 @@ public class DataStorage : MonoBehaviour
 
     public void IncreaseHealth()
     {
-        if (PlayerHealth < maxHealth) PlayerHealth++;   // Only add health if the player doesn't have max health
+        if (PlayerHealth < maxHealth) PlayerHealth++; // Only add health if the player doesn't have max health
         Debug.Log("Health: " + PlayerHealth);
     }
 
@@ -58,7 +60,7 @@ public class DataStorage : MonoBehaviour
     {
         PlayerHealth -= decreaseBy;
         Debug.Log("Health: " + PlayerHealth);
-        
+
         // If health is 0, player dies
         if (PlayerHealth <= 0)
         {
@@ -69,6 +71,7 @@ public class DataStorage : MonoBehaviour
     public void CollectKey()
     {
         KeyFound = true;
+        KeyNr++;
         Debug.Log("Congrats, you found the key");
     }
 }
