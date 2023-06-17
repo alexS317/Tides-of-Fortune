@@ -74,9 +74,7 @@ public class PlayerMovement : MonoBehaviour
 
     void ExecuteMovement()
     {
-       // isJumpingOrFalling = rigidBody.velocity.y < -.035 || rigidBody.velocity.y > 0.00001;
-       isJumpingOrFalling = rigidBody.velocity.y < -.01 || rigidBody.velocity.y > .01;
-        // Debug.Log(rigidBody.velocity.y);
+        isJumpingOrFalling = rigidBody.velocity.y < -.01 || rigidBody.velocity.y > .01;
 
         if (moveBy == Vector3.zero) isMoving = false;
         else isMoving = true;

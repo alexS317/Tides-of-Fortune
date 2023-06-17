@@ -21,18 +21,14 @@ public class PlayerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!animator.GetBool("attack"))
-        {
-            weaponCollider.enabled = false; // Collider is disabled when there's no attack input
-        }
+        // Check boolean from animation event
+        if (PlayerAnimEvents.IsHitting) weaponCollider.enabled = true;
+        else weaponCollider.enabled = false;
     }
     
     void OnAttack()
     {
         animator.SetTrigger("attack");  // Trigger automatically resets after the action is complete
-        Debug.Log("Attack");
-
-        weaponCollider.enabled = true;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -41,12 +37,6 @@ public class PlayerAttack : MonoBehaviour
         {
             var enemyActions = other.GetComponent<EnemyActions>();
             enemyActions.TakeDamage(damage);    // Decrease enemy health
-            
-            // if (isAttacking)
-            // {
-            //     enemyActions.TakeDamage(damage);
-            //     isAttacking = false;
-            // }
         }
 
         // Just for testing purposes
