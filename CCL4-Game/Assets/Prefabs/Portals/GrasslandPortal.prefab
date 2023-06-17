@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelName: Level2
-  requiredMaps: 1
+  <RequiredMaps>k__BackingField: 1
 --- !u!114 &3147061057890715195
 MonoBehaviour:
   m_ObjectHideFlags: 0

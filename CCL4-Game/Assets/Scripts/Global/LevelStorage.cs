@@ -18,6 +18,6 @@ public class LevelStorage : MonoBehaviour
     public void IncreaseMaps()
     {
         MapsInLevel++;
-        Debug.Log("Maps in storage:" + MapsInLevel);
+        Debug.Log("Maps in level storage: " + MapsInLevel);
     }
 }

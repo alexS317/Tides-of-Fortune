@@ -7,16 +7,16 @@ using UnityEngine.SceneManagement;
 public class LevelChangePortal : MonoBehaviour
 {
     [SerializeField] private string levelName;
-    [SerializeField] private int requiredMaps;
+    [field:SerializeField] public int RequiredMaps { get; private set; }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             // Can only proceed to next level if enough maps were found in the current one
-            if (LevelStorage.Instance.MapsInLevel == requiredMaps)
+            if (LevelStorage.Instance.MapsInLevel == RequiredMaps)
             {
-                SceneManager.LoadSceneAsync(levelName);
+                SceneManager.LoadScene(levelName);
             }
             else
             {

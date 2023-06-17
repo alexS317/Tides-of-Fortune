@@ -73,7 +73,15 @@ public class Dialogue : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             wasTriggered = true;
-            if (DataStorage.Instance.KeyFound == false)
+            if (LevelStorage.Instance.MapsInLevel < this.GetComponent<LevelChangePortal>()?.RequiredMaps) // For checking portals
+            {
+                OpenDialogue();
+                playerReference = other.gameObject;
+                playerReference.GetComponent<PlayerInput>().enabled = false;
+                Camera.main.GetComponent<PlayerInput>().enabled = false;
+            }
+            
+            if (other.gameObject.name == "TreasureChest" && DataStorage.Instance.KeyFound == false)    // For checking final treasure chest
             {
                 OpenDialogue();
                 playerReference = other.gameObject;
