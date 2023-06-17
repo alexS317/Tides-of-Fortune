@@ -12,7 +12,5 @@ public class Ocean : MonoBehaviour
         {
             SceneManager.LoadSceneAsync("GameOver");
         }
-        
-        Destroy(other.gameObject);
     }
 }

@@ -73,7 +73,7 @@ ModelImporter:
       curves: []
       events:
       - time: 0.9925926
-        functionName: FullyOpened
+        functionName: OpenFinalChest
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: 705efcee82cec6b4699c73dd96b42ba3,
           type: 3}

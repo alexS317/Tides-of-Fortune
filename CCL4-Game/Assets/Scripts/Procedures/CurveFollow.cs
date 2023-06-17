@@ -13,11 +13,11 @@ public class CurveFollow : MonoBehaviour
     private float _tParam = 0.0f;
     private bool _coroutineAllowed = true;
     private bool chestOpened = false;
-    private TreasureChest chest;
+    private WoodenChest chest;
 
     private void Start()
     {
-        chest = GetComponentInParent<TreasureChest>();
+        chest = GetComponentInParent<WoodenChest>();
         // StartCoroutine(FollowBezierCurve(_routeToGo));
     }
 
