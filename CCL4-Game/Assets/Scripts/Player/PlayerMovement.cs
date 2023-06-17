@@ -16,6 +16,24 @@ public class PlayerMovement : MonoBehaviour
     private bool isMoving;
     private bool isJumpingOrFalling;
 
+    [SerializeField] private float groundCheckDistance = 0.1f;
+    [SerializeField] private LayerMask groundLayer;
+
+    private bool IsGrounded()
+    {
+        RaycastHit hit;
+        Vector3 raycastOrigin = transform.position + Vector3.right * 0.1f;
+
+        Debug.DrawRay(raycastOrigin, Vector3.down * 1f);
+
+        if (Physics.Raycast(raycastOrigin, Vector3.down, out hit, groundCheckDistance, groundLayer))
+        {
+            return true;
+        }
+
+        return false;
+    }
+
     private Rigidbody rigidBody;
 
     // Start is called before the first frame update
@@ -28,6 +46,10 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         ExecuteMovement();
+
+        isJumpingOrFalling = !IsGrounded();
+
+        print(isJumpingOrFalling);
     }
 
     void OnMovement(InputValue input)
@@ -42,30 +64,45 @@ public class PlayerMovement : MonoBehaviour
         rigidBody.AddForce(Vector3.up * jumpStrength, ForceMode.VelocityChange);
     }
 
-    void OnAttack(InputValue input)
+    void OnAttack()
     {
-        if (input.isPressed) animator.SetBool("attack", true);
+        animator.SetTrigger("attack");
         Debug.Log("Attack");
+        
         // else animator.SetBool("attack", false);
     }
 
-
     void ExecuteMovement()
     {
-        isJumpingOrFalling = rigidBody.velocity.y < -.035 || rigidBody.velocity.y > 0.00001;
+       // isJumpingOrFalling = rigidBody.velocity.y < -.035 || rigidBody.velocity.y > 0.00001;
         // Debug.Log(rigidBody.velocity.y);
 
         if (moveBy == Vector3.zero) isMoving = false;
         else isMoving = true;
 
-        animator.SetBool("run", isMoving);
-        animator.SetBool("jump", isJumpingOrFalling);
+        //animator.SetBool("run", isMoving);
+        //animator.SetBool("jump", isJumpingOrFalling);
 
-        if (!isMoving)
+        if (!isMoving && !isJumpingOrFalling)
         {
             transform.rotation = Quaternion.Euler(0, Camera.main.transform.eulerAngles.y, 0);
+            animator.SetBool("run", false);
+            animator.SetBool("jump", false);
             return;
+        } else if(!isMoving && isJumpingOrFalling)
+        {
+            animator.SetBool("jump", true);
+
+        } else if(isMoving && !isJumpingOrFalling)
+        {
+            animator.SetBool("run", true);
+            animator.SetBool("jump", false);
+
+        } else if(isMoving && isJumpingOrFalling)
+                {
+            animator.SetBool("jump", true);
         }
+
 
         if (movementType == MovementType.TransformBased)
         {
