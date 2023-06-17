@@ -33,16 +33,11 @@ public class PlayerAttack : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Ghost"))
         {
-            var enemyActions = other.GetComponent<EnemyActions>();
-            enemyActions.TakeDamage(damage);    // Decrease enemy health
+            Debug.Log("Enemy hit");
+            var enemyStats = other.GetComponent<EnemyStats>();
+            enemyStats.TakeDamage(damage);    // Decrease enemy health
         }
-
-        // Just for testing purposes
-        // if (other.gameObject.CompareTag("Ghost"))
-        // {
-        //     other.GetComponent<Ghost>().TakeDamage((int)damage);
-        // }
     }
 }

@@ -23,7 +23,7 @@ public class Weapon : MonoBehaviour
     {
         if (other.tag =="Ghost")
         {
-            other.GetComponent<Ghost>().TakeDamage(damageAmount);
+            // other.GetComponent<Ghost>().TakeDamage(damageAmount);
             print("Sword");
             
             DataStorage.Instance.IncreaseCoins();

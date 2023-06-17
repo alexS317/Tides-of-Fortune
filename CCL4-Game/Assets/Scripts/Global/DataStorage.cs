@@ -59,7 +59,7 @@ public class DataStorage : MonoBehaviour
     public void DecreasePlayerHealth(float decreaseBy)
     {
         PlayerHealth -= decreaseBy;
-        Debug.Log("Health: " + PlayerHealth);
+        Debug.Log("Player health: " + PlayerHealth);
 
         // If health is 0, player dies
         if (PlayerHealth <= 0)

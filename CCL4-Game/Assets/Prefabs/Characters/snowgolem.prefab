@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d307fd25dc3195b46b296ffa84909040, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  decreasePlayerHealthBy: 2
+  damage: 5
 --- !u!1001 &4534212979486532625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -89,17 +89,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: ec6c1139e18a7ae4287f852286fa6167,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.66
+      value: -12.504613
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ec6c1139e18a7ae4287f852286fa6167,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.28
+      value: 0.60000134
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ec6c1139e18a7ae4287f852286fa6167,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.63
+      value: -5.048355
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ec6c1139e18a7ae4287f852286fa6167,
         type: 3}
@@ -146,6 +146,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: snowgolem
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec6c1139e18a7ae4287f852286fa6167,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: ec6c1139e18a7ae4287f852286fa6167,
         type: 3}
       propertyPath: m_Controller
@@ -159,6 +164,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4534212979486532625}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &4422555234833672343
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3615734640453589312}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.376405, y: 7.9075313, z: 8.37265}
+  m_Center: {x: 0.16803436, y: 5.5402627, z: 0.08323738}
 --- !u!195 &996959040
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -181,6 +199,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &7840682265338985309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3615734640453589312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b073261973a3eb4cb739870ec2e3b7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
 --- !u!1 &6186731208341530679 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1497607477271229402, guid: ec6c1139e18a7ae4287f852286fa6167,
@@ -212,7 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d307fd25dc3195b46b296ffa84909040, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  decreasePlayerHealthBy: 2
+  damage: 0
 --- !u!4 &8071174605746637540 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3535800541790851339, guid: ec6c1139e18a7ae4287f852286fa6167,

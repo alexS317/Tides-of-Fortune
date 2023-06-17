@@ -3,10 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyActions : MonoBehaviour
+public class EnemyStats : MonoBehaviour
 {
     [SerializeField] private float health;
-    [SerializeField] private float damage;
+    // [SerializeField] private float damage;
 
     // Enemy takes damage
     public void TakeDamage(float hitDamage)
@@ -21,11 +21,11 @@ public class EnemyActions : MonoBehaviour
         Debug.Log("Enemy health: " + health);
     }
 
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            DataStorage.Instance.DecreasePlayerHealth(damage);  // Enemy decreases player health
-        }
-    }
+    // private void OnCollisionEnter(Collision other)
+    // {
+    //     if (other.gameObject.CompareTag("Player"))
+    //     {
+    //         DataStorage.Instance.DecreasePlayerHealth(damage);  // Enemy decreases player health
+    //     }
+    // }
 }
