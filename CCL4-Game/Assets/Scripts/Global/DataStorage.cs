@@ -17,7 +17,7 @@ public class DataStorage : MonoBehaviour
 
     public bool KeyFound { get; private set; } = false;
     
-    public int KeyNr { get; private set; }
+    public int KeyNr { get; private set; }  // Only used to display the number in the inventory
 
     [field: SerializeField] public float PlayerHealth { get; private set; }
 
@@ -50,13 +50,13 @@ public class DataStorage : MonoBehaviour
         Debug.Log("Maps: " + TotalMaps);
     }
 
-    public void IncreaseHealth()
+    public void IncreasePlayerHealth()
     {
         if (PlayerHealth < maxHealth) PlayerHealth++; // Only add health if the player doesn't have max health
         Debug.Log("Health: " + PlayerHealth);
     }
 
-    public void DecreaseHealth(float decreaseBy)
+    public void DecreasePlayerHealth(float decreaseBy)
     {
         PlayerHealth -= decreaseBy;
         Debug.Log("Health: " + PlayerHealth);

@@ -209,6 +209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1998925681747670311}
   - component: {fileID: 6804023406548406639}
+  - component: {fileID: 6722123139569049405}
   - component: {fileID: 1583473559794121677}
   - component: {fileID: 4967118938772357840}
   - component: {fileID: 1228743376785634409}
@@ -251,6 +252,25 @@ MonoBehaviour:
   jumpStrength: 8
   movementType: 0
   animator: {fileID: 3901040093363378156}
+  groundCheckDistance: 0.1
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!114 &6722123139569049405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6140161153706021628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 000396bc94312ce4f8b45030f894900f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: {fileID: 6478006307193607656}
+  animator: {fileID: 3901040093363378156}
+  damage: 2
 --- !u!114 &1583473559794121677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,6 +411,25 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 7442711727860066941}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6478006307193607656 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4706452340541456491, guid: 0b805edff1e4b0540a6e240a128a1997,
+    type: 3}
+  m_PrefabInstance: {fileID: 7442711727860066941}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &7616919405808690943
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6478006307193607656}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7892933, y: 1.0621876, z: 0.81930375}
+  m_Center: {x: -0.738806, y: 0.5901918, z: 0.15543427}
 --- !u!4 &6972534980321136022 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0b805edff1e4b0540a6e240a128a1997,

@@ -33,7 +33,7 @@ public class Ghost : MonoBehaviour
         {
             print("Player");
             DeadGhost();
-            DataStorage.Instance.DecreaseHealth(damage);
+            DataStorage.Instance.DecreasePlayerHealth(damage);
         }
        
     }

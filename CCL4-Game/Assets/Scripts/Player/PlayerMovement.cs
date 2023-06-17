@@ -47,9 +47,9 @@ public class PlayerMovement : MonoBehaviour
     {
         ExecuteMovement();
 
-        isJumpingOrFalling = !IsGrounded();
+        // isJumpingOrFalling = !IsGrounded();
 
-        print(isJumpingOrFalling);
+        // print(isJumpingOrFalling);
     }
 
     void OnMovement(InputValue input)
@@ -64,44 +64,47 @@ public class PlayerMovement : MonoBehaviour
         rigidBody.AddForce(Vector3.up * jumpStrength, ForceMode.VelocityChange);
     }
 
-    void OnAttack()
-    {
-        animator.SetTrigger("attack");
-        Debug.Log("Attack");
-        
-        // else animator.SetBool("attack", false);
-    }
+    // void OnAttack()
+    // {
+    //     animator.SetTrigger("attack");
+    //     Debug.Log("Attack");
+    //     
+    //     // else animator.SetBool("attack", false);
+    // }
 
     void ExecuteMovement()
     {
        // isJumpingOrFalling = rigidBody.velocity.y < -.035 || rigidBody.velocity.y > 0.00001;
+       isJumpingOrFalling = rigidBody.velocity.y < -.01 || rigidBody.velocity.y > .01;
         // Debug.Log(rigidBody.velocity.y);
 
         if (moveBy == Vector3.zero) isMoving = false;
         else isMoving = true;
 
-        //animator.SetBool("run", isMoving);
-        //animator.SetBool("jump", isJumpingOrFalling);
+        animator.SetBool("run", isMoving);
+        animator.SetBool("jump", isJumpingOrFalling);
 
-        if (!isMoving && !isJumpingOrFalling)
+        // if (!isMoving && !isJumpingOrFalling)
+        if (!isMoving)
         {
             transform.rotation = Quaternion.Euler(0, Camera.main.transform.eulerAngles.y, 0);
-            animator.SetBool("run", false);
-            animator.SetBool("jump", false);
+            // animator.SetBool("run", false);
+            // animator.SetBool("jump", false);
             return;
-        } else if(!isMoving && isJumpingOrFalling)
-        {
-            animator.SetBool("jump", true);
-
-        } else if(isMoving && !isJumpingOrFalling)
-        {
-            animator.SetBool("run", true);
-            animator.SetBool("jump", false);
-
-        } else if(isMoving && isJumpingOrFalling)
-                {
-            animator.SetBool("jump", true);
         }
+        // else if(!isMoving && isJumpingOrFalling)
+        // {
+        //     animator.SetBool("jump", true);
+        //
+        // } else if(isMoving && !isJumpingOrFalling)
+        // {
+        //     animator.SetBool("run", true);
+        //     animator.SetBool("jump", false);
+        //
+        // } else if(isMoving && isJumpingOrFalling)
+        //         {
+        //     animator.SetBool("jump", true);
+        // }
 
 
         if (movementType == MovementType.TransformBased)
