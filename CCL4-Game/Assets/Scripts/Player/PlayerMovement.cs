@@ -42,16 +42,24 @@ public class PlayerMovement : MonoBehaviour
         rigidBody.AddForce(Vector3.up * jumpStrength, ForceMode.VelocityChange);
     }
 
+    void OnAttack(InputValue input)
+    {
+        if (input.isPressed) animator.SetBool("attack", true);
+        Debug.Log("Attack");
+        // else animator.SetBool("attack", false);
+    }
+
 
     void ExecuteMovement()
     {
         isJumpingOrFalling = rigidBody.velocity.y < -.035 || rigidBody.velocity.y > 0.00001;
+        // Debug.Log(rigidBody.velocity.y);
 
         if (moveBy == Vector3.zero) isMoving = false;
         else isMoving = true;
 
         animator.SetBool("run", isMoving);
-        //animator.SetBool("jump", isJumpingOrFalling);
+        animator.SetBool("jump", isJumpingOrFalling);
 
         if (!isMoving)
         {
@@ -62,7 +70,6 @@ public class PlayerMovement : MonoBehaviour
         if (movementType == MovementType.TransformBased)
         {
             RotatePlayerFigure(moveBy);
-            //transform.position += moveBy * (speed * Time.deltaTime);
             transform.Translate(Vector3.forward * (speed * Time.deltaTime));
         }
         else if (movementType == MovementType.PhysicsBased)
