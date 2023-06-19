@@ -4,14 +4,21 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    public int damageAmount = 2;
+    
 
     GameObject sword;
     Transform SwordPosition;
 
+    GameObject hitCollider;
+
+    private BoxCollider weaponCollider;
+
     private void Start()
     {
         sword = GameObject.FindGameObjectWithTag("Sword");
+
+        hitCollider = GameObject.FindGameObjectWithTag("HitCollider");
+        weaponCollider = hitCollider.GetComponent<BoxCollider>();
     }
 
     private void Update()
@@ -21,13 +28,27 @@ public class Weapon : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag =="Ghost")
+        if (other.tag =="Enemy")
         {
             // other.GetComponent<Ghost>().TakeDamage(damageAmount);
             print("Sword");
             
             DataStorage.Instance.IncreaseCoins();
         }
+    }
+
+    public void EnableHitBox()
+    {
+
+        print("hitbox activate");
+        weaponCollider.enabled = true;
+    }
+
+    public void DisableHitBox()
+    {
+
+        print("hitbox deactivat");
+        weaponCollider.enabled = false;
     }
 
     void ActivateSword()

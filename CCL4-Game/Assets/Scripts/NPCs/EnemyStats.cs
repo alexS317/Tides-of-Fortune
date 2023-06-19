@@ -14,17 +14,14 @@ public class EnemyStats : MonoBehaviour
     [SerializeField]
     Animator animator;
 
-    GameObject  hitCollider;
-
-    private BoxCollider weaponCollider;
+    
 
 
     // [SerializeField] private float damage;
 
     private void Start()
     {
-        hitCollider = GameObject.FindGameObjectWithTag("HitCollider");
-        weaponCollider = hitCollider.GetComponent<BoxCollider>();
+        
     }
 
     // Enemy takes damage
@@ -44,19 +41,7 @@ public class EnemyStats : MonoBehaviour
         Debug.Log("Enemy health: " + health);
     }
 
-    public void EnableHitBox()
-    {
 
-        print("hitbox activate");
-        weaponCollider.enabled = true;
-    }
-
-    public void DisableHitBox()
-    {
-
-        print("hitbox deactivat");
-        weaponCollider.enabled = false;
-    }
 
     // private void OnCollisionEnter(Collision other)
     // {

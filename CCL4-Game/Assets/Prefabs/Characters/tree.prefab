@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3189101322220504648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5804998440609814799}
+  m_Layer: 0
+  m_Name: ShootingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5804998440609814799
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3189101322220504648}
+  m_LocalRotation: {x: -0.008372298, y: -0.007368466, z: 0.0016222603, w: 0.9999365}
+  m_LocalPosition: {x: -0.0028, y: -0, z: -0}
+  m_LocalScale: {x: 0.024999999, y: 0.024999995, z: 0.025000006}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7046546871470206926}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -0.958, y: -0.846, z: 0.193}
 --- !u!1001 &250995400567733767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30,17 +61,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 3a93ccba02d6277468bf6119770ee029,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -11.965979
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3a93ccba02d6277468bf6119770ee029,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.19169235
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3a93ccba02d6277468bf6119770ee029,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -13.221445
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3a93ccba02d6277468bf6119770ee029,
         type: 3}
@@ -169,4 +200,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BerryObject: {fileID: 6822655763958065249, guid: af550d2ecf348b545905cdb531de17f7,
     type: 3}
-  berryCenter: {fileID: 0}
+  berryCenter: {fileID: 5804998440609814799}
+--- !u!4 &7046546871470206926 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7111724733557084617, guid: 3a93ccba02d6277468bf6119770ee029,
+    type: 3}
+  m_PrefabInstance: {fileID: 250995400567733767}
+  m_PrefabAsset: {fileID: 0}

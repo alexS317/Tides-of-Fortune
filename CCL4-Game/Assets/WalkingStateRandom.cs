@@ -50,7 +50,7 @@ public class WalkingStateRandom : StateMachineBehaviour
             if (agent.remainingDistance <= agent.stoppingDistance)
             {
                 // Calculate a random position within a range around the object
-                Vector3 randomPosition = animator.transform.position + Random.insideUnitSphere * 5f;
+                Vector3 randomPosition = animator.transform.position + Random.insideUnitSphere * 15f;
                 NavMeshHit navMeshHit;
 
                 // Find the closest valid position on the NavMesh to the random position
