@@ -382,6 +382,29 @@
 										<ActiveSource Name="BackgroundLevel1" ID="{FD908A2F-7D93-4DF5-A34F-E1B1081468F4}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="BackgroundMenu" ID="{3545F17E-090A-46BC-BD59-F6182F62A9EB}" ShortID="214831983">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8245366-1EBA-4165-9D82-FB54400CC14E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="pirate_band_drunken_sailor" ID="{552B31F0-059A-4D12-B1F8-37D6F2073E49}">
+											<Language>SFX</Language>
+											<AudioFile>pirate_band_drunken_sailor.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="987280588"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="pirate_band_drunken_sailor" ID="{552B31F0-059A-4D12-B1F8-37D6F2073E49}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="EnemySounds" ID="{8AF1DF5B-A607-4431-8057-F95B5C9631E4}" ShortID="632489225">
