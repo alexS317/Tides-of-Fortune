@@ -27,7 +27,12 @@ public class Berry : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
-        print("Damage");
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            
+            DataStorage.Instance.DecreasePlayerHealth(1);
+            Destroy(gameObject);
+        }
+            
     }
 }

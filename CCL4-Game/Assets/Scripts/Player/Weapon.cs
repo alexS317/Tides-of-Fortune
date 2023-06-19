@@ -15,7 +15,7 @@ public class Weapon : MonoBehaviour
 
     private void Start()
     {
-        sword = GameObject.FindGameObjectWithTag("Sword");
+        //sword = GameObject.FindGameObjectWithTag("Sword");
 
         hitCollider = GameObject.FindGameObjectWithTag("HitCollider");
         weaponCollider = hitCollider.GetComponent<BoxCollider>();
