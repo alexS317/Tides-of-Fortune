@@ -7,10 +7,11 @@ using UnityEngine.AI;
 public class WalkingStateRandom : StateMachineBehaviour
 {
     private float timer;
-    List<Transform> wayPoints = new List<Transform>();
+    //List<Transform> wayPoints = new List<Transform>();
     NavMeshAgent agent;
     Transform player;
     private float chaseRange = 10;
+    [SerializeField]
     private float attackRange = 3;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -18,11 +19,8 @@ public class WalkingStateRandom : StateMachineBehaviour
         timer = 0;
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
-
-
-        
-
         agent = animator.GetComponent<NavMeshAgent>();
+
         //agent.SetDestination(wayPoints[Random.Range(0, wayPoints.Count)].position);
     }
 
@@ -34,8 +32,8 @@ public class WalkingStateRandom : StateMachineBehaviour
         float distanceToPlayer = Vector3.Distance(player.position, animator.transform.position);
         if (distanceToPlayer < chaseRange)
         {
-            agent.speed = 2f;
-            agent.SetDestination(player.position);
+            //agent.speed = 2f;
+            //agent.SetDestination(player.position);
             if (distanceToPlayer < attackRange)
             {
                 animator.SetBool("isAttacking", true);
@@ -43,7 +41,7 @@ public class WalkingStateRandom : StateMachineBehaviour
         }
         else
         {
-            agent.speed = 1.2f;
+            //agent.speed = 1.2f;
             if (timer > 8)
             {
                 animator.SetBool("isWalking", false);

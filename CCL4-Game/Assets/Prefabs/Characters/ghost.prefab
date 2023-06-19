@@ -4996,7 +4996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3ccd601920db584398879e44aeb7c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathParticels: {fileID: 7388724862868491294, guid: b346a8f33526fe84dadc3618d82f36d9,
+  deathParticles: {fileID: 7388724862868491294, guid: b346a8f33526fe84dadc3618d82f36d9,
     type: 3}
 --- !u!114 &1860941617620477087
 MonoBehaviour:
@@ -5012,7 +5012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   resistance: 0
-  animator: {fileID: 0}
+  animator: {fileID: 8569989421876030129}
 --- !u!114 &1936032264060150601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5026,3 +5026,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
+--- !u!95 &8569989421876030129 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 9f3054e413907734ba4b79282ffdad50,
+    type: 3}
+  m_PrefabInstance: {fileID: 2847438594753566496}
+  m_PrefabAsset: {fileID: 0}
