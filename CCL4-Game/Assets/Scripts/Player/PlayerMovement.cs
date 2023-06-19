@@ -8,32 +8,11 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed = 5f;
     [SerializeField] public float jumpStrength = 5f;
-    [SerializeField] private MovementType movementType;
-
     [SerializeField] private Animator animator;
 
     private Vector3 moveBy;
     private bool isMoving;
     private bool isJumpingOrFalling;
-
-    [SerializeField] private float groundCheckDistance = 0.1f;
-    [SerializeField] private LayerMask groundLayer;
-
-    private bool IsGrounded()
-    {
-        // Perform a raycast downward to check if the player is touching the ground
-        RaycastHit hit;
-        Vector3 raycastOrigin = transform.position + Vector3.right * 0.1f;
-
-        Debug.DrawRay(raycastOrigin, Vector3.down * 1f);
-
-        if (Physics.Raycast(raycastOrigin, Vector3.down, out hit, groundCheckDistance, groundLayer))
-        {
-            return true;
-        }
-
-        return false;
-    }
 
     private Rigidbody rigidBody;
 
@@ -83,17 +62,9 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        if (movementType == MovementType.TransformBased)
-        {
-            // Rotate the player and move it using transform translation
-            RotatePlayerFigure(moveBy);
-            transform.Translate(Vector3.forward * (speed * Time.deltaTime));
-        }
-        else if (movementType == MovementType.PhysicsBased)
-        {
-            // Move the player using Rigidbody physics
-            rigidBody.AddForce(moveBy * 2, ForceMode.Acceleration);
-        }
+        // Rotate the player and move it using transform translation
+        RotatePlayerFigure(moveBy);
+        transform.Translate(Vector3.forward * (speed * Time.deltaTime));
     }
 
     private void RotatePlayerFigure(Vector3 rotateVector)

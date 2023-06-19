@@ -37,7 +37,7 @@ ModelImporter:
       takeName: PlayerCharacter|Attack
       internalID: 5050697112031128070
       firstFrame: 0
-      lastFrame: 19
+      lastFrame: 21
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -57,7 +57,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.7518518
+      - time: 0.6962963
         functionName: HitEnemy
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: af42e4b97da1bd34689faa47915bf005,
@@ -65,13 +65,13 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.8314086
+      - time: 0.9592592
         functionName: FinishAttack
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: af42e4b97da1bd34689faa47915bf005,
           type: 3}
         floatParameter: 0
-        intParameter: 1
+        intParameter: 0
         messageOptions: 0
       transformMask: []
       maskType: 3
@@ -110,8 +110,8 @@ ModelImporter:
       name: PlayerCharacter|Jump
       takeName: PlayerCharacter|Jump
       internalID: 5620807188825851180
-      firstFrame: 4
-      lastFrame: 14
+      firstFrame: 0
+      lastFrame: 21
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

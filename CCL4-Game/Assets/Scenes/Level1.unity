@@ -6376,48 +6376,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 667868950}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &673180437 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3762484620821518307, guid: 65cf31d106a27d340a93180fb314a214,
-    type: 3}
-  m_PrefabInstance: {fileID: 3762484621476649511}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &673180439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 673180437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e2f342745a292a478a50f023492f411, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDefaultListener: 1
-  listenerId: 0
---- !u!114 &673180440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 673180437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a03d8d1ffd7ae74082423cc765a2829, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1001 &692078937
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18757,13 +18715,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerCamera
       objectReference: {fileID: 0}
-    - target: {fileID: 6478006307193607656, guid: 65cf31d106a27d340a93180fb314a214,
-        type: 3}
-      propertyPath: m_TagString
-      value: HitCollider
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3762484620821518306, guid: 65cf31d106a27d340a93180fb314a214, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65cf31d106a27d340a93180fb314a214, type: 3}
 --- !u!1001 &4237256628133007256
 PrefabInstance:
