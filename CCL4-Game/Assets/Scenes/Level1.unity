@@ -1557,6 +1557,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 167027757}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &174499438 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7046546871470206926, guid: f9ee76bb56937964a859d5e30d832881,
+    type: 3}
+  m_PrefabInstance: {fileID: 2010575555}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &175232669
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18653,6 +18659,17 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1513860255}
+    - target: {fileID: -4307961511222225042, guid: f9ee76bb56937964a859d5e30d832881,
+        type: 3}
+      propertyPath: BerryObject
+      value: 
+      objectReference: {fileID: 6822655763958065249, guid: af550d2ecf348b545905cdb531de17f7,
+        type: 3}
+    - target: {fileID: -4307961511222225042, guid: f9ee76bb56937964a859d5e30d832881,
+        type: 3}
+      propertyPath: berryCenter
+      value: 
+      objectReference: {fileID: 174499438}
     - target: {fileID: 356082895848593900, guid: f9ee76bb56937964a859d5e30d832881,
         type: 3}
       propertyPath: m_RootOrder

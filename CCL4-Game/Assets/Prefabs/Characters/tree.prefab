@@ -131,6 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 6
+  animator: {fileID: 0}
 --- !u!195 &-4780608446214037521
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -165,3 +166,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f01b1f5b71e225349864b7f353092ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BerryObject: {fileID: 6822655763958065249, guid: af550d2ecf348b545905cdb531de17f7,
+    type: 3}
+  berryCenter: {fileID: 0}
