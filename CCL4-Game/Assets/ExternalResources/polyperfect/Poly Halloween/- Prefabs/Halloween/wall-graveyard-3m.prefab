@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 601319309112775483}
   - component: {fileID: 4609305767119363230}
   - component: {fileID: 1734867056385321044}
+  - component: {fileID: -2597068344310480632}
   m_Layer: 0
   m_Name: wall-graveyard-3m
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &-2597068344310480632
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221661635745433985}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.1773298, y: 1.4276417, z: 0.3449817}
+  m_Center: {x: -1.4157282, y: 0.6777546, z: 0.00044576824}
