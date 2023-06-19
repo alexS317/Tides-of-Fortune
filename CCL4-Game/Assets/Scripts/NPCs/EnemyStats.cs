@@ -14,9 +14,6 @@ public class EnemyStats : MonoBehaviour
     [SerializeField]
     Animator animator;
 
-    [SerializeField] 
-    private GameObject weapon;
-
     GameObject  hitCollider;
 
     private BoxCollider weaponCollider;

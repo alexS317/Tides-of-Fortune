@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.38825688, g: 0.7281151, b: 0.7341303, a: 1}
+  m_IndirectSpecularColor: {r: 0.38810045, g: 0.7278148, b: 0.7324987, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7026,7 +7026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3326e303352a7b4e864f7b26eeb2568, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <PlayerHealth>k__BackingField: 10
+  <PlayerHealth>k__BackingField: 20
 --- !u!114 &725847089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7464,15 +7464,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2093773013, guid: 44fc3fce621c75245a8d6ab4296c0467, type: 3}
+      propertyPath: m_TagString
+      value: HitCollider
+      objectReference: {fileID: 0}
+    - target: {fileID: 2093773015, guid: 44fc3fce621c75245a8d6ab4296c0467, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3615734640453589312, guid: 44fc3fce621c75245a8d6ab4296c0467,
         type: 3}
       propertyPath: m_Name
       value: snowgolem
-      objectReference: {fileID: 0}
-    - target: {fileID: 3615734640453589312, guid: 44fc3fce621c75245a8d6ab4296c0467,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4136129454038565882, guid: 44fc3fce621c75245a8d6ab4296c0467,
         type: 3}

@@ -94,7 +94,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: ec6c1139e18a7ae4287f852286fa6167,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.60000134
+      value: -0.18
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ec6c1139e18a7ae4287f852286fa6167,
         type: 3}
@@ -213,7 +213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   resistance: 1
-  animator: {fileID: 0}
+  animator: {fileID: 8036206274838403456}
 --- !u!1 &6186731208341530679 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1497607477271229402, guid: ec6c1139e18a7ae4287f852286fa6167,
@@ -246,6 +246,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+--- !u!95 &8036206274838403456 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: ec6c1139e18a7ae4287f852286fa6167,
+    type: 3}
+  m_PrefabInstance: {fileID: 4534212979486532625}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8071174605746637540 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3535800541790851339, guid: ec6c1139e18a7ae4287f852286fa6167,

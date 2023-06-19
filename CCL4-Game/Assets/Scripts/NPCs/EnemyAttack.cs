@@ -10,8 +10,8 @@ public class EnemyAttack : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            print("Attack player");
-            DataStorage.Instance.DecreasePlayerHealth(damage);  // Enemy decreases player health
+            // Enemy decreases player health
+            DataStorage.Instance.DecreasePlayerHealth(damage);  
         }
     }
 }
