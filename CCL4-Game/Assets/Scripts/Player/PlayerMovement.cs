@@ -50,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
         // isJumpingOrFalling = !IsGrounded();
 
         // print(isJumpingOrFalling);
+        
     }
 
     void OnMovement(InputValue input)

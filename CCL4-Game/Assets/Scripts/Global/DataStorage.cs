@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 // Global data storage
 public class DataStorage : MonoBehaviour
@@ -10,6 +11,7 @@ public class DataStorage : MonoBehaviour
     public static DataStorage Instance;
 
     public float PlayTime { get; private set; }
+    public int TotalHealthPotions { get; private set; }
 
     public int TotalCoins { get; private set; }
 
@@ -54,6 +56,11 @@ public class DataStorage : MonoBehaviour
     {
         if (PlayerHealth < maxHealth) PlayerHealth++; // Only add health if the player doesn't have max health
         Debug.Log("Health: " + PlayerHealth);
+    }
+
+    public void CollectHealthPotions()
+    {
+        TotalHealthPotions++;
     }
 
     public void DecreasePlayerHealth(float decreaseBy)
