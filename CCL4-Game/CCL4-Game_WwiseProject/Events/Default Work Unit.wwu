@@ -1,6 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_CollectCoin" ID="{697FE196-C714-4563-B077-F39FDBC2DE26}">
+					<ChildrenList>
+						<Action Name="" ID="{EB21A5CA-1604-4F86-B508-8545DDE6B2B0}" ShortID="210063828">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CollectCoin" ID="{854EE0D3-749B-4A8B-A57C-CB55EC181FE5}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CollectKey" ID="{C2A83182-2101-44A7-8730-AF776A884DD2}">
+					<ChildrenList>
+						<Action Name="" ID="{BF31E89C-B622-49F3-8D72-ABE2762E24FE}" ShortID="729174492">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CollectKey" ID="{43CA98B7-40EE-406A-A4C2-C40FF74ADCC2}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CollectMap" ID="{0EFFB579-4C2F-447A-8A24-E052372D6A52}">
+					<ChildrenList>
+						<Action Name="" ID="{C391B090-6013-48E6-8E80-06038E00AAD1}" ShortID="729518991">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CollectMap" ID="{1F204A17-F120-4433-8540-AEDEA5DEDFFC}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_DrinkPotion" ID="{2A7030B0-70E5-467E-9FF9-C2705DD7C95A}">
+					<ChildrenList>
+						<Action Name="" ID="{E1DE83E3-680D-4908-9A13-48DC9A9E1100}" ShortID="1015737483">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DrinkPotion" ID="{C0EA895A-7A08-429D-9150-66D24338F029}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_OpenChest" ID="{D1826CA4-87C4-4F61-A93A-FA28DBB61CA3}">
+					<ChildrenList>
+						<Action Name="" ID="{1ED967A3-4C0D-4DB0-B7E4-6D75D9A2BF97}" ShortID="449196327">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="OpenChest" ID="{6588C4BC-3B67-4BD6-8286-61786C3F7E2A}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Portal" ID="{B11E5738-75C5-47DE-A3A5-D7950CC4D883}">
+					<ChildrenList>
+						<Action Name="" ID="{05D7037C-77B0-41BC-AF43-69373C578678}" ShortID="1069804639">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Portal" ID="{AD171874-0E20-43B8-9031-5560140EC530}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

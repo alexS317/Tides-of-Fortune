@@ -4,7 +4,14 @@
 		<WorkUnit Name="Default Work Unit" ID="{EEA48275-E32C-4C15-9BA8-DD10FCB73670}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="Standart" ID="{09439BA0-7E97-4425-8CA6-224AF5FCECBE}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_CollectMap" ID="{0EFFB579-4C2F-447A-8A24-E052372D6A52}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_CollectKey" ID="{C2A83182-2101-44A7-8730-AF776A884DD2}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_CollectCoin" ID="{697FE196-C714-4563-B077-F39FDBC2DE26}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_DrinkPotion" ID="{2A7030B0-70E5-467E-9FF9-C2705DD7C95A}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Portal" ID="{B11E5738-75C5-47DE-A3A5-D7950CC4D883}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_OpenChest" ID="{D1826CA4-87C4-4F61-A93A-FA28DBB61CA3}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>

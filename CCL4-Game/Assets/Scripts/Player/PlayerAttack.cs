@@ -29,6 +29,7 @@ public class PlayerAttack : MonoBehaviour
     void OnAttack()
     {
         animator.SetTrigger("attack");  // Trigger automatically resets after the action is complete
+        AkSoundEngine.PostEvent("Play_PlayerAttack", gameObject);
     }
 
     private void OnTriggerEnter(Collider other)

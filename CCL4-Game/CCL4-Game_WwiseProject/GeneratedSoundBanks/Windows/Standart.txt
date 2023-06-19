@@ -5,6 +5,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2228638855	Play_CollectCoin			\Default Work Unit\Play_CollectCoin	
 	2424882924	Play_Portal			\Default Work Unit\Play_Portal	
 	3416405661	Play_OpenChest			\Default Work Unit\Play_OpenChest	
+	3703766381	Play_PlayerAttack			\Default Work Unit\Play_PlayerAttack	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	80575695	DrinkPotion	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\DrinkPotion_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\DrinkPotion		183184
@@ -12,6 +13,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	265209881	CollectCoin2	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\CollectCoin2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectCoin\CollectCoin2		263344
 	266220930	CollectKey	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\CollectKey_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectKey		203372
 	288041657	Portal	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\Portal_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Others\Portal		1835808
+	350015169	PlayerAttack2	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\PlayerAttack2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\Attack\PlayerAttack\PlayerAttack2		127512
 	569832036	CollectMap	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\CollectMap_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectMap		54398
 	776665753	OpenChest	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\OpenChest_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\OpenChest		172892
+	1035167289	PlayerAttack1	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\PlayerAttack1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\Attack\PlayerAttack\PlayerAttack1		237768
 
