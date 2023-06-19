@@ -12,6 +12,11 @@ public class MainScreenActions : MonoBehaviour
         SceneManager.LoadSceneAsync("Level1");
     }
 
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
     public void MainMenu()
     {
         SceneManager.LoadSceneAsync("MainMenu");

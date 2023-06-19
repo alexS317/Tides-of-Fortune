@@ -64,14 +64,6 @@ public class PlayerMovement : MonoBehaviour
         rigidBody.AddForce(Vector3.up * jumpStrength, ForceMode.VelocityChange);
     }
 
-    // void OnAttack()
-    // {
-    //     animator.SetTrigger("attack");
-    //     Debug.Log("Attack");
-    //     
-    //     // else animator.SetBool("attack", false);
-    // }
-
     void ExecuteMovement()
     {
         isJumpingOrFalling = rigidBody.velocity.y < -.01 || rigidBody.velocity.y > .01;
