@@ -30,9 +30,9 @@ public class EnemyStats : MonoBehaviour
     // Enemy takes damage
     public void TakeDamage(float hitDamage)
     {
-
-
         health -= (hitDamage - resistance);
+
+        print(health);
 
         if (health <= 0)
         {
