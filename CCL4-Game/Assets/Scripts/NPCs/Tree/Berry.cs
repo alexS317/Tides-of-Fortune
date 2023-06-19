@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Berry : MonoBehaviour
 {
-
     private float timer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,9 +17,8 @@ public class Berry : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if(timer > 2)
+        if (timer > 2)
         {
-
             print("berry bad");
             Destroy(gameObject);
         }
@@ -29,10 +28,8 @@ public class Berry : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            
             DataStorage.Instance.DecreasePlayerHealth(1);
             Destroy(gameObject);
         }
-            
     }
 }
