@@ -386,6 +386,62 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StatePropertyList>
+											<Property Name="Volume"/>
+										</StatePropertyList>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="BackgroundMusic" ID="{5AD7379A-B78A-4F66-AEB2-A9412759CCED}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Level1" ID="{4A38E86A-C568-41A5-B3F6-B6813370DDA9}"/>
+												<CustomState Name="" ID="{1F8832BF-390B-4EF8-83FE-9BAEBEEBD34C}" ShortID="208950217">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Level3" ID="{2ADF9DC7-D0CC-426C-A0DD-3C740702BE2C}"/>
+												<CustomState Name="" ID="{DA036D9B-5EAB-4151-8E50-DFB122E29686}" ShortID="531878863"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Level2" ID="{B57146B3-D9B9-4694-993E-EADB578DC25E}"/>
+												<CustomState Name="" ID="{64A36805-FB59-43D1-B545-721CC869E4E2}" ShortID="781332199">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="SuccessScreen" ID="{1CF1554B-295B-4745-A024-D88D05C88CFD}"/>
+												<CustomState Name="" ID="{7C063548-D08B-4C9E-B9FD-C98F7DBAAD0F}" ShortID="172945006">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="MainMenu" ID="{1DA4D84F-EB30-47A0-91A8-4740FD405DD0}"/>
+												<CustomState Name="" ID="{638848F5-701D-4E67-948E-C9FC6FD6D726}" ShortID="1027504081">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="GameOverScreen" ID="{F639FAB4-F87A-4CCD-8A78-6581A5F6014C}"/>
+												<CustomState Name="" ID="{594D3F11-68B4-4BCB-A748-27954B5122CD}" ShortID="259145266">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="BackgroundLevel3" ID="{56710FD0-2FEF-473F-8F0C-86FDEBEB787E}" Platform="Linked"/>
@@ -409,6 +465,62 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StatePropertyList>
+											<Property Name="Volume"/>
+										</StatePropertyList>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="BackgroundMusic" ID="{5AD7379A-B78A-4F66-AEB2-A9412759CCED}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Level1" ID="{4A38E86A-C568-41A5-B3F6-B6813370DDA9}"/>
+												<CustomState Name="" ID="{6E75ADC1-EF30-4BA0-9BDD-C517D7473DD3}" ShortID="774811837">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Level3" ID="{2ADF9DC7-D0CC-426C-A0DD-3C740702BE2C}"/>
+												<CustomState Name="" ID="{F73AB367-B979-4E56-9E5C-B1A25BD6D24A}" ShortID="1035739633">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Level2" ID="{B57146B3-D9B9-4694-993E-EADB578DC25E}"/>
+												<CustomState Name="" ID="{DA83F5FF-786C-490B-9B88-AAE4DD23FAE6}" ShortID="620181523"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="SuccessScreen" ID="{1CF1554B-295B-4745-A024-D88D05C88CFD}"/>
+												<CustomState Name="" ID="{DA33F678-B83E-4A70-9F58-DF16071D34D3}" ShortID="982452475">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="MainMenu" ID="{1DA4D84F-EB30-47A0-91A8-4740FD405DD0}"/>
+												<CustomState Name="" ID="{7B3456B8-CCC4-4660-8090-95B9719FAEA4}" ShortID="887311778">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="GameOverScreen" ID="{F639FAB4-F87A-4CCD-8A78-6581A5F6014C}"/>
+												<CustomState Name="" ID="{CB17CB00-56AC-4262-9E76-3C838B6FA896}" ShortID="953963233">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="BackgroundLevel2" ID="{99F73634-BE34-471C-82B7-4344D5C7E679}" Platform="Linked"/>
@@ -432,6 +544,62 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StatePropertyList>
+											<Property Name="Volume"/>
+										</StatePropertyList>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="BackgroundMusic" ID="{5AD7379A-B78A-4F66-AEB2-A9412759CCED}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Level1" ID="{4A38E86A-C568-41A5-B3F6-B6813370DDA9}"/>
+												<CustomState Name="" ID="{2B4D7305-6A16-418D-BEB7-71A77CED76F3}" ShortID="359230692"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Level3" ID="{2ADF9DC7-D0CC-426C-A0DD-3C740702BE2C}"/>
+												<CustomState Name="" ID="{2CCF36EF-FA71-4EB5-9DD8-6E6680FC2EE4}" ShortID="1053336327">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Level2" ID="{B57146B3-D9B9-4694-993E-EADB578DC25E}"/>
+												<CustomState Name="" ID="{8FC97ADF-C906-48B6-AE37-631C6BB62B2B}" ShortID="153075039">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="SuccessScreen" ID="{1CF1554B-295B-4745-A024-D88D05C88CFD}"/>
+												<CustomState Name="" ID="{838928AD-4591-427E-992B-92E0711BA147}" ShortID="2048002">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="MainMenu" ID="{1DA4D84F-EB30-47A0-91A8-4740FD405DD0}"/>
+												<CustomState Name="" ID="{FA31B839-D92F-4562-B1B2-0B1E6191F711}" ShortID="981410172">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="GameOverScreen" ID="{F639FAB4-F87A-4CCD-8A78-6581A5F6014C}"/>
+												<CustomState Name="" ID="{71F88EE9-F29A-46E6-9E7E-85F1170F1814}" ShortID="99468494">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="BackgroundLevel1" ID="{FD908A2F-7D93-4DF5-A34F-E1B1081468F4}" Platform="Linked"/>
@@ -455,9 +623,223 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StatePropertyList>
+											<Property Name="Volume"/>
+										</StatePropertyList>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="BackgroundMusic" ID="{5AD7379A-B78A-4F66-AEB2-A9412759CCED}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Level1" ID="{4A38E86A-C568-41A5-B3F6-B6813370DDA9}"/>
+												<CustomState Name="" ID="{D6A340DB-C0A5-4FE5-97DC-83C1ACFD81F4}" ShortID="1030487257">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Level3" ID="{2ADF9DC7-D0CC-426C-A0DD-3C740702BE2C}"/>
+												<CustomState Name="" ID="{26AC1471-8DAE-4439-A43C-BCA61C1592E7}" ShortID="539381987">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Level2" ID="{B57146B3-D9B9-4694-993E-EADB578DC25E}"/>
+												<CustomState Name="" ID="{D0B924E2-D54E-4113-84CC-066E2FD18142}" ShortID="737291706">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="SuccessScreen" ID="{1CF1554B-295B-4745-A024-D88D05C88CFD}"/>
+												<CustomState Name="" ID="{3BFD8FE1-B095-4BBE-9016-A1C91CB40324}" ShortID="127908981">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="MainMenu" ID="{1DA4D84F-EB30-47A0-91A8-4740FD405DD0}"/>
+												<CustomState Name="" ID="{D462147D-D40D-42E5-A91D-9CF71D564E51}" ShortID="544254444"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="GameOverScreen" ID="{F639FAB4-F87A-4CCD-8A78-6581A5F6014C}"/>
+												<CustomState Name="" ID="{7FAC6419-29DC-46AA-ABFC-6A075C61BD89}" ShortID="46442421">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="pirate_band_drunken_sailor" ID="{552B31F0-059A-4D12-B1F8-37D6F2073E49}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Success" ID="{56ED4880-7A03-4132-AB89-3C96419A6195}" ShortID="575191130">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8245366-1EBA-4165-9D82-FB54400CC14E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Success" ID="{174AB67F-BB6A-43E1-8633-D7F6A1018D41}">
+											<Language>SFX</Language>
+											<AudioFile>CCLAudio\Success.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1017545861"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<StateInfo>
+										<StatePropertyList>
+											<Property Name="Volume"/>
+										</StatePropertyList>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="BackgroundMusic" ID="{5AD7379A-B78A-4F66-AEB2-A9412759CCED}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Level1" ID="{4A38E86A-C568-41A5-B3F6-B6813370DDA9}"/>
+												<CustomState Name="" ID="{BF5B6944-6682-4127-848B-64C0ECD05788}" ShortID="839658316">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Level3" ID="{2ADF9DC7-D0CC-426C-A0DD-3C740702BE2C}"/>
+												<CustomState Name="" ID="{48266DE1-7C09-4BC0-95F6-028668E3C835}" ShortID="786660970">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Level2" ID="{B57146B3-D9B9-4694-993E-EADB578DC25E}"/>
+												<CustomState Name="" ID="{5B1957D4-C75E-4E56-8990-45A6FC725894}" ShortID="113303382">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="SuccessScreen" ID="{1CF1554B-295B-4745-A024-D88D05C88CFD}"/>
+												<CustomState Name="" ID="{69836ECD-9904-4392-86EC-FD28DBDA02CE}" ShortID="556621714"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="MainMenu" ID="{1DA4D84F-EB30-47A0-91A8-4740FD405DD0}"/>
+												<CustomState Name="" ID="{A25FE63C-D622-4243-B805-C9697F669187}" ShortID="535020305">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="GameOverScreen" ID="{F639FAB4-F87A-4CCD-8A78-6581A5F6014C}"/>
+												<CustomState Name="" ID="{9DA75C99-FA47-4CFF-96B3-616F4DD3FC87}" ShortID="78764528">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Success" ID="{174AB67F-BB6A-43E1-8633-D7F6A1018D41}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GameOver" ID="{7C567C3E-7A10-42EC-832F-5729FDCE882F}" ShortID="13780179">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8245366-1EBA-4165-9D82-FB54400CC14E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GameOver" ID="{FE0FF074-1B9C-47E3-B575-42141131C7F3}">
+											<Language>SFX</Language>
+											<AudioFile>CCLAudio\GameOver.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="892825225"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<StateInfo>
+										<StatePropertyList>
+											<Property Name="Volume"/>
+										</StatePropertyList>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="BackgroundMusic" ID="{5AD7379A-B78A-4F66-AEB2-A9412759CCED}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Level1" ID="{4A38E86A-C568-41A5-B3F6-B6813370DDA9}"/>
+												<CustomState Name="" ID="{B5D6CC12-77C5-45DD-B5BD-B8E2795B0BC1}" ShortID="912242221">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Level3" ID="{2ADF9DC7-D0CC-426C-A0DD-3C740702BE2C}"/>
+												<CustomState Name="" ID="{CAF23FDE-0182-4800-8C41-B7B1B1B7C6FA}" ShortID="842568491">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Level2" ID="{B57146B3-D9B9-4694-993E-EADB578DC25E}"/>
+												<CustomState Name="" ID="{91BD663A-1AFA-489E-A772-108F933FBDE5}" ShortID="656427226">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="SuccessScreen" ID="{1CF1554B-295B-4745-A024-D88D05C88CFD}"/>
+												<CustomState Name="" ID="{8798925A-179E-452D-8B43-AF6BEB2755BE}" ShortID="303980690">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="MainMenu" ID="{1DA4D84F-EB30-47A0-91A8-4740FD405DD0}"/>
+												<CustomState Name="" ID="{61F68E70-4E31-497F-A79D-FE287CF68B33}" ShortID="1048150418">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="GameOverScreen" ID="{F639FAB4-F87A-4CCD-8A78-6581A5F6014C}"/>
+												<CustomState Name="" ID="{270C9C72-E099-4DD2-A680-874CDF0869E4}" ShortID="420995321"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="GameOver" ID="{FE0FF074-1B9C-47E3-B575-42141131C7F3}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -560,29 +942,6 @@
 										<ActiveSource Name="Portal" ID="{EDE5CEF1-A893-4FBA-B20A-0A51413F60A7}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Success" ID="{56ED4880-7A03-4132-AB89-3C96419A6195}" ShortID="575191130">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8245366-1EBA-4165-9D82-FB54400CC14E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Success" ID="{174AB67F-BB6A-43E1-8633-D7F6A1018D41}">
-											<Language>SFX</Language>
-											<AudioFile>CCLAudio\Success.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1017545861"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Success" ID="{174AB67F-BB6A-43E1-8633-D7F6A1018D41}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="creepy" ID="{808FDD60-61C6-4EE2-BC1A-EFB2AC1057D4}" ShortID="10295840">
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -604,29 +963,6 @@
 									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="creepy" ID="{DF7D46D1-0BAA-446C-A19D-458386484111}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="GameOver" ID="{7C567C3E-7A10-42EC-832F-5729FDCE882F}" ShortID="13780179">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8245366-1EBA-4165-9D82-FB54400CC14E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="GameOver" ID="{FE0FF074-1B9C-47E3-B575-42141131C7F3}">
-											<Language>SFX</Language>
-											<AudioFile>CCLAudio\GameOver.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="892825225"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="GameOver" ID="{FE0FF074-1B9C-47E3-B575-42141131C7F3}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
