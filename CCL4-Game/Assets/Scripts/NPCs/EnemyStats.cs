@@ -23,8 +23,8 @@ public class EnemyStats : MonoBehaviour
 
     private void Start()
     {
-        //hitCollider = GameObject.FindGameObjectWithTag("HitCollider");
-        //weaponCollider = hitCollider.GetComponent<BoxCollider>();
+        hitCollider = GameObject.FindGameObjectWithTag("HitCollider");
+        weaponCollider = hitCollider.GetComponent<BoxCollider>();
     }
 
     // Enemy takes damage
