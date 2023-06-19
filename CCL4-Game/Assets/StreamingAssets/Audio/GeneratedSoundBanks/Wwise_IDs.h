@@ -13,13 +13,14 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_ATTACK = 1519321238U;
         static const AkUniqueID PLAY_COLLECTCOIN = 2228638855U;
         static const AkUniqueID PLAY_COLLECTKEY = 1564200781U;
         static const AkUniqueID PLAY_COLLECTMAP = 1698715786U;
         static const AkUniqueID PLAY_DRINKPOTION = 976135773U;
         static const AkUniqueID PLAY_OPENCHEST = 3416405661U;
-        static const AkUniqueID PLAY_PLAYERATTACK = 3703766381U;
         static const AkUniqueID PLAY_PORTAL = 2424882924U;
+        static const AkUniqueID PLAY_SWORDSWING = 1746766985U;
     } // namespace EVENTS
 
     namespace STATES

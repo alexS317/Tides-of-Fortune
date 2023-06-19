@@ -9,7 +9,7 @@ public class PlayerAnimEvents : MonoBehaviour
     void HitEnemy(int nr)
     {
         IsHitting = true;
-        // Debug.Log("Hit");
+        AkSoundEngine.PostEvent("Play_SwordSwing", gameObject);
     }
 
     void FinishAttack(int nr)

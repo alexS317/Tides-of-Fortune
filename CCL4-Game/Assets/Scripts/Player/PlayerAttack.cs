@@ -29,7 +29,6 @@ public class PlayerAttack : MonoBehaviour
     void OnAttack()
     {
         animator.SetTrigger("attack");  // Trigger automatically resets after the action is complete
-        AkSoundEngine.PostEvent("Play_PlayerAttack", gameObject);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -39,6 +38,8 @@ public class PlayerAttack : MonoBehaviour
             Debug.Log("Enemy hit");
             var enemyStats = other.GetComponent<EnemyStats>();
             enemyStats.TakeDamage(damage);    // Decrease enemy health
+            
+            AkSoundEngine.PostEvent("Play_Attack", gameObject);
         }
     }
 }

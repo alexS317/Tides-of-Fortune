@@ -10,6 +10,8 @@
 						<ObjectRef Name="Play_CollectCoin" ID="{697FE196-C714-4563-B077-F39FDBC2DE26}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_DrinkPotion" ID="{2A7030B0-70E5-467E-9FF9-C2705DD7C95A}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Portal" ID="{B11E5738-75C5-47DE-A3A5-D7950CC4D883}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SwordSwing" ID="{594FAD32-8D55-4D50-A185-62CADB067CE2}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Attack" ID="{6930F29C-F83D-4E5F-BC49-D4BFB00B4A73}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_OpenChest" ID="{D1826CA4-87C4-4F61-A93A-FA28DBB61CA3}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

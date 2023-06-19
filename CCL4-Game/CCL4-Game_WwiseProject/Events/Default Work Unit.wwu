@@ -69,6 +69,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Attack" ID="{6930F29C-F83D-4E5F-BC49-D4BFB00B4A73}">
+					<ChildrenList>
+						<Action Name="" ID="{D702D024-AB4E-4BBA-B00B-B190B8B9BF66}" ShortID="1034912062">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Attack" ID="{1D07D53D-9267-4D2E-B379-9BF485F9A607}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SwordSwing" ID="{594FAD32-8D55-4D50-A185-62CADB067CE2}">
+					<ChildrenList>
+						<Action Name="" ID="{063BF652-86CF-4942-87E5-11ED89174009}" ShortID="767317217">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SwordSwing" ID="{94E5C86C-E1DD-4EE6-AEEC-FE8E60E70BF0}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
