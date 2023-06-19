@@ -21,4 +21,9 @@ public class MainScreenActions : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("MainMenu");
     }
+
+    public void HowToPlay()
+    {
+        SceneManager.LoadSceneAsync("HowToPlay");
+    }
 }
