@@ -50,7 +50,6 @@ public class PlayerMovement : MonoBehaviour
         // isJumpingOrFalling = !IsGrounded();
 
         // print(isJumpingOrFalling);
-        
     }
 
     void OnMovement(InputValue input)
@@ -64,6 +63,14 @@ public class PlayerMovement : MonoBehaviour
         if (isJumpingOrFalling) return;
         rigidBody.AddForce(Vector3.up * jumpStrength, ForceMode.VelocityChange);
     }
+
+    // void OnAttack()
+    // {
+    //     animator.SetTrigger("attack");
+    //     Debug.Log("Attack");
+    //     
+    //     // else animator.SetBool("attack", false);
+    // }
 
     void ExecuteMovement()
     {
