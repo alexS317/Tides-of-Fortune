@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6307f55622d5e724c904bb0a22a5cb8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementDistance: {x: 0, y: 2, z: 0}
+  movementDistance: {x: 0, y: 3, z: 0}
   timeForMovement: 2
 --- !u!65 &9196312810558020193
 BoxCollider:
