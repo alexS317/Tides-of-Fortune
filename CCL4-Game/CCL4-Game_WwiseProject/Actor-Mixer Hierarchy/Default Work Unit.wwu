@@ -366,7 +366,6 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="CCLAudio" ID="{390576DC-656B-45DA-A9C4-3700296723BB}" ShortID="456037866"/>
 						<Folder Name="BackgroundMusic" ID="{8BA741B5-A7FE-412D-B54D-DE69D3699AE3}" ShortID="140573530">
 							<ChildrenList>
 								<Sound Name="BackgroundLevel3" ID="{FA5F354C-F456-4FFA-AD42-408A694483E5}" ShortID="224721769">

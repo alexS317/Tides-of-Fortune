@@ -13,6 +13,50 @@
 						<State Name="SuccessScreen" ID="{1CF1554B-295B-4745-A024-D88D05C88CFD}"/>
 						<State Name="GameOverScreen" ID="{F639FAB4-F87A-4CCD-8A78-6581A5F6014C}"/>
 					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="MainMenu" ID="{1DA4D84F-EB30-47A0-91A8-4740FD405DD0}"/>
+							<EndState Name="Level1" ID="{4A38E86A-C568-41A5-B3F6-B6813370DDA9}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Level1" ID="{4A38E86A-C568-41A5-B3F6-B6813370DDA9}"/>
+							<EndState Name="Level2" ID="{B57146B3-D9B9-4694-993E-EADB578DC25E}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Level2" ID="{B57146B3-D9B9-4694-993E-EADB578DC25E}"/>
+							<EndState Name="Level3" ID="{2ADF9DC7-D0CC-426C-A0DD-3C740702BE2C}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Level3" ID="{2ADF9DC7-D0CC-426C-A0DD-3C740702BE2C}"/>
+							<EndState Name="SuccessScreen" ID="{1CF1554B-295B-4745-A024-D88D05C88CFD}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Level1" ID="{4A38E86A-C568-41A5-B3F6-B6813370DDA9}"/>
+							<EndState Name="GameOverScreen" ID="{F639FAB4-F87A-4CCD-8A78-6581A5F6014C}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Level2" ID="{B57146B3-D9B9-4694-993E-EADB578DC25E}"/>
+							<EndState Name="GameOverScreen" ID="{F639FAB4-F87A-4CCD-8A78-6581A5F6014C}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Level3" ID="{2ADF9DC7-D0CC-426C-A0DD-3C740702BE2C}"/>
+							<EndState Name="GameOverScreen" ID="{F639FAB4-F87A-4CCD-8A78-6581A5F6014C}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
