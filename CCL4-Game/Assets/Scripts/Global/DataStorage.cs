@@ -18,8 +18,8 @@ public class DataStorage : MonoBehaviour
     public int TotalMaps { get; private set; }
 
     public bool KeyFound { get; private set; } = false;
-    
-    public int KeyNr { get; private set; }  // Only used to display the number in the inventory
+
+    public int KeyNr { get; private set; } // Only used to display the number in the inventory
 
     [field: SerializeField] public float PlayerHealth { get; private set; }
 
@@ -54,8 +54,13 @@ public class DataStorage : MonoBehaviour
 
     public void IncreasePlayerHealth()
     {
-        if (PlayerHealth < maxHealth) PlayerHealth++; // Only add health if the player doesn't have max health
-        Debug.Log("Health: " + PlayerHealth);
+        if (TotalHealthPotions > 0)
+        {
+            if (PlayerHealth < maxHealth) PlayerHealth++; // Only add health if the player doesn't have max health
+            Debug.Log("Health: " + PlayerHealth);
+            TotalHealthPotions--;
+        }
+        else Debug.Log("Not enough potions");
     }
 
     public void CollectHealthPotions()

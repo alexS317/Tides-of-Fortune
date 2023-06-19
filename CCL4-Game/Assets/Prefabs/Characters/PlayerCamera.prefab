@@ -210,6 +210,7 @@ GameObject:
   - component: {fileID: 1998925681747670311}
   - component: {fileID: 6804023406548406639}
   - component: {fileID: 6722123139569049405}
+  - component: {fileID: 6464311499541683794}
   - component: {fileID: 1583473559794121677}
   - component: {fileID: 4967118938772357840}
   - component: {fileID: 1228743376785634409}
@@ -271,6 +272,18 @@ MonoBehaviour:
   weapon: {fileID: 6478006307193607656}
   animator: {fileID: 3901040093363378156}
   damage: 2
+--- !u!114 &6464311499541683794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6140161153706021628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b931dea2bae844d9cf436e164f9f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1583473559794121677
 MonoBehaviour:
   m_ObjectHideFlags: 0
