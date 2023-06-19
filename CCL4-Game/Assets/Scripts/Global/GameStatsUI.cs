@@ -22,7 +22,8 @@ public class GameStatsUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Update the healthbar based on the current player health
-        healthBar.transform.localScale = new Vector3(DataStorage.Instance.PlayerHealth / maxHealth, 1, 1);
+        // Update the health bar based on the current player health
+        if (DataStorage.Instance.PlayerHealth >= 0)
+            healthBar.transform.localScale = new Vector3(DataStorage.Instance.PlayerHealth / maxHealth, 1, 1);
     }
 }
