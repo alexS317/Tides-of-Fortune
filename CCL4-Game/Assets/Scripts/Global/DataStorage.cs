@@ -59,7 +59,7 @@ public class DataStorage : MonoBehaviour
     {
         if (TotalHealthPotions > 0)
         {
-            if (PlayerHealth < maxHealth) PlayerHealth++; // Only add health if the player doesn't have max health
+            if (PlayerHealth < maxHealth) PlayerHealth+=2; // Only add health if the player doesn't have max health
             Debug.Log("Health: " + PlayerHealth);
             TotalHealthPotions--;
             AkSoundEngine.PostEvent("Play_DrinkPotion", gameObject);
