@@ -17,6 +17,7 @@ public class TreasureChest : MonoBehaviour
         // Only open if the player has the key
         if (DataStorage.Instance.KeyFound)
         {
+            AkSoundEngine.PostEvent("Play_OpeningChest", gameObject);
             GetComponent<Animator>().SetBool("opened", true);
         }
         else Debug.Log("Can't open without a key.");

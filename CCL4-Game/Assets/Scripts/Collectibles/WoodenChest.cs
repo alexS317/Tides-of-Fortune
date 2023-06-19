@@ -16,6 +16,7 @@ public class WoodenChest : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            AkSoundEngine.PostEvent("Play_OpenChest", gameObject);
             this.GetComponent<Animator>().SetBool("opened", true);
             // Open = true;
         }

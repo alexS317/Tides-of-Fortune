@@ -16,6 +16,7 @@ public class LevelChangePortal : MonoBehaviour
             // Can only proceed to next level if enough maps were found in the current one
             if (LevelStorage.Instance.MapsInLevel == RequiredMaps)
             {
+                AkSoundEngine.PostEvent("Play_Portal", gameObject);
                 SceneManager.LoadScene(levelName);
             }
             else

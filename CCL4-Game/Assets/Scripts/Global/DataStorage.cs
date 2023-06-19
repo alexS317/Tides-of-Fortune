@@ -42,13 +42,16 @@ public class DataStorage : MonoBehaviour
 
     public void IncreaseCoins()
     {
+        
         TotalCoins++;
+        AkSoundEngine.PostEvent("Play_CollectCoin", gameObject);
         Debug.Log("Coins: " + TotalCoins);
     }
 
     public void IncreaseTotalMaps()
     {
         TotalMaps++;
+        AkSoundEngine.PostEvent("Play_CollectMap", gameObject);
         Debug.Log("Maps: " + TotalMaps);
     }
 
@@ -59,6 +62,7 @@ public class DataStorage : MonoBehaviour
             if (PlayerHealth < maxHealth) PlayerHealth++; // Only add health if the player doesn't have max health
             Debug.Log("Health: " + PlayerHealth);
             TotalHealthPotions--;
+            AkSoundEngine.PostEvent("Play_DrinkPotion", gameObject);
         }
         else Debug.Log("Not enough potions");
     }
@@ -84,6 +88,7 @@ public class DataStorage : MonoBehaviour
     {
         KeyFound = true;
         KeyNr++;
+        AkSoundEngine.PostEvent("Play_CollectKey", gameObject);
         Debug.Log("Congrats, you found the key");
     }
 }
