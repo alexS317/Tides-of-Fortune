@@ -8,12 +8,14 @@ public class PlayerAnimEvents : MonoBehaviour
 
     void HitEnemy(int nr)
     {
+        // Triggered when the player's attack animation hits an enemy
         IsHitting = true;
-        AkSoundEngine.PostEvent("Play_SwordSwing", gameObject);
+        AkSoundEngine.PostEvent("Play_SwordSwing", gameObject); // Play sword swing sound effect
     }
 
     void FinishAttack(int nr)
     {
+        // Triggered when the player's attack animation finishes
         IsHitting = false;
     }
 }

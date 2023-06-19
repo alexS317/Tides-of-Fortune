@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class TreasureChest : MonoBehaviour
 {
-    // Event function applied on animation (wait for animation to complete before loading the scene)
     void OpenFinalChest(int nr)
     {
+        // Load Success scene
         SceneManager.LoadSceneAsync("Success");
     }
 
@@ -17,9 +17,15 @@ public class TreasureChest : MonoBehaviour
         // Only open if the player has the key
         if (DataStorage.Instance.KeyFound)
         {
+            // Play the sound
             AkSoundEngine.PostEvent("Play_OpeningChest", gameObject);
+
+            // Set the "opened" parameter in the animator to true
             GetComponent<Animator>().SetBool("opened", true);
         }
-        else Debug.Log("Can't open without a key.");
+        else
+        {
+            Debug.Log("Can't open without a key.");
+        }
     }
 }

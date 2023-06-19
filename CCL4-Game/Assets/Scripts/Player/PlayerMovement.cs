@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool IsGrounded()
     {
+        // Perform a raycast downward to check if the player is touching the ground
         RaycastHit hit;
         Vector3 raycastOrigin = transform.position + Vector3.right * 0.1f;
 
@@ -46,78 +47,58 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         ExecuteMovement();
-
-        // isJumpingOrFalling = !IsGrounded();
-
-        // print(isJumpingOrFalling);
     }
 
     void OnMovement(InputValue input)
     {
+        // Handle the movement input from the player
         Vector2 inputValue = input.Get<Vector2>();
         moveBy = new Vector3(inputValue.x, 0, inputValue.y);
     }
 
     void OnJump(InputValue input)
     {
-        if (isJumpingOrFalling) return;
+        // Handle the jump input from the player
+        if (isJumpingOrFalling) return; // Ignore jump input if the player is already jumping or falling
         rigidBody.AddForce(Vector3.up * jumpStrength, ForceMode.VelocityChange);
     }
 
-    // void OnAttack()
-    // {
-    //     animator.SetTrigger("attack");
-    //     Debug.Log("Attack");
-    //     
-    //     // else animator.SetBool("attack", false);
-    // }
-
     void ExecuteMovement()
     {
-        isJumpingOrFalling = rigidBody.velocity.y < -.01 || rigidBody.velocity.y > .01;
+        // Determine if the player is currently jumping or falling
+        isJumpingOrFalling = rigidBody.velocity.y < -0.01f || rigidBody.velocity.y > 0.01f;
 
+        // Determine if the player is currently moving
         if (moveBy == Vector3.zero) isMoving = false;
         else isMoving = true;
 
+        // Set animator parameters based on player movement state
         animator.SetBool("run", isMoving);
         animator.SetBool("jump", isJumpingOrFalling);
 
-        // if (!isMoving && !isJumpingOrFalling)
         if (!isMoving)
         {
+            // Stop player rotation and animation if not moving
             transform.rotation = Quaternion.Euler(0, Camera.main.transform.eulerAngles.y, 0);
-            // animator.SetBool("run", false);
-            // animator.SetBool("jump", false);
             return;
         }
-        // else if(!isMoving && isJumpingOrFalling)
-        // {
-        //     animator.SetBool("jump", true);
-        //
-        // } else if(isMoving && !isJumpingOrFalling)
-        // {
-        //     animator.SetBool("run", true);
-        //     animator.SetBool("jump", false);
-        //
-        // } else if(isMoving && isJumpingOrFalling)
-        //         {
-        //     animator.SetBool("jump", true);
-        // }
-
 
         if (movementType == MovementType.TransformBased)
         {
+            // Rotate the player and move it using transform translation
             RotatePlayerFigure(moveBy);
             transform.Translate(Vector3.forward * (speed * Time.deltaTime));
         }
         else if (movementType == MovementType.PhysicsBased)
         {
+            // Move the player using Rigidbody physics
             rigidBody.AddForce(moveBy * 2, ForceMode.Acceleration);
         }
     }
 
     private void RotatePlayerFigure(Vector3 rotateVector)
     {
+        // Rotate the player model based on the movement direction
         rotateVector = Vector3.Normalize(rotateVector);
         transform.rotation = Quaternion.Euler(0, Camera.main.transform.eulerAngles.y, 0);
         var rotationY = 90 * rotateVector.x;

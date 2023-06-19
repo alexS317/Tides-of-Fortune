@@ -12,11 +12,13 @@ public class LevelStorage : MonoBehaviour
 
     private void Start()
     {
+        // Set the instance to this object
         if (Instance == null) Instance = this;
     }
 
     public void IncreaseMaps()
     {
+        // Increase the number of maps in the level
         MapsInLevel++;
         Debug.Log("Maps in level storage: " + MapsInLevel);
     }

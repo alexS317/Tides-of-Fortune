@@ -7,23 +7,28 @@ public class MainScreenActions : MonoBehaviour
 {
     public void StartGame()
     {
+        // Destroy GlobalData to reset game data
         Destroy(GameObject.Find("GlobalData"));
-        
+
+        // Load Level1
         SceneManager.LoadSceneAsync("Level1");
     }
 
     public void ExitGame()
     {
+        // Quit the game
         Application.Quit();
     }
 
     public void MainMenu()
     {
+        // Load MainMenu
         SceneManager.LoadSceneAsync("MainMenu");
     }
 
     public void HowToPlay()
     {
+        // Load HowToPlay
         SceneManager.LoadSceneAsync("HowToPlay");
     }
 }

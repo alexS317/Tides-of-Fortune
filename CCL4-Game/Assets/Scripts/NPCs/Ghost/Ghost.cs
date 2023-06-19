@@ -9,15 +9,17 @@ public class Ghost : MonoBehaviour
 
     // public int health = 2;
 
-    //private int points;
+    // private int points;
 
-    public ParticleSystem deathParticels;
+    public ParticleSystem deathParticles;
 
     private void OnCollisionEnter(Collision collision)
     {
+        // Check if the colliding object has the "Player" tag
         if (collision.gameObject.CompareTag("Player"))
         {
             DeadGhost();
+
             // DataStorage.Instance.DecreasePlayerHealth(damage);
         }
     }
@@ -26,20 +28,23 @@ public class Ghost : MonoBehaviour
     // {
     //     health -= damageAmount;
     //     
-    //     if(health <= 0)
+    //     if (health <= 0)
     //     {
     //         DeadGhost();
-    //         
     //     }
     // }
-
 
     private void DeadGhost()
     {
         print("BOOOOMM!!!");
-        GetComponent<Collider>().enabled = false;
-        Instantiate(deathParticels, transform.position, Quaternion.identity);
 
+        // Disable the collider of the ghost
+        GetComponent<Collider>().enabled = false;
+
+        // Instantiate the deathParticles at the current position with no rotation
+        Instantiate(deathParticles, transform.position, Quaternion.identity);
+
+        // Destroy the ghost game object
         Destroy(this.gameObject);
     }
 }

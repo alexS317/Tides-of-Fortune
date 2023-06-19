@@ -7,16 +7,19 @@ using UnityEngine.SceneManagement;
 public class LevelChangePortal : MonoBehaviour
 {
     [SerializeField] private string levelName;
-    [field:SerializeField] public int RequiredMaps { get; private set; }
+    [field: SerializeField] public int RequiredMaps { get; private set; }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            // Can only proceed to next level if enough maps were found in the current one
+            // Check if enough maps were found in the current level to proceed
             if (LevelStorage.Instance.MapsInLevel == RequiredMaps)
             {
+                // Play the sound
                 AkSoundEngine.PostEvent("Play_Portal", gameObject);
+
+                // Load the specified level
                 SceneManager.LoadScene(levelName);
             }
             else

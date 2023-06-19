@@ -22,8 +22,10 @@ public class PlayerAttack : MonoBehaviour
     void Update()
     {
         // Check boolean from animation event
-        if (PlayerAnimEvents.IsHitting) weaponCollider.enabled = true;
-        else weaponCollider.enabled = false;
+        if (PlayerAnimEvents.IsHitting)
+            weaponCollider.enabled = true;
+        else
+            weaponCollider.enabled = false;
     }
     
     void OnAttack()
@@ -33,12 +35,18 @@ public class PlayerAttack : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // Check if the colliding object has the "Enemy" or "Ghost" tag
         if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Ghost"))
         {
             Debug.Log("Enemy hit");
-            var enemyStats = other.GetComponent<EnemyStats>();
-            enemyStats.TakeDamage(damage);    // Decrease enemy health
             
+            // Get the EnemyStats component from the colliding object
+            var enemyStats = other.GetComponent<EnemyStats>();
+            
+            // Decrease enemy health by the specified damage amount
+            enemyStats.TakeDamage(damage);
+            
+            // Play the sound event
             AkSoundEngine.PostEvent("Play_Attack", gameObject);
         }
     }
