@@ -6,7 +6,15 @@ using UnityEngine;
 public class EnemyStats : MonoBehaviour
 {
     [SerializeField] private float health;
+
+    [SerializeField]
+    Animator animator;
     // [SerializeField] private float damage;
+
+    private void Start()
+    {
+        //animator.GetComponent<Animator>();
+    }
 
     // Enemy takes damage
     public void TakeDamage(float hitDamage)
@@ -15,7 +23,9 @@ public class EnemyStats : MonoBehaviour
 
         if (health <= 0)
         {
-            Destroy(gameObject);
+            animator.SetTrigger("death");
+            GetComponent<Collider>().enabled = false;
+            //Destroy(gameObject);
         }
         
         Debug.Log("Enemy health: " + health);

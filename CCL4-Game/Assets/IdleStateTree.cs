@@ -27,7 +27,7 @@ public class IdleStateTree : StateMachineBehaviour
         float distanceToPlayer = Vector3.Distance(player.position, animator.transform.position);
         if (distanceToPlayer < chaseRange)
         {
-            animator.SetBool("isWalking", true);
+            animator.SetBool("isChasing", true);
         }
     }
 
