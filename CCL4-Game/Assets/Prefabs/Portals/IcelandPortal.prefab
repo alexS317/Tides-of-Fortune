@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 5949256270317957740}
   - component: {fileID: 9027859394772674701}
   - component: {fileID: 8865043822101750299}
+  - component: {fileID: 5330825634802332165}
+  - component: {fileID: 4667806041572013161}
   m_Layer: 0
   m_Name: IcelandPortal
   m_TagString: Untagged
@@ -146,3 +148,41 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.438422, y: 2.0746794, z: 0.49705786}
   m_Center: {x: 0.0015193417, y: 0.33279288, z: 1.2283198}
+--- !u!114 &5330825634802332165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8180805870097274329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d05bbabd485f6e144b2ce273161a8a80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: d1bbb3b5
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3d68b61b5a3638542b329ea9ca46339b,
+      type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
+--- !u!114 &4667806041572013161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8180805870097274329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db8e72c3df883af4890302045c24aacc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerObject: {fileID: 0}

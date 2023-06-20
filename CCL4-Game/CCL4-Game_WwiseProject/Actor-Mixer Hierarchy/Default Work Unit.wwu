@@ -157,6 +157,54 @@
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8245366-1EBA-4165-9D82-FB54400CC14E}"/>
 														</Reference>
 													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="concrete footstep 2" ID="{9A35979F-BF22-46C9-BDC9-564471478757}" ShortID="953905318">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8245366-1EBA-4165-9D82-FB54400CC14E}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="concrete footstep 2" ID="{85AD55DE-128E-4782-9F72-3B9B6B09B8DD}">
+																	<Language>SFX</Language>
+																	<AudioFile>concrete footstep 2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="896248252"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="concrete footstep 2" ID="{85AD55DE-128E-4782-9F72-3B9B6B09B8DD}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="concrete footstep 4" ID="{7748AC3E-6F29-4BAB-9063-27F4071D06FF}" ShortID="352077281">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8245366-1EBA-4165-9D82-FB54400CC14E}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="concrete footstep 4" ID="{B7779CF0-73B1-481F-98B2-0F33A5024EB7}">
+																	<Language>SFX</Language>
+																	<AudioFile>concrete footstep 4.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="296856510"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="concrete footstep 4" ID="{B7779CF0-73B1-481F-98B2-0F33A5024EB7}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
 													<ObjectLists/>
 												</RandomSequenceContainer>
 											</ChildrenList>
