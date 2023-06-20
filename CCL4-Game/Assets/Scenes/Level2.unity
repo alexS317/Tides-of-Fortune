@@ -1314,6 +1314,63 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 339720485}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &339720487 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8394383175808143564, guid: 8e1d62deb1a3c2541ac53dd620ef88fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 339720485}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &339720488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339720487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41c3e864fcc34445ae48fad0b737cfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerObject: {fileID: 1266583586}
+--- !u!114 &339720489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339720487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d05bbabd485f6e144b2ce273161a8a80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e7bcd4098da2efe4581f258f5902ef0f,
+      type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
+--- !u!65 &339720490
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339720487}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0000005, y: 3.3284812, z: 2}
+  m_Center: {x: -0.00000052886423, y: 0.4173004, z: -0.00000053574894}
 --- !u!4 &346228754 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2542220758886670137, guid: d54624a43ca7a6940a9145b25350093f,
@@ -8046,6 +8103,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 528188960657523746, guid: 818fe2bbd92a4c94a91fd665db5e631c,
+        type: 3}
+      propertyPath: triggerObject
+      value: 
+      objectReference: {fileID: 1266583586}
     - target: {fileID: 5949256270317957740, guid: 818fe2bbd92a4c94a91fd665db5e631c,
         type: 3}
       propertyPath: textElement

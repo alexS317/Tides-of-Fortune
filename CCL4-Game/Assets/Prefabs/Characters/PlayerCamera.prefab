@@ -511,17 +511,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 0b805edff1e4b0540a6e240a128a1997,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0b805edff1e4b0540a6e240a128a1997,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0b805edff1e4b0540a6e240a128a1997,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0b805edff1e4b0540a6e240a128a1997,
         type: 3}
@@ -586,6 +586,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7442711727860066941}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &7747852227364612447
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7748648989908965164}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.47549555, y: 0.48976842, z: 0.28282037}
+  m_Center: {x: -0.0053520654, y: 0.255117, z: 0.023192301}
 --- !u!95 &1057609057
 Animator:
   serializedVersion: 5
@@ -619,16 +632,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af42e4b97da1bd34689faa47915bf005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &7747852227364612447
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7748648989908965164}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.47549555, y: 0.48976755, z: 0.28282037}
-  m_Center: {x: -0.005352065, y: 0.25511622, z: 0.023192301}
