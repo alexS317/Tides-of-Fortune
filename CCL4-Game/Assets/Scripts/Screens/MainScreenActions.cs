@@ -25,12 +25,12 @@ public class MainScreenActions : MonoBehaviour
 
     public void MainMenu()
     {
+        AkSoundEngine.StopAll();    // Stop all sounds so they won't be played over each other
+        
         AkSoundEngine.PostEvent("Play_Button", gameObject);
         
         // Load MainMenu
         SceneManager.LoadSceneAsync("MainMenu");
-        
-        AkSoundEngine.StopAll();    // Stop all sounds so they won't be played over each other
     }
 
     public void HowToPlay()

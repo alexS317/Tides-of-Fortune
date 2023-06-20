@@ -34,6 +34,8 @@ public class Dialogue : MonoBehaviour
 
     public void CloseDialogue()
     {
+        AkSoundEngine.PostEvent("Play_Button", gameObject);
+        
         playerReference.GetComponent<PlayerInput>().enabled = true;
         Camera.main.GetComponent<PlayerInput>().enabled = true;
         dialogueDisplay.SetActive(false);
