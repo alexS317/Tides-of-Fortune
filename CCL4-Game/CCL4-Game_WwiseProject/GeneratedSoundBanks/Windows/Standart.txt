@@ -2,12 +2,15 @@ Event	ID	Name			Wwise Object Path	Notes
 	829709465	Play_BgMainMenu			\Default Work Unit\Play_BgMainMenu	
 	976135773	Play_DrinkPotion			\Default Work Unit\Play_DrinkPotion	
 	1444251224	Play_BgLevel1			\Default Work Unit\Play_BgLevel1	
+	1444251226	Play_BgLevel3			\Default Work Unit\Play_BgLevel3	
+	1444251227	Play_BgLevel2			\Default Work Unit\Play_BgLevel2	
 	1564200781	Play_CollectKey			\Default Work Unit\Play_CollectKey	
 	1698715786	Play_CollectMap			\Default Work Unit\Play_CollectMap	
 	1746766985	Play_SwordSwing			\Default Work Unit\Play_SwordSwing	
 	2099555730	Play_Button			\Default Work Unit\Play_Button	
 	2228638855	Play_CollectCoin			\Default Work Unit\Play_CollectCoin	
 	2424882924	Play_Portal			\Default Work Unit\Play_Portal	
+	3174629258	Play_GameOver			\Default Work Unit\Play_GameOver	
 	3416405661	Play_OpenChest			\Default Work Unit\Play_OpenChest	
 	3597740845	Play_CollectPotion			\Default Work Unit\Play_CollectPotion	
 	3703766381	Play_PlayerAttack			\Default Work Unit\Play_PlayerAttack	
@@ -28,21 +31,39 @@ State	ID	Name	State Group			Notes
 Custom State	ID	Name	State Group	Owner		Notes
 	46442421	GameOverScreen	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\MainMenu		
 	127908981	SuccessScreen	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\MainMenu		
+	172945006	SuccessScreen	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel3		
+	208950217	Level1	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel3		
+	259145266	GameOverScreen	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel3		
+	303980690	SuccessScreen	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\GameOver		
 	539381987	Level3	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\MainMenu		
+	656427226	Level2	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\GameOver		
 	737291706	Level2	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\MainMenu		
+	774811837	Level1	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel2		
+	781332199	Level2	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel3		
+	842568491	Level3	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\GameOver		
+	887311778	MainMenu	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel2		
+	912242221	Level1	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\GameOver		
+	953963233	GameOverScreen	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel2		
+	982452475	SuccessScreen	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel2		
+	1027504081	MainMenu	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel3		
 	1030487257	Level1	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\MainMenu		
+	1035739633	Level3	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel2		
+	1048150418	MainMenu	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\GameOver		
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	80575695	DrinkPotion	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\DrinkPotion_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\DrinkPotion		183184
 	234564374	BackgroundLevel1	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\Spring Birds Loop with Low-Cut (New Jersey)_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel1		28034752
 	266220930	CollectKey	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\CollectKey_B71EF841.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectKey		112880
 	288041657	Portal	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\Portal_A240E76D.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Others\Portal		726932
+	314838666	BackgroundLevel3	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\BackgroundLevel3_0B12FA76.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel3		1602328
 	350015169	SwordSwing	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\PlayerAttack2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\SwordSwing		127512
 	409981325	PlayerGotHit	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\PlayerGotHit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\PlayerGotHit		88124
 	569832036	CollectMap	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\CollectMap_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectMap		54398
 	579703602	CollectCoin2	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CollectCoin2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectCoin\CollectCoin2		28734
 	776665753	OpenChest	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\OpenChest_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\OpenChest		172892
 	798696614	Button	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\Button_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Others\Button		106560
+	825627106	BackgroundLevel2	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\BackgroundLevel2_690274EF.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel2		856552
+	892825225	GameOver	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\GameOver_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\GameOver		2103808
 	906532918	CollectCoin1	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CollectCoin1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectCoin\CollectCoin1		132364
 	913869998	CollectPotion	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CollectPotion_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectPotion		65560
 	987280588	MainMenu	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\pirate_band_drunken_sailor_6F869533.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\MainMenu		5822564
