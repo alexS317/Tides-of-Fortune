@@ -91,6 +91,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_BgMainMenu" ID="{B5FE43D4-1661-4D32-B3D1-BB4CF6645D01}">
+					<ChildrenList>
+						<Action Name="" ID="{E25A7A70-226A-42B8-8221-66A610A782B6}" ShortID="147638041">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainMenu" ID="{3545F17E-090A-46BC-BD59-F6182F62A9EB}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BgLevel1" ID="{9A2D4B78-F803-46E7-BE2E-ED1161B8E436}">
+					<ChildrenList>
+						<Action Name="" ID="{96A65994-C583-40F2-AC04-2FCF35F47916}" ShortID="708962735">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BackgroundLevel1" ID="{0665143F-8142-4978-8BAD-3B1B66D6F547}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

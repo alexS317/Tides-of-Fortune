@@ -1,5 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
+	829709465	Play_BgMainMenu			\Default Work Unit\Play_BgMainMenu	
 	976135773	Play_DrinkPotion			\Default Work Unit\Play_DrinkPotion	
+	1444251224	Play_BgLevel1			\Default Work Unit\Play_BgLevel1	
 	1519321238	Play_Attack			\Default Work Unit\Play_Attack	
 	1564200781	Play_CollectKey			\Default Work Unit\Play_CollectKey	
 	1698715786	Play_CollectMap			\Default Work Unit\Play_CollectMap	
@@ -8,14 +10,40 @@ Event	ID	Name			Wwise Object Path	Notes
 	2424882924	Play_Portal			\Default Work Unit\Play_Portal	
 	3416405661	Play_OpenChest			\Default Work Unit\Play_OpenChest	
 
+State Group	ID	Name			Wwise Object Path	Notes
+	626769978	BackgroundMusic			\Default Work Unit\BackgroundMusic	
+
+State	ID	Name	State Group			Notes
+	748895195	None	BackgroundMusic			
+	1097577930	SuccessScreen	BackgroundMusic			
+	2097072641	GameOverScreen	BackgroundMusic			
+	2678230380	Level3	BackgroundMusic			
+	2678230381	Level2	BackgroundMusic			
+	2678230382	Level1	BackgroundMusic			
+	3604647259	MainMenu	BackgroundMusic			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	2048002	SuccessScreen	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel1		
+	46442421	GameOverScreen	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\MainMenu		
+	99468494	GameOverScreen	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel1		
+	127908981	SuccessScreen	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\MainMenu		
+	153075039	Level2	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel1		
+	539381987	Level3	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\MainMenu		
+	737291706	Level2	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\MainMenu		
+	981410172	MainMenu	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel1		
+	1030487257	Level1	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\MainMenu		
+	1053336327	Level3	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel1		
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	80575695	DrinkPotion	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\DrinkPotion_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\DrinkPotion		183184
-	217251700	CollectCoin1	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\CollectCoin1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectCoin\CollectCoin1		238736
-	265209881	CollectCoin2	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\CollectCoin2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectCoin\CollectCoin2		263344
-	266220930	CollectKey	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\CollectKey_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectKey		203372
-	288041657	Portal	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\Portal_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Others\Portal		1835808
-	350015169	SwordSwing1	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\PlayerAttack2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\SwordSwing\SwordSwing1		127512
-	569832036	CollectMap	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\CollectMap_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectMap		54398
-	776665753	OpenChest	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\OpenChest_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\OpenChest		172892
-	1035167289	PlayerAttack1	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\PlayerAttack1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\Attack\PlayerAttack1		237768
+	80575695	DrinkPotion	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\DrinkPotion_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\DrinkPotion		183184
+	217251700	CollectCoin1	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\CollectCoin1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectCoin\CollectCoin1		238736
+	265209881	CollectCoin2	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\CollectCoin2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectCoin\CollectCoin2		263344
+	266220930	CollectKey	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\CollectKey_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectKey		203372
+	277320323	BackgroundLevel1	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\BackgroundLevel1_C5579977.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel1		2299136
+	288041657	Portal	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\Portal_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Others\Portal		1835808
+	350015169	SwordSwing1	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\PlayerAttack2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\SwordSwing\SwordSwing1		127512
+	569832036	CollectMap	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\CollectMap_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectMap		54398
+	776665753	OpenChest	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\OpenChest_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\OpenChest		172892
+	987280588	MainMenu	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\pirate_band_drunken_sailor_4E7D2CB7.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\MainMenu		5822564
+	1035167289	PlayerAttack1	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\PlayerAttack1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\Attack\PlayerAttack1		237768
 

@@ -527,6 +527,9 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="BackgroundLevel1" ID="{0665143F-8142-4978-8BAD-3B1B66D6F547}" ShortID="314234900">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
@@ -537,6 +540,9 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="BackgroundLevel1" ID="{FD908A2F-7D93-4DF5-A34F-E1B1081468F4}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>CCLAudio\BackgroundLevel1.wav</AudioFile>
 											<MediaIDList>
@@ -605,7 +611,15 @@
 										<ActiveSource Name="BackgroundLevel1" ID="{FD908A2F-7D93-4DF5-A34F-E1B1081468F4}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="BackgroundMenu" ID="{3545F17E-090A-46BC-BD59-F6182F62A9EB}" ShortID="214831983">
+								<Sound Name="MainMenu" ID="{3545F17E-090A-46BC-BD59-F6182F62A9EB}" ShortID="214831983">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
@@ -616,6 +630,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="pirate_band_drunken_sailor" ID="{552B31F0-059A-4D12-B1F8-37D6F2073E49}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.44615923049133"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.66527426541426"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>pirate_band_drunken_sailor.wav</AudioFile>
 											<MediaIDList>

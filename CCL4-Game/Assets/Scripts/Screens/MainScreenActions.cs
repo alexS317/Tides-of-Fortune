@@ -24,6 +24,8 @@ public class MainScreenActions : MonoBehaviour
     {
         // Load MainMenu
         SceneManager.LoadSceneAsync("MainMenu");
+        
+        AkSoundEngine.StopAll();    // Stop all sounds so they won't be played over each other
     }
 
     public void HowToPlay()

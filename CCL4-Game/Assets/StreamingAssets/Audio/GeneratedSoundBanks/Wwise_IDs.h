@@ -14,6 +14,8 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_ATTACK = 1519321238U;
+        static const AkUniqueID PLAY_BGLEVEL1 = 1444251224U;
+        static const AkUniqueID PLAY_BGMAINMENU = 829709465U;
         static const AkUniqueID PLAY_COLLECTCOIN = 2228638855U;
         static const AkUniqueID PLAY_COLLECTKEY = 1564200781U;
         static const AkUniqueID PLAY_COLLECTMAP = 1698715786U;
