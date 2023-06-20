@@ -18,6 +18,7 @@ public class DataStorage : MonoBehaviour
     public int KeyNr { get; private set; } // Only used to display the number in the inventory
 
     [field: SerializeField] public float PlayerHealth { get; private set; }
+    [SerializeField] private float healthPointsPerPotion;
     private float maxHealth;
 
     public void Start()
@@ -62,7 +63,9 @@ public class DataStorage : MonoBehaviour
         if (TotalHealthPotions > 0)
         {
             if (PlayerHealth < maxHealth)
-                PlayerHealth += 2; // Only add health if the player doesn't have max health
+                PlayerHealth += healthPointsPerPotion; // Only add health if the player doesn't have max health
+            if (PlayerHealth > maxHealth) 
+                PlayerHealth = maxHealth; // Prevent health from going over the maximum
             Debug.Log("Health: " + PlayerHealth);
             TotalHealthPotions--;
             AkSoundEngine.PostEvent("Play_DrinkPotion", gameObject);

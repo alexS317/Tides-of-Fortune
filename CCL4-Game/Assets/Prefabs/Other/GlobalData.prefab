@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <PlayerHealth>k__BackingField: 20
+  healthPointsPerPotion: 2
 --- !u!114 &5096402518299698351
 MonoBehaviour:
   m_ObjectHideFlags: 0

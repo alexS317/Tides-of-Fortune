@@ -23,7 +23,7 @@ public class GameStatsUI : MonoBehaviour
     void Update()
     {
         // Update the health bar based on the current player health
-        if (DataStorage.Instance.PlayerHealth >= 0)
+        if (DataStorage.Instance.PlayerHealth >= 0 && DataStorage.Instance.PlayerHealth <= maxHealth)
             healthBar.transform.localScale = new Vector3(DataStorage.Instance.PlayerHealth / maxHealth, 1, 1);
     }
 }
