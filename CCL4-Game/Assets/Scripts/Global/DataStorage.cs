@@ -87,6 +87,7 @@ public class DataStorage : MonoBehaviour
     public void DecreasePlayerHealth(float decreaseBy)
     {
         PlayerHealth -= decreaseBy;
+        AkSoundEngine.PostEvent("Play_PlayerGotHit", gameObject);
         Debug.Log("Player health: " + PlayerHealth);
 
         // If health is 0, player dies

@@ -2,14 +2,16 @@ Event	ID	Name			Wwise Object Path	Notes
 	829709465	Play_BgMainMenu			\Default Work Unit\Play_BgMainMenu	
 	976135773	Play_DrinkPotion			\Default Work Unit\Play_DrinkPotion	
 	1444251224	Play_BgLevel1			\Default Work Unit\Play_BgLevel1	
-	1519321238	Play_Attack			\Default Work Unit\Play_Attack	
 	1564200781	Play_CollectKey			\Default Work Unit\Play_CollectKey	
 	1698715786	Play_CollectMap			\Default Work Unit\Play_CollectMap	
 	1746766985	Play_SwordSwing			\Default Work Unit\Play_SwordSwing	
+	2099555730	Play_Button			\Default Work Unit\Play_Button	
 	2228638855	Play_CollectCoin			\Default Work Unit\Play_CollectCoin	
 	2424882924	Play_Portal			\Default Work Unit\Play_Portal	
 	3416405661	Play_OpenChest			\Default Work Unit\Play_OpenChest	
 	3597740845	Play_CollectPotion			\Default Work Unit\Play_CollectPotion	
+	3703766381	Play_PlayerAttack			\Default Work Unit\Play_PlayerAttack	
+	3763555292	Play_PlayerGotHit			\Default Work Unit\Play_PlayerGotHit	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	626769978	BackgroundMusic			\Default Work Unit\BackgroundMusic	
@@ -37,15 +39,17 @@ Custom State	ID	Name	State Group	Owner		Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	80575695	DrinkPotion	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\DrinkPotion_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\DrinkPotion		183184
-	217251700	CollectCoin1	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\CollectCoin1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectCoin\CollectCoin1		238736
-	265209881	CollectCoin2	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\CollectCoin2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectCoin\CollectCoin2		263344
 	266220930	CollectKey	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\CollectKey_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectKey		203372
 	277320323	BackgroundLevel1	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\BackgroundLevel1_C5579977.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel1		2299136
 	288041657	Portal	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\Portal_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Others\Portal		1835808
-	350015169	SwordSwing1	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\PlayerAttack2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\SwordSwing\SwordSwing1		127512
+	350015169	SwordSwing	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\PlayerAttack2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\SwordSwing		127512
+	409981325	PlayerGotHit	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\PlayerGotHit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\PlayerGotHit		88124
 	569832036	CollectMap	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\CollectMap_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectMap		54398
+	579703602	CollectCoin2	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CollectCoin2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectCoin\CollectCoin2		28734
 	776665753	OpenChest	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\OpenChest_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\OpenChest		172892
+	798696614	Button	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\Button_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Others\Button		106560
+	906532918	CollectCoin1	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CollectCoin1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectCoin\CollectCoin1		132364
 	913869998	CollectPotion	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CollectPotion_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectPotion		65560
 	987280588	MainMenu	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\pirate_band_drunken_sailor_6F869533.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\MainMenu		5822564
-	1035167289	PlayerAttack1	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\PlayerAttack1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\Attack\PlayerAttack1		237768
+	1035167289	PlayerAttack	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\PlayerAttack1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\PlayerAttack		237768
 
