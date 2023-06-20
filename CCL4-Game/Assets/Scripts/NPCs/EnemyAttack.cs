@@ -14,4 +14,14 @@ public class EnemyAttack : MonoBehaviour
             DataStorage.Instance.DecreasePlayerHealth(damage);  
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            print("AUUUU!!");
+            // Enemy decreases player health
+            DataStorage.Instance.DecreasePlayerHealth(damage);
+        }
+    }
 }

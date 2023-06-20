@@ -4,38 +4,15 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    
-
-    GameObject sword;
-    Transform SwordPosition;
-
     GameObject hitCollider;
-
-    private BoxCollider weaponCollider;
+    [SerializeField]
+    Collider weaponCollider;
 
     private void Start()
     {
-
-        hitCollider = GameObject.FindGameObjectWithTag("HitCollider");
-        weaponCollider = hitCollider.GetComponent<BoxCollider>();
+        //hitCollider = GameObject.FindGameObjectWithTag("HitCollider");
+       // weaponCollider = hitCollider.GetComponent<Collider>();
         
-        
-        //if(this.gameObject.CompareTag("Player"))
-        //{
-        //    sword = GameObject.FindGameObjectWithTag("Sword");
-
-        //    print(" sword hit box route");
-        //}
-
-        //if (this.gameObject.CompareTag("Player"))
-        //{
-        //    hitCollider = GameObject.FindGameObjectWithTag("HitCollider");
-        //    weaponCollider = hitCollider.GetComponent<BoxCollider>();
-        //
-        //    print(" sword hit box route");
-        //}
-
-
     }
 
     private void Update()
@@ -47,34 +24,20 @@ public class Weapon : MonoBehaviour
     {
         if (other.tag =="Enemy")
         {
-            // other.GetComponent<Ghost>().TakeDamage(damageAmount);
-            print("Sword");
-            
             DataStorage.Instance.IncreaseCoins();
         }
     }
 
-    public void EnableHitBox()
+    public void ActivatHitBox()
     {
-
         print("hitbox activate");
         weaponCollider.enabled = true;
     }
 
-    public void DisableHitBox()
+    public void DeactivateHitBox()
     {
 
         print("hitbox deactivat");
         weaponCollider.enabled = false;
-    }
-
-    void ActivateSword()
-    {
-        GetComponent<Collider>().enabled = true;
-    }
-
-    void DeactivateSword()
-    {
-        GetComponent<Collider>().enabled = false;
     }
 }
