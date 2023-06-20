@@ -26,12 +26,14 @@ namespace AK
         static const AkUniqueID PLAY_GAMEOVER = 3174629258U;
         static const AkUniqueID PLAY_GHOSTSOUND = 2372636900U;
         static const AkUniqueID PLAY_OPENCHEST = 3416405661U;
+        static const AkUniqueID PLAY_OWL = 2859161640U;
         static const AkUniqueID PLAY_PENGUINGOTHIT = 3018978351U;
-        static const AkUniqueID PLAY_PENGUINSOUND = 1387673711U;
         static const AkUniqueID PLAY_PLAYERATTACK = 3703766381U;
         static const AkUniqueID PLAY_PLAYERFOOTSTEPS = 1805011878U;
         static const AkUniqueID PLAY_PLAYERGOTHIT = 3763555292U;
+        static const AkUniqueID PLAY_PLAYERJUMP = 3817990921U;
         static const AkUniqueID PLAY_PORTAL = 2424882924U;
+        static const AkUniqueID PLAY_SUCCESS = 3943614907U;
         static const AkUniqueID PLAY_SWORDSWING = 1746766985U;
         static const AkUniqueID PLAY_TREEMONSTERSOUND = 1690511569U;
     } // namespace EVENTS

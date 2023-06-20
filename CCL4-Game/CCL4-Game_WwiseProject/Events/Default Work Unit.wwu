@@ -223,6 +223,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Owl" ID="{A673A0A2-984C-428E-A677-EC2A14C65E28}">
+					<ChildrenList>
+						<Action Name="" ID="{C7D231E4-4AB4-49E2-8B5E-BA5CC99CCB82}" ShortID="729042186">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Owl" ID="{E60F9CF5-F6BE-478F-8BF1-EBD14B34C1C4}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PlayerJump" ID="{60416D2A-0A70-4FB2-8224-8E9314D19B6F}">
+					<ChildrenList>
+						<Action Name="" ID="{1CF27C43-0EDD-49B6-99E2-7AA5D930B1C9}" ShortID="791006263">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerJump" ID="{D3AA3C65-BFB9-44BE-8E32-F543D9A99BEC}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Success" ID="{637D9AA1-8F21-4075-B378-C2DD49F3BF83}">
+					<ChildrenList>
+						<Action Name="" ID="{753E7C4D-FCDA-4218-802C-978A874FA773}" ShortID="13773003">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Success" ID="{4BB46B87-946B-4B45-A005-844F468F82F6}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

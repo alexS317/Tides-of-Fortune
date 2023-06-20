@@ -40,6 +40,8 @@ public class PlayerMovement : MonoBehaviour
         // Handle the jump input from the player
         if (isJumpingOrFalling) return; // Ignore jump input if the player is already jumping or falling
         rigidBody.AddForce(Vector3.up * jumpStrength, ForceMode.VelocityChange);
+
+        AkSoundEngine.PostEvent("Play_PlayerJump", gameObject);
     }
 
     void ExecuteMovement()

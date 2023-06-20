@@ -8,6 +8,8 @@ public class TreasureChest : MonoBehaviour
 {
     void OpenFinalChest(int nr)
     {
+        AkSoundEngine.StopAll();
+        
         // Load Success scene
         SceneManager.LoadSceneAsync("Success");
     }

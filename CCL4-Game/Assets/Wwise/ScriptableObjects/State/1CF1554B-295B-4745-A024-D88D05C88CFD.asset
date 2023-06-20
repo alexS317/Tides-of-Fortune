@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e420380735d8a1f4d898299938daf15a, type: 3}
+  m_Name: 1CF1554B-295B-4745-A024-D88D05C88CFD
+  m_EditorClassIdentifier: 
+  objectName: SuccessScreen
+  id: 1097577930
+  guid: 1CF1554B-295B-4745-A024-D88D05C88CFD
+  WwiseStateGroupReference: {fileID: 11400000, guid: d188a612f469e1e4ea511f8925c85ac2,
+    type: 2}

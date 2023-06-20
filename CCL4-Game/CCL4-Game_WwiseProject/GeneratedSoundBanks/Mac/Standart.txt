@@ -1,7 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	829709465	Play_BgMainMenu			\Default Work Unit\Play_BgMainMenu	
 	976135773	Play_DrinkPotion			\Default Work Unit\Play_DrinkPotion	
-	1387673711	Play_PenguinSound			\Default Work Unit\Play_PenguinSound	
 	1444251224	Play_BgLevel1			\Default Work Unit\Play_BgLevel1	
 	1444251226	Play_BgLevel3			\Default Work Unit\Play_BgLevel3	
 	1444251227	Play_BgLevel2			\Default Work Unit\Play_BgLevel2	
@@ -14,12 +13,15 @@ Event	ID	Name			Wwise Object Path	Notes
 	2228638855	Play_CollectCoin			\Default Work Unit\Play_CollectCoin	
 	2372636900	Play_GhostSound			\Default Work Unit\Play_GhostSound	
 	2424882924	Play_Portal			\Default Work Unit\Play_Portal	
+	2859161640	Play_Owl			\Default Work Unit\Play_Owl	
 	3018978351	Play_PenguinGotHit			\Default Work Unit\Play_PenguinGotHit	
 	3174629258	Play_GameOver			\Default Work Unit\Play_GameOver	
 	3416405661	Play_OpenChest			\Default Work Unit\Play_OpenChest	
 	3597740845	Play_CollectPotion			\Default Work Unit\Play_CollectPotion	
 	3703766381	Play_PlayerAttack			\Default Work Unit\Play_PlayerAttack	
 	3763555292	Play_PlayerGotHit			\Default Work Unit\Play_PlayerGotHit	
+	3817990921	Play_PlayerJump			\Default Work Unit\Play_PlayerJump	
+	3943614907	Play_Success			\Default Work Unit\Play_Success	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	629923905	areas			\Default Work Unit\areas	
@@ -43,11 +45,16 @@ State	ID	Name	State Group			Notes
 
 Custom State	ID	Name	State Group	Owner		Notes
 	46442421	GameOverScreen	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\MainMenu		
+	96445312	MainMenu	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\Success		
+	113308788	Level2	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\Success		
 	127908981	SuccessScreen	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\MainMenu		
 	172945006	SuccessScreen	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel3		
+	192566795	GameOverScreen	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\Success		
 	208950217	Level1	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel3		
 	259145266	GameOverScreen	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel3		
 	303980690	SuccessScreen	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\GameOver		
+	363408841	Level1	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\Success		
+	438466921	Level3	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\Success		
 	539381987	Level3	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\MainMenu		
 	656427226	Level2	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\GameOver		
 	737291706	Level2	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\MainMenu		
@@ -64,31 +71,35 @@ Custom State	ID	Name	State Group	Owner		Notes
 	1048150418	MainMenu	BackgroundMusic	\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\GameOver		
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	66467741	PenguinSound	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\Penguin2_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\EnemySounds\PenguinSound		1040444
-	80575695	DrinkPotion	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\DrinkPotion_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\DrinkPotion		183184
-	184037357	TreeMonsterSound	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\TreeMonsterSound_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\EnemySounds\TreeMonsterSound		534032
-	234564374	BackgroundLevel1	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Spring Birds Loop with Low-Cut (New Jersey)_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel1		28034752
-	266220930	CollectKey	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\CollectKey_B71EF841.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectKey		112880
-	288041657	Portal	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\Portal_A240E76D.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Others\Portal		726932
-	296856510	concrete footstep 4	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\concrete footstep 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\Movement\FootSteps\StoneSteps\concrete footstep 4		40400
-	298624579	FootstepIce1	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\FootstepIce1_ECBBC881.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\Movement\FootSteps\IceSteps\FootstepIce1		196896
-	314838666	BackgroundLevel3	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\BackgroundLevel3_0B12FA76.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel3		1602328
-	350015169	SwordSwing	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\PlayerAttack2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\SwordSwing		127512
-	409981325	PlayerGotHit	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\PlayerGotHit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\PlayerGotHit		88124
-	569832036	CollectMap	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\CollectMap_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectMap		54398
-	579703602	CollectCoin2	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CollectCoin2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectCoin\CollectCoin2		28734
-	776665753	OpenChest	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\OpenChest_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\OpenChest		172892
-	798696614	Button	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\Button_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Others\Button		106560
-	812447936	GhostSound	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\GhostSound_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\EnemySounds\GhostSound		483376
-	825627106	BackgroundLevel2	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\BackgroundLevel2_690274EF.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel2		856552
-	857574192	Footsteps_Grass+Dirt_1	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Footsteps_Grass+Dirt_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\Movement\FootSteps\GrassSteps\Footsteps_Grass+Dirt_1		125132
-	892825225	GameOver	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\GameOver_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\GameOver		2103808
-	896248252	concrete footstep 2	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\concrete footstep 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\Movement\FootSteps\StoneSteps\concrete footstep 2		47122
-	906532918	CollectCoin1	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CollectCoin1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectCoin\CollectCoin1		132364
-	913869998	CollectPotion	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CollectPotion_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectPotion		65560
-	970975336	Footsteps_Grass+Dirt_2	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Footsteps_Grass+Dirt_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\Movement\FootSteps\GrassSteps\Footsteps_Grass+Dirt_2		115508
-	987280588	MainMenu	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\pirate_band_drunken_sailor_6F869533.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\MainMenu		5822564
-	1007906396	FootstepIce2	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\FootstepIce2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\Movement\FootSteps\IceSteps\FootstepIce2		154414
-	1027483792	PenguinGotHit	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\Penguin1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\EnemySounds\PenguinGotHit		30724
-	1035167289	PlayerAttack	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\PlayerAttack1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\PlayerAttack		237768
+	44045019	PlayerJump	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\PlayerJump_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\Movement\PlayerJump		1899
+	80575695	DrinkPotion	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\DrinkPotion_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\DrinkPotion		9241
+	184037357	TreeMonsterSound	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\TreeMonsterSound_D1650929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\EnemySounds\TreeMonsterSound		14662
+	234564374	BackgroundLevel1	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Spring Birds Loop with Low-Cut (New Jersey)_639745A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel1		2191687
+	266220930	CollectKey	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\CollectKey_5DEBB271.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectKey		8582
+	278737355	Success	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Success_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\Success		25072
+	288041657	Portal	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\Portal_62F54D1B.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Others\Portal		28698
+	296856510	concrete footstep 4	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\concrete footstep 4_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\Movement\FootSteps\StoneSteps\concrete footstep 4		2581
+	314838666	BackgroundLevel3	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\BackgroundLevel3_A971A327.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel3		137685
+	350015169	SwordSwing	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\PlayerAttack2_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\SwordSwing		5304
+	409981325	PlayerGotHit	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\PlayerGotHit_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\PlayerGotHit		5061
+	417817416	Snow Step 1	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Snow Step 1_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\Movement\FootSteps\IceSteps\Snow Step 1		3571
+	569832036	CollectMap	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\CollectMap_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectMap		7084
+	579703602	CollectCoin2	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CollectCoin2_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectCoin\CollectCoin2		4062
+	707256828	Snow Step 3	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Snow Step 3_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\Movement\FootSteps\IceSteps\Snow Step 3		2077
+	776665753	OpenChest	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\OpenChest_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\OpenChest		10419
+	798696614	Button	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\Button_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Others\Button		6613
+	812447936	GhostSound	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\GhostSound_33DDF687.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\EnemySounds\GhostSound		11521
+	825627106	BackgroundLevel2	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\BackgroundLevel2_FF7F7BAE.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel2		54148
+	832253283	Snow Step 2	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Snow Step 2_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\Movement\FootSteps\IceSteps\Snow Step 2		3583
+	857574192	Footsteps_Grass+Dirt_1	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Footsteps_Grass+Dirt_1_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\Movement\FootSteps\GrassSteps\Footsteps_Grass+Dirt_1		6123
+	860686915	CollectCoin3	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CollectCoin3_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectCoin\CollectCoin3		3780
+	892825225	GameOver	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\GameOver_FCE3660C.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\GameOver		89235
+	896248252	concrete footstep 2	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\concrete footstep 2_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\Movement\FootSteps\StoneSteps\concrete footstep 2		4758
+	903189089	Owl	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Owl_33DDF687.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Others\Owl		26124
+	906532918	CollectCoin1	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CollectCoin1_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectCoin\CollectCoin1		8814
+	913869998	CollectPotion	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CollectPotion_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectPotion		7482
+	970975336	Footsteps_Grass+Dirt_2	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Footsteps_Grass+Dirt_2_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\Movement\FootSteps\GrassSteps\Footsteps_Grass+Dirt_2		5929
+	987280588	MainMenu	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\pirate_band_drunken_sailor_687E17AE.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\MainMenu		217346
+	1027483792	PenguinGotHit	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\Penguin1_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\EnemySounds\PenguinGotHit		2953
+	1035167289	PlayerAttack	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\PlayerAttack1_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\PlayerAttack		13024
 
