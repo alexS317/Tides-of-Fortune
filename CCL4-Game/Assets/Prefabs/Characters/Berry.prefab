@@ -95,6 +95,22 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5940134199635793200}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &8861755933942191970
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6822655763958065249}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!135 &-3015472251500743737
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -120,19 +136,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4646dae4822ae148a017de385808662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!54 &8861755933942191970
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6822655763958065249}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  berryParticles: {fileID: 4642848129145531053, guid: 3138a83bedbd6ad4481ba0b061da2eb6,
+    type: 3}
