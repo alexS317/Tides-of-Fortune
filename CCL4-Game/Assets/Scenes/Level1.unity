@@ -18425,6 +18425,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 6478006307193607656, guid: 65cf31d106a27d340a93180fb314a214,
+        type: 3}
+      propertyPath: m_TagString
+      value: Sword
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65cf31d106a27d340a93180fb314a214, type: 3}
 --- !u!1001 &4237256628133007256

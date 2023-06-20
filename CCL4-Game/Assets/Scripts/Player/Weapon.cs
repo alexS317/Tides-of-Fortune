@@ -15,10 +15,27 @@ public class Weapon : MonoBehaviour
 
     private void Start()
     {
-        //sword = GameObject.FindGameObjectWithTag("Sword");
 
         hitCollider = GameObject.FindGameObjectWithTag("HitCollider");
         weaponCollider = hitCollider.GetComponent<BoxCollider>();
+        
+        
+        //if(this.gameObject.CompareTag("Player"))
+        //{
+        //    sword = GameObject.FindGameObjectWithTag("Sword");
+
+        //    print(" sword hit box route");
+        //}
+
+        //if (this.gameObject.CompareTag("Player"))
+        //{
+        //    hitCollider = GameObject.FindGameObjectWithTag("HitCollider");
+        //    weaponCollider = hitCollider.GetComponent<BoxCollider>();
+        //
+        //    print(" sword hit box route");
+        //}
+
+
     }
 
     private void Update()

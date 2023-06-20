@@ -87,6 +87,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: penguin
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b70ed6e175f13e940a0a4b6f0637056f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: b70ed6e175f13e940a0a4b6f0637056f,
         type: 3}
       propertyPath: m_Controller

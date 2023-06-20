@@ -120,7 +120,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.44356954
+      - time: 0.39370078
         functionName: EnableHitBox
         data: 
         objectReferenceParameter: {instanceID: 0}
