@@ -9,6 +9,8 @@ public class MainScreenActions : MonoBehaviour
     {
         // Destroy GlobalData to reset game data
         Destroy(GameObject.Find("GlobalData"));
+        
+        AkSoundEngine.PostEvent("Play_Button", gameObject);
 
         // Load Level1
         SceneManager.LoadSceneAsync("Level1");
@@ -16,12 +18,15 @@ public class MainScreenActions : MonoBehaviour
 
     public void ExitGame()
     {
+        AkSoundEngine.PostEvent("Play_Button", gameObject);
         // Quit the game
         Application.Quit();
     }
 
     public void MainMenu()
     {
+        AkSoundEngine.PostEvent("Play_Button", gameObject);
+        
         // Load MainMenu
         SceneManager.LoadSceneAsync("MainMenu");
         
@@ -30,6 +35,7 @@ public class MainScreenActions : MonoBehaviour
 
     public void HowToPlay()
     {
+        AkSoundEngine.PostEvent("Play_Button", gameObject);
         // Load HowToPlay
         SceneManager.LoadSceneAsync("HowToPlay");
     }
