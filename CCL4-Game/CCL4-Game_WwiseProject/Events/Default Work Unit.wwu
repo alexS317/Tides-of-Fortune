@@ -190,6 +190,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_TreeMonsterSound" ID="{C80ACBB1-342D-45B7-899E-6FB66EE56DB5}">
+					<ChildrenList>
+						<Action Name="" ID="{DC034B8D-E633-4625-9AA3-C7C544E6217A}" ShortID="548372570">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TreeMonsterSound" ID="{8F598856-962F-40C0-A815-263027442AD8}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PenguinGotHit" ID="{06C9D72D-A8E5-41FF-8D47-0744F1488EB7}">
+					<ChildrenList>
+						<Action Name="" ID="{B02BC0D5-C151-4CDD-96E0-CF6623891818}" ShortID="525289946">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PenguinGotHit" ID="{1694B652-75CE-4644-8748-5BB8937A9F71}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_GhostSound" ID="{B977ADC1-33BD-4D86-9BE7-10D22ACC684F}">
+					<ChildrenList>
+						<Action Name="" ID="{570EE191-E9CB-4BBE-9873-85DBD343351B}" ShortID="634025778">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GhostSound" ID="{4CB37D01-F51C-4B15-9837-A18161FAD961}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

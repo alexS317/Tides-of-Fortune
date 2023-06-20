@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,11 @@ public class Ghost : MonoBehaviour
     // public int health = 2;
 
     // private int points;
+
+    private void Start()
+    {
+        AkSoundEngine.PostEvent("Play_GhostSound", gameObject);
+    }
 
     public ParticleSystem deathParticles;
 

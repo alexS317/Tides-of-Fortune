@@ -203,6 +203,18 @@ MonoBehaviour:
   BerryObject: {fileID: 6822655763958065249, guid: af550d2ecf348b545905cdb531de17f7,
     type: 3}
   berryCenter: {fileID: 5804998440609814799}
+--- !u!114 &2071382595633538820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133463641930433366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 003a4adfddf1f334aae3cbce39f82ea3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &5913546635049698198 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 3a93ccba02d6277468bf6119770ee029,

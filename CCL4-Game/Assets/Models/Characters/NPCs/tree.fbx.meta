@@ -179,7 +179,23 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.17575756
+        functionName: TreeStep
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 003a4adfddf1f334aae3cbce39f82ea3,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.83232325
+        functionName: TreeStep
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 003a4adfddf1f334aae3cbce39f82ea3,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}

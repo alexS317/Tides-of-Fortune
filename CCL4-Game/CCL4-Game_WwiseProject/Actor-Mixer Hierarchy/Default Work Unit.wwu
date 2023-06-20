@@ -1011,7 +1011,7 @@
 										<ActiveSource Name="GolemSound" ID="{055B48BB-21FC-40C8-A11A-4808824F5272}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Penguin1" ID="{1694B652-75CE-4644-8748-5BB8937A9F71}" ShortID="595847909">
+								<Sound Name="PenguinGotHit" ID="{1694B652-75CE-4644-8748-5BB8937A9F71}" ShortID="595847909">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
@@ -1034,8 +1034,15 @@
 										<ActiveSource Name="Penguin1" ID="{804AA08E-AAA9-4C98-A46D-43F1E7E53842}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Penguin2" ID="{18D9846C-F044-4F43-8D62-1ABB10C1AD22}" ShortID="1065620112">
+								<Sound Name="PenguinSound" ID="{18D9846C-F044-4F43-8D62-1ABB10C1AD22}" ShortID="1065620112">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="PenguinAttenuation" ID="{B790B1D6-0219-497E-88FB-3EF24B862E9D}" WorkUnitID="{6CC6668D-911B-4E58-B77E-FE067827A4F2}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
 										</Reference>
@@ -1058,7 +1065,14 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="GhostSound" ID="{4CB37D01-F51C-4B15-9837-A18161FAD961}" ShortID="5151864">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="GhostAttenuation" ID="{D3AD132B-D045-4B1E-9CE6-0E8084C92B24}" WorkUnitID="{6CC6668D-911B-4E58-B77E-FE067827A4F2}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
 										</Reference>
@@ -1081,7 +1095,14 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="TreeMonsterSound" ID="{8F598856-962F-40C0-A815-263027442AD8}" ShortID="465889305">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="TreeAttenuation" ID="{5F8AC777-22BC-4B18-8516-57DA76654CBB}" WorkUnitID="{6CC6668D-911B-4E58-B77E-FE067827A4F2}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
 										</Reference>
