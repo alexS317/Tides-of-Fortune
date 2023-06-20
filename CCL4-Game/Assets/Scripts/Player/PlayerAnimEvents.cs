@@ -18,4 +18,9 @@ public class PlayerAnimEvents : MonoBehaviour
         // Triggered when the player's attack animation finishes
         IsHitting = false;
     }
+    
+    void FootStep(int side)
+    {
+        AkSoundEngine.PostEvent("Play_PlayerFootSteps", gameObject);
+    }
 }

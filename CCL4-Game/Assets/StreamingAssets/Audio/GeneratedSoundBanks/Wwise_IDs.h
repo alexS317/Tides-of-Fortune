@@ -26,6 +26,7 @@ namespace AK
         static const AkUniqueID PLAY_GAMEOVER = 3174629258U;
         static const AkUniqueID PLAY_OPENCHEST = 3416405661U;
         static const AkUniqueID PLAY_PLAYERATTACK = 3703766381U;
+        static const AkUniqueID PLAY_PLAYERFOOTSTEPS = 1805011878U;
         static const AkUniqueID PLAY_PLAYERGOTHIT = 3763555292U;
         static const AkUniqueID PLAY_PORTAL = 2424882924U;
         static const AkUniqueID PLAY_SWORDSWING = 1746766985U;
@@ -50,6 +51,22 @@ namespace AK
         } // namespace BACKGROUNDMUSIC
 
     } // namespace STATES
+
+    namespace SWITCHES
+    {
+        namespace AREAS
+        {
+            static const AkUniqueID GROUP = 629923905U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID ICE = 344481046U;
+                static const AkUniqueID STONE = 1216965916U;
+            } // namespace SWITCH
+        } // namespace AREAS
+
+    } // namespace SWITCHES
 
     namespace BANKS
     {
