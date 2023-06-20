@@ -7,6 +7,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1564200781	Play_CollectKey			\Default Work Unit\Play_CollectKey	
 	1698715786	Play_CollectMap			\Default Work Unit\Play_CollectMap	
 	1746766985	Play_SwordSwing			\Default Work Unit\Play_SwordSwing	
+	1805011878	Play_PlayerFootSteps			\Default Work Unit\Play_PlayerFootSteps	
 	2099555730	Play_Button			\Default Work Unit\Play_Button	
 	2228638855	Play_CollectCoin			\Default Work Unit\Play_CollectCoin	
 	2424882924	Play_Portal			\Default Work Unit\Play_Portal	
@@ -15,6 +16,14 @@ Event	ID	Name			Wwise Object Path	Notes
 	3597740845	Play_CollectPotion			\Default Work Unit\Play_CollectPotion	
 	3703766381	Play_PlayerAttack			\Default Work Unit\Play_PlayerAttack	
 	3763555292	Play_PlayerGotHit			\Default Work Unit\Play_PlayerGotHit	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	629923905	areas			\Default Work Unit\areas	
+
+Switch	ID	Name	Switch Group			Notes
+	344481046	ice	areas			
+	1216965916	stone	areas			
+	4248645337	grass	areas			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	626769978	BackgroundMusic			\Default Work Unit\BackgroundMusic	
@@ -55,6 +64,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	234564374	BackgroundLevel1	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\Spring Birds Loop with Low-Cut (New Jersey)_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel1		28034752
 	266220930	CollectKey	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\CollectKey_B71EF841.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectKey		112880
 	288041657	Portal	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\Portal_A240E76D.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Others\Portal		726932
+	298624579	FootstepIce1	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\FootstepIce1_ECBBC881.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\Movement\FootSteps\IceSteps\FootstepIce1		196896
 	314838666	BackgroundLevel3	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\BackgroundLevel3_0B12FA76.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel3		1602328
 	350015169	SwordSwing	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\PlayerAttack2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\SwordSwing		127512
 	409981325	PlayerGotHit	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\PlayerGotHit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\PlayerGotHit		88124
@@ -63,9 +73,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	776665753	OpenChest	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\OpenChest_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\OpenChest		172892
 	798696614	Button	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\Button_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Others\Button		106560
 	825627106	BackgroundLevel2	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\BackgroundLevel2_690274EF.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel2		856552
+	857574192	Footsteps_Grass+Dirt_1	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\Footsteps_Grass+Dirt_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\Movement\FootSteps\GrassSteps\Footsteps_Grass+Dirt_1		125132
 	892825225	GameOver	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\GameOver_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\GameOver		2103808
 	906532918	CollectCoin1	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CollectCoin1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectCoin\CollectCoin1		132364
 	913869998	CollectPotion	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CollectPotion_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectPotion		65560
+	970975336	Footsteps_Grass+Dirt_2	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\Footsteps_Grass+Dirt_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\Movement\FootSteps\GrassSteps\Footsteps_Grass+Dirt_2		115508
 	987280588	MainMenu	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\pirate_band_drunken_sailor_6F869533.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\MainMenu		5822564
+	1007906396	FootstepIce2	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\FootstepIce2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\Movement\FootSteps\IceSteps\FootstepIce2		154414
 	1035167289	PlayerAttack	C:\Users\AlexandraF\Studium\Creative Computing\4th Semester\Creative Code Lab 4\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CCLAudio\PlayerAttack1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\PlayerAttack		237768
 
