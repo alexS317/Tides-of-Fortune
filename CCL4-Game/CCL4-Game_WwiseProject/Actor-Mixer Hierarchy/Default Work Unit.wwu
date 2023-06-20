@@ -33,6 +33,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="FootstepGrass2" ID="{D9C759B6-868E-42C9-A297-1EF992FD0FE6}" ShortID="463231468">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
@@ -89,6 +96,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="FootstepIce1" ID="{AFCF7E4B-2689-4BCB-8F95-74D459E6D944}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.11582206100166"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CCLAudio\FootstepIce1.wav</AudioFile>
 													<MediaIDList>
@@ -101,9 +113,89 @@
 												<ActiveSource Name="FootstepIce1" ID="{AFCF7E4B-2689-4BCB-8F95-74D459E6D944}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<SwitchContainer Name="FootSteps" ID="{5F953D00-6833-4EE4-A9E3-373A922D8924}" ShortID="984223734">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="grass" ID="{180662F5-C9C3-49CE-A2E6-479885FFCA94}" WorkUnitID="{E2BF2C6D-F2EA-43C5-9ACE-40CA5A47C57F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8245366-1EBA-4165-9D82-FB54400CC14E}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="areas" ID="{7B499982-CC22-4E8C-82D2-D4EEF7BC2B91}" WorkUnitID="{E2BF2C6D-F2EA-43C5-9ACE-40CA5A47C57F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="GrassSteps" ID="{AB3E06A0-0591-4B20-8A3D-D533B7737F1C}" ShortID="649743823">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8245366-1EBA-4165-9D82-FB54400CC14E}"/>
+														</Reference>
+													</ReferenceList>
+													<ObjectLists/>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="IceSteps" ID="{F12C305F-EF0C-4C24-A700-E984CB352F41}" ShortID="595096329">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8245366-1EBA-4165-9D82-FB54400CC14E}"/>
+														</Reference>
+													</ReferenceList>
+													<ObjectLists/>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="StoneSteps" ID="{B3D4BAAB-D0FC-46D2-B61C-1D62E2C123AD}" ShortID="437971439">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8245366-1EBA-4165-9D82-FB54400CC14E}"/>
+														</Reference>
+													</ReferenceList>
+													<ObjectLists/>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<ObjectLists/>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="IceSteps" ID="{F12C305F-EF0C-4C24-A700-E984CB352F41}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="GrassSteps" ID="{AB3E06A0-0591-4B20-8A3D-D533B7737F1C}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="StoneSteps" ID="{B3D4BAAB-D0FC-46D2-B61C-1D62E2C123AD}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+											</GroupingInfo>
+										</SwitchContainer>
 									</ChildrenList>
 								</Folder>
 								<Sound Name="PlayerAttack" ID="{7CFAB741-4D60-4220-8E73-0875C60673B8}" ShortID="145074461">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{350994B1-B5AF-4CD3-B161-283D072A2798}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+															<Property Name="Min" Type="Real64" Value="-50"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>

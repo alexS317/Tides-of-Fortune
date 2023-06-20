@@ -164,6 +164,8 @@ MonoBehaviour:
   health: 6
   resistance: 0
   animator: {fileID: 5913546635049698198}
+  hitParticels: {fileID: 8567499164180954485, guid: e6a9b7360fdaf2442b5a9433d677ba3c,
+    type: 3}
 --- !u!195 &-4780608446214037521
 NavMeshAgent:
   m_ObjectHideFlags: 0

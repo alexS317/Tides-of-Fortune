@@ -133,6 +133,8 @@ MonoBehaviour:
   health: 5
   resistance: 1
   animator: {fileID: 0}
+  hitParticels: {fileID: 6523699520211762466, guid: 0edef91621bb6b34384ccc9dbb98729c,
+    type: 3}
 --- !u!114 &6173701792765890389
 MonoBehaviour:
   m_ObjectHideFlags: 0

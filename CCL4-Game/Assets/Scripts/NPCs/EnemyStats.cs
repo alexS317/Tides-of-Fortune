@@ -9,9 +9,13 @@ public class EnemyStats : MonoBehaviour
     [SerializeField] private float resistance;
     [SerializeField] Animator animator;
 
+    [SerializeField] ParticleSystem hitParticels;
+
     // Enemy takes damage
     public void TakeDamage(float hitDamage)
     {
+
+        Instantiate(hitParticels, transform.position, Quaternion.identity);
         health -= (hitDamage - resistance);
 
         if (health <= 0)

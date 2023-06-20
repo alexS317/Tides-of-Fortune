@@ -47,7 +47,7 @@ public class PlayerAttack : MonoBehaviour
             enemyStats.TakeDamage(damage);
             
             // Play the sound event
-            AkSoundEngine.PostEvent("Play_Attack", gameObject);
+            AkSoundEngine.PostEvent("Play_PlayerAttack", gameObject);
         }
     }
 }

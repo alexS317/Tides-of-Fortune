@@ -6,6 +6,8 @@ public class Berry : MonoBehaviour
 {
     private float timer;
 
+    public ParticleSystem berryParticles;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,9 @@ public class Berry : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+
+            Instantiate(berryParticles, transform.position, Quaternion.identity);
+
             DataStorage.Instance.DecreasePlayerHealth(1);
             Destroy(gameObject);
         }
