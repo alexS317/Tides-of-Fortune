@@ -45,9 +45,11 @@ public class PlayerAttack : MonoBehaviour
             
             // Decrease enemy health by the specified damage amount
             enemyStats.TakeDamage(damage);
-            
+
             // Play the sound event
             AkSoundEngine.PostEvent("Play_PlayerAttack", gameObject);
+
+            if (enemyStats.enemyType == EnemyType.Penguin) AkSoundEngine.PostEvent("Play_PenguinGotHit", gameObject);
         }
     }
 }

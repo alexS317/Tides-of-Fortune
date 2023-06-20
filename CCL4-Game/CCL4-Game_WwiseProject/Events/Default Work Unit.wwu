@@ -256,6 +256,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_PenguinSound" ID="{19E71890-C7DC-4661-A15B-053F3B4A9F7A}">
+					<ChildrenList>
+						<Action Name="" ID="{25A9E1BD-14C4-4AE4-930F-F95C2B940F9F}" ShortID="326935379">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PenguinSound" ID="{18D9846C-F044-4F43-8D62-1ABB10C1AD22}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

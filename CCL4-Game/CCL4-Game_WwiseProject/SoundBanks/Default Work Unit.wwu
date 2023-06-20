@@ -14,6 +14,7 @@
 						<ObjectRef Name="Play_CollectMap" ID="{0EFFB579-4C2F-447A-8A24-E052372D6A52}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_CollectKey" ID="{C2A83182-2101-44A7-8730-AF776A884DD2}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_TreeMonsterSound" ID="{C80ACBB1-342D-45B7-899E-6FB66EE56DB5}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_PenguinSound" ID="{19E71890-C7DC-4661-A15B-053F3B4A9F7A}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_DrinkPotion" ID="{2A7030B0-70E5-467E-9FF9-C2705DD7C95A}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BgLevel1" ID="{9A2D4B78-F803-46E7-BE2E-ED1161B8E436}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_PlayerFootSteps" ID="{0C3B2DD9-ECB1-47DC-9F76-9F8EE5C670C4}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>

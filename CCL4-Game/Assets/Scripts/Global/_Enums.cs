@@ -1,7 +1,9 @@
 using System;
 
-public enum MovementType
+public enum EnemyType
 {
-    TransformBased,
-    PhysicsBased
+    Tree,
+    Penguin,
+    Golem,
+    Ghost
 }

@@ -28,6 +28,7 @@ namespace AK
         static const AkUniqueID PLAY_OPENCHEST = 3416405661U;
         static const AkUniqueID PLAY_OWL = 2859161640U;
         static const AkUniqueID PLAY_PENGUINGOTHIT = 3018978351U;
+        static const AkUniqueID PLAY_PENGUINSOUND = 1387673711U;
         static const AkUniqueID PLAY_PLAYERATTACK = 3703766381U;
         static const AkUniqueID PLAY_PLAYERFOOTSTEPS = 1805011878U;
         static const AkUniqueID PLAY_PLAYERGOTHIT = 3763555292U;

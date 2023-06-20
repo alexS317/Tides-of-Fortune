@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class EnemyStats : MonoBehaviour
 {
+    [field:SerializeField] public EnemyType enemyType { get; private set; }
     [SerializeField] private float health;
     [SerializeField] private float resistance;
     [SerializeField] Animator animator;
@@ -18,14 +19,13 @@ public class EnemyStats : MonoBehaviour
     // Enemy takes damage
     public void TakeDamage(float hitDamage)
     {
-
         Instantiate(hitParticels, transform.position, Quaternion.identity);
         health -= (hitDamage - resistance);
 
         if (health <= 0)
         {
             animator.SetTrigger("death");
-            GetComponent<Collider>().enabled = false;            
+            GetComponent<Collider>().enabled = false;
         }
 
         Debug.Log("Enemy health: " + health);
@@ -33,6 +33,6 @@ public class EnemyStats : MonoBehaviour
 
     public void PlayHitParticles()
     {
-        Instantiate(smashParticles, transform.position, Quaternion.identity );
+        Instantiate(smashParticles, transform.position, Quaternion.identity);
     }
 }
