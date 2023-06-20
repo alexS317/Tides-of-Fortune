@@ -9,7 +9,9 @@ public class EnemyStats : MonoBehaviour
     [SerializeField] private float resistance;
     [SerializeField] Animator animator;
 
+
     [SerializeField] ParticleSystem hitParticels;
+    [SerializeField] ParticleSystem smashParticles;
 
     // Enemy takes damage
     public void TakeDamage(float hitDamage)
@@ -25,5 +27,10 @@ public class EnemyStats : MonoBehaviour
         }
 
         Debug.Log("Enemy health: " + health);
+    }
+
+    public void PlayHitParticles()
+    {
+        Instantiate(smashParticles, transform.position, Quaternion.identity );
     }
 }

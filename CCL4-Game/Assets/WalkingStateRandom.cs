@@ -34,10 +34,17 @@ public class WalkingStateRandom : StateMachineBehaviour
         {
             //agent.speed = 2f;
             //agent.SetDestination(player.position);
-            if (distanceToPlayer < attackRange)
-            {
-                animator.SetBool("isAttacking", true);
-            }
+           // if (distanceToPlayer < aggroRange)
+            //{
+
+                agent.SetDestination(player.position);
+
+                if (distanceToPlayer < attackRange)
+                {
+                    animator.SetBool("isAttacking", true);
+                }
+                // animator.SetBool("isAttacking", true);
+            //}
         }
         else
         {
@@ -54,7 +61,7 @@ public class WalkingStateRandom : StateMachineBehaviour
                 NavMeshHit navMeshHit;
 
                 // Find the closest valid position on the NavMesh to the random position
-                if (NavMesh.SamplePosition(randomPosition, out navMeshHit, 5f, NavMesh.AllAreas))
+                if (NavMesh.SamplePosition(randomPosition, out navMeshHit, 10f, NavMesh.AllAreas))
                 {
                     agent.SetDestination(navMeshHit.position);
                 }

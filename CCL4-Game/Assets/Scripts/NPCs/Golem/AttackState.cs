@@ -16,7 +16,12 @@ public class AttackState : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        //animator.transform.LookAt(player);
+        animator.transform.LookAt(player);
+
+        // Lock the Z-axis
+        Vector3 rotation = animator.transform.rotation.eulerAngles;
+        rotation.x = 0f;
+        animator.transform.rotation = Quaternion.Euler(rotation);
 
         float distanceToPlayer = Vector3.Distance(player.position, animator.transform.position);
         if (distanceToPlayer > 5f)

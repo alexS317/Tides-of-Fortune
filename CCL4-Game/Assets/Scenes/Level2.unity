@@ -205,6 +205,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d54624a43ca7a6940a9145b25350093f, type: 3}
+--- !u!4 &87286517 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9211076162546199649, guid: 44fc3fce621c75245a8d6ab4296c0467,
+    type: 3}
+  m_PrefabInstance: {fileID: 594018276}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &88605095 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2542220758886670137, guid: d54624a43ca7a6940a9145b25350093f,
@@ -2323,6 +2329,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7840682265338985309, guid: 44fc3fce621c75245a8d6ab4296c0467,
+        type: 3}
+      propertyPath: rotation
+      value: 
+      objectReference: {fileID: 87286517}
+    - target: {fileID: 7840682265338985309, guid: 44fc3fce621c75245a8d6ab4296c0467,
+        type: 3}
+      propertyPath: smashParticles
+      value: 
+      objectReference: {fileID: 2629628210209888467, guid: ca6705a3f9070d14d819d179493bcfa0,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 8183078323100033645, guid: 44fc3fce621c75245a8d6ab4296c0467, type: 3}
     - {fileID: 2398080937049781472, guid: 44fc3fce621c75245a8d6ab4296c0467, type: 3}
