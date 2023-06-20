@@ -74,7 +74,40 @@
 						<Action Name="" ID="{96A65994-C583-40F2-AC04-2FCF35F47916}" ShortID="708962735">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="BackgroundLevel1" ID="{0665143F-8142-4978-8BAD-3B1B66D6F547}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+									<ObjectRef Name="BackgroundLevel1" ID="{67523F68-5554-4F4B-82E5-6E8984156061}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BgLevel2" ID="{9011975C-427D-4D46-BE9A-87229199FDCC}">
+					<ChildrenList>
+						<Action Name="" ID="{97F579F1-FA43-4C51-BFA3-5897AB405C24}" ShortID="192814729">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BackgroundLevel2" ID="{756111B4-16BC-421B-8A50-31A04FCA56D7}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BgLevel3" ID="{BF3121AB-44CA-4C70-8939-AA919CA6DC11}">
+					<ChildrenList>
+						<Action Name="" ID="{3AF0109E-D1D5-416D-A0DC-BFC5BAEB8045}" ShortID="180167742">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BackgroundLevel3" ID="{FA5F354C-F456-4FFA-AD42-408A694483E5}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_GameOver" ID="{1119707B-27DA-4A4A-BD79-1F1A03155FCE}">
+					<ChildrenList>
+						<Action Name="" ID="{EEE31790-3298-4F29-8FF6-A705A7BD85BE}" ShortID="939787169">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GameOver" ID="{7C567C3E-7A10-42EC-832F-5729FDCE882F}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -14,6 +14,8 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_BGLEVEL1 = 1444251224U;
+        static const AkUniqueID PLAY_BGLEVEL2 = 1444251227U;
+        static const AkUniqueID PLAY_BGLEVEL3 = 1444251226U;
         static const AkUniqueID PLAY_BGMAINMENU = 829709465U;
         static const AkUniqueID PLAY_BUTTON = 2099555730U;
         static const AkUniqueID PLAY_COLLECTCOIN = 2228638855U;
@@ -21,6 +23,7 @@ namespace AK
         static const AkUniqueID PLAY_COLLECTMAP = 1698715786U;
         static const AkUniqueID PLAY_COLLECTPOTION = 3597740845U;
         static const AkUniqueID PLAY_DRINKPOTION = 976135773U;
+        static const AkUniqueID PLAY_GAMEOVER = 3174629258U;
         static const AkUniqueID PLAY_OPENCHEST = 3416405661U;
         static const AkUniqueID PLAY_PLAYERATTACK = 3703766381U;
         static const AkUniqueID PLAY_PLAYERGOTHIT = 3763555292U;
