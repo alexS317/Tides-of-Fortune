@@ -24,7 +24,7 @@ public class Weapon : MonoBehaviour
     {
         if (other.tag =="Enemy")
         {
-            DataStorage.Instance.IncreaseCoins();
+            DataStorage.Instance.IncreaseKillCount();
         }
     }
 
