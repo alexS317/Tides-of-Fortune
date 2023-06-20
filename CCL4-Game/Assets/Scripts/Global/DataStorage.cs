@@ -80,6 +80,7 @@ public class DataStorage : MonoBehaviour
     public void CollectHealthPotions()
     {
         TotalHealthPotions++;
+        AkSoundEngine.PostEvent("Play_CollectPotion", gameObject);
     }
 
     // Decrease the players health after getting hit by an enemy
