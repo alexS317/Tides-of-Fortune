@@ -16,6 +16,8 @@ public class LevelChangePortal : MonoBehaviour
             // Check if enough maps were found in the current level to proceed
             if (LevelStorage.Instance.MapsInLevel == RequiredMaps)
             {
+                AkSoundEngine.StopAll();    // Stop all sounds from previous scene
+                
                 // Play the sound
                 AkSoundEngine.PostEvent("Play_Portal", gameObject);
 

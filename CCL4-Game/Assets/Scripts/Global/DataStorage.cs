@@ -93,6 +93,7 @@ public class DataStorage : MonoBehaviour
         // If health is 0, player dies
         if (PlayerHealth <= 0)
         {
+            AkSoundEngine.StopAll(); // Stop all sounds from previous scene
             SceneManager.LoadSceneAsync("GameOver");
         }
     }

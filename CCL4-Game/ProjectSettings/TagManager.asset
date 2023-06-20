@@ -9,7 +9,6 @@ TagManager:
   - Ghost
   - Enemy
   - HitCollider
-  - FinalTreasure
   layers:
   - Default
   - TransparentFX

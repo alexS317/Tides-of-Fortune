@@ -14801,6 +14801,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 3877230886157750279, guid: 65cf31d106a27d340a93180fb314a214,
+        type: 3}
+      propertyPath: data.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 35ee74aefdaa45b47814f3479a5151e8,
+        type: 2}
+    - target: {fileID: 5495229557077776217, guid: 65cf31d106a27d340a93180fb314a214,
+        type: 3}
+      propertyPath: data.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: c8f61d399b02a2045b231fb4ea327048,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65cf31d106a27d340a93180fb314a214, type: 3}
 --- !u!1001 &1676025207
