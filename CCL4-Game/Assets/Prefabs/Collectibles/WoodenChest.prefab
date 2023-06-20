@@ -94,7 +94,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4415633240283673865}
   - component: {fileID: 5557286578614242306}
-  - component: {fileID: 1492481880258765957}
   - component: {fileID: 6445571266001902264}
   - component: {fileID: 7743146958364254629}
   m_Layer: 0
@@ -144,19 +143,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!65 &1492481880258765957
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3894676506738405299}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.5133607, z: 0.60119855}
-  m_Center: {x: 0, y: 0.2609122, z: 0.020627677}
 --- !u!65 &6445571266001902264
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -286,6 +272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4309196040416947926}
   - component: {fileID: 1892791301058066849}
+  - component: {fileID: 8495065325394719592}
   m_Layer: 0
   m_Name: WoodenChest
   m_TagString: Untagged
@@ -364,6 +351,19 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: 0.0035635345, z: 0.00016926648}
     m_Extent: {x: 0.004443735, y: 0.0035451544, z: 0.002857136}
   m_DirtyAABB: 0
+--- !u!65 &8495065325394719592
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6541819950931872996}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8887471, y: 0.59992415, z: 0.57142717}
+  m_Center: {x: 0, y: 0.30180016, z: 0.016926661}
 --- !u!1 &7204948920237553331
 GameObject:
   m_ObjectHideFlags: 0
