@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyAttack : MonoBehaviour
 {
     [SerializeField] private float damage; 
+    [SerializeField] private ParticleSystem hitParticles;
 
     private void OnCollisionEnter(Collision other)
     {
@@ -21,6 +22,7 @@ public class EnemyAttack : MonoBehaviour
         {
             print("AUUUU!!");
             // Enemy decreases player health
+            Instantiate(hitParticles, transform.position, Quaternion.identity);
             DataStorage.Instance.DecreasePlayerHealth(damage);
         }
     }
