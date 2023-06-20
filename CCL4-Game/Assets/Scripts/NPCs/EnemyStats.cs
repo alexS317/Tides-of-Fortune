@@ -13,6 +13,8 @@ public class EnemyStats : MonoBehaviour
     [SerializeField] ParticleSystem hitParticels;
     [SerializeField] ParticleSystem smashParticles;
 
+    //[SerializeField] Collider WeaponCollider;
+
     // Enemy takes damage
     public void TakeDamage(float hitDamage)
     {
@@ -23,7 +25,7 @@ public class EnemyStats : MonoBehaviour
         if (health <= 0)
         {
             animator.SetTrigger("death");
-            GetComponent<Collider>().enabled = false;
+            GetComponent<Collider>().enabled = false;            
         }
 
         Debug.Log("Enemy health: " + health);

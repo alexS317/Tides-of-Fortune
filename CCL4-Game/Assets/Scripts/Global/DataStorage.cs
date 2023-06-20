@@ -16,6 +16,7 @@ public class DataStorage : MonoBehaviour
     public int TotalMaps { get; private set; }
     public bool KeyFound { get; private set; } = false;
     public int KeyNr { get; private set; } // Only used to display the number in the inventory
+    public int killCount { get; private set; }
 
     [field: SerializeField] public float PlayerHealth { get; private set; }
     [SerializeField] private float healthPointsPerPotion;
@@ -105,5 +106,10 @@ public class DataStorage : MonoBehaviour
         KeyNr++;
         AkSoundEngine.PostEvent("Play_CollectKey", gameObject);
         Debug.Log("Congrats, you found the key");
+    }
+
+    public void IncreaseKillCount()
+    {
+        killCount++;
     }
 }
