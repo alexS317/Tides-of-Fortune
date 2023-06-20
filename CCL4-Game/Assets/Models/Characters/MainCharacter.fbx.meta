@@ -110,8 +110,8 @@ ModelImporter:
       name: PlayerCharacter|Jump
       takeName: PlayerCharacter|Jump
       internalID: 5620807188825851180
-      firstFrame: 0
-      lastFrame: 21
+      firstFrame: 7.1000004
+      lastFrame: 12.4
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
