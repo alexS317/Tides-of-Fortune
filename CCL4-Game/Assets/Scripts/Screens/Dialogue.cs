@@ -81,7 +81,7 @@ public class Dialogue : MonoBehaviour
                 Camera.main.GetComponent<PlayerInput>().enabled = false;
             }
             
-            if (other.gameObject.name == "TreasureChest" && DataStorage.Instance.KeyFound == false)    // For checking final treasure chest
+            if (this.gameObject.name == "TreasureChest" && !DataStorage.Instance.KeyFound)    // For checking final treasure chest)
             {
                 OpenDialogue();
                 playerReference = other.gameObject;
