@@ -12,7 +12,7 @@ public class EnemyStats : MonoBehaviour
 
 
     [SerializeField] ParticleSystem hitParticels;
-    [SerializeField] ParticleSystem smashParticles;
+    //[SerializeField] ParticleSystem smashParticles;
 
 
     // Enemy takes damage
@@ -29,8 +29,4 @@ public class EnemyStats : MonoBehaviour
         Debug.Log("Enemy health: " + health);
     }
 
-    public void PlayHitParticles()
-    {
-        Instantiate(smashParticles, transform.position, Quaternion.identity);
-    }
 }
