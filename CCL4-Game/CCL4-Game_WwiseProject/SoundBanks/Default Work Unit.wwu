@@ -11,6 +11,7 @@
 						<ObjectRef Name="Play_PenguinGotHit" ID="{06C9D72D-A8E5-41FF-8D47-0744F1488EB7}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_GolemSteps" ID="{1350426E-CD99-426C-858E-80FE2872EAEF}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Owl" ID="{A673A0A2-984C-428E-A677-EC2A14C65E28}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_PenguinSound" ID="{D01A91BA-EB56-42E5-A534-1E353A9D527E}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_CollectMap" ID="{0EFFB579-4C2F-447A-8A24-E052372D6A52}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_CollectKey" ID="{C2A83182-2101-44A7-8730-AF776A884DD2}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_TreeMonsterSound" ID="{C80ACBB1-342D-45B7-899E-6FB66EE56DB5}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>

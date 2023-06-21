@@ -24,7 +24,6 @@ namespace AK
         static const AkUniqueID PLAY_COLLECTPOTION = 3597740845U;
         static const AkUniqueID PLAY_DRINKPOTION = 976135773U;
         static const AkUniqueID PLAY_GAMEOVER = 3174629258U;
-        static const AkUniqueID PLAY_GHOSTSOUND = 2372636900U;
         static const AkUniqueID PLAY_GOLEMSTEPS = 3685071199U;
         static const AkUniqueID PLAY_OPENCHEST = 3416405661U;
         static const AkUniqueID PLAY_OWL = 2859161640U;
@@ -39,6 +38,7 @@ namespace AK
         static const AkUniqueID PLAY_SWORDSWING = 1746766985U;
         static const AkUniqueID PLAY_TREEMONSTERSOUND = 1690511569U;
         static const AkUniqueID PLAY_TREESHOOT = 2589394147U;
+        static const AkUniqueID STOP_PENGUINSOUND = 1618297397U;
     } // namespace EVENTS
 
     namespace STATES

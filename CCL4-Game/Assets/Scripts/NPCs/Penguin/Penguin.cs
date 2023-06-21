@@ -10,4 +10,9 @@ public class Penguin : MonoBehaviour
     {
         AkSoundEngine.PostEvent("Play_PenguinSound", gameObject);
     }
+
+    public void StopSound()
+    {
+        AkSoundEngine.PostEvent("Stop_PenguinSound", gameObject);
+    }
 }

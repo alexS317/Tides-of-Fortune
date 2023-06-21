@@ -278,6 +278,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_PenguinSound" ID="{D01A91BA-EB56-42E5-A534-1E353A9D527E}">
+					<ChildrenList>
+						<Action Name="" ID="{4AAA35A1-176E-4711-8278-750DD6EC8D71}" ShortID="801098081">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PenguinSound" ID="{18D9846C-F044-4F43-8D62-1ABB10C1AD22}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
