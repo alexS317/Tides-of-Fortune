@@ -10,7 +10,6 @@ public class Tree : MonoBehaviour
 
     public void ShootBerry()
     {
-        print("Eat berries");
         GameObject berry = Instantiate(BerryObject, berryCenter.position, transform.rotation);
 
 
@@ -19,8 +18,5 @@ public class Tree : MonoBehaviour
 
         berry.GetComponent<Rigidbody>().AddForce(direction * 18f, ForceMode.Impulse);
 
-        //print("Eat berries");
-        //GameObject berry = Instantiate(BerryObject, berryCenter.position, transform.rotation );
-        //berry.GetComponent<Rigidbody>().AddForce(transform.forward * 18f, ForceMode.Impulse);
     }
 }

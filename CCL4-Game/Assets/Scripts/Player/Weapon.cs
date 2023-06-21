@@ -7,18 +7,7 @@ public class Weapon : MonoBehaviour
     GameObject hitCollider;
     [SerializeField]
     Collider weaponCollider;
-
-    private void Start()
-    {
-        //hitCollider = GameObject.FindGameObjectWithTag("HitCollider");
-       // weaponCollider = hitCollider.GetComponent<Collider>();
-        
-    }
-
-    private void Update()
-    {
-        //SwordPosition = sword.transform;
-    }
+    
 
     private void OnTriggerEnter(Collider other)
     {

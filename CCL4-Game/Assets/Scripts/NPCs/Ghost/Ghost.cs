@@ -5,12 +5,6 @@ using UnityEngine;
 
 public class Ghost : MonoBehaviour
 {
-    // [SerializeField]
-    // private float damage;
-
-    // public int health = 2;
-
-    // private int points;
 
     private void Start()
     {
@@ -29,16 +23,6 @@ public class Ghost : MonoBehaviour
             // DataStorage.Instance.DecreasePlayerHealth(damage);
         }
     }
-
-    // public void TakeDamage(int damageAmount)
-    // {
-    //     health -= damageAmount;
-    //     
-    //     if (health <= 0)
-    //     {
-    //         DeadGhost();
-    //     }
-    // }
 
     private void DeadGhost()
     {

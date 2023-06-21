@@ -32,24 +32,16 @@ public class WalkingStateRandom : StateMachineBehaviour
         float distanceToPlayer = Vector3.Distance(player.position, animator.transform.position);
         if (distanceToPlayer < chaseRange)
         {
-            //agent.speed = 2f;
-            //agent.SetDestination(player.position);
-           // if (distanceToPlayer < aggroRange)
-            //{
-
-                agent.SetDestination(player.position);
+            agent.SetDestination(player.position);
 
                 if (distanceToPlayer < attackRange)
                 {
                     animator.SetBool("isAttacking", true);
                 }
-                // animator.SetBool("isAttacking", true);
-            //}
         }
         else
         {
             // If the timer exceeds 8 seconds, stop walking
-            //agent.speed = 1.2f;
             if (timer > 8)
             {
                 animator.SetBool("isWalking", false);

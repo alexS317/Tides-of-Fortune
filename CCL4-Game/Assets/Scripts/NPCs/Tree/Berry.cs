@@ -27,18 +27,6 @@ public class Berry : MonoBehaviour
         }
     }
 
-    private void OnCollisioTnEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-
-            Instantiate(berryParticles, transform.position, Quaternion.identity);
-
-            DataStorage.Instance.DecreasePlayerHealth(1);
-            Destroy(gameObject);
-        }
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
