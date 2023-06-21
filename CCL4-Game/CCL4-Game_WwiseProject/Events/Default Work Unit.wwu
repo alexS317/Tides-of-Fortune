@@ -135,17 +135,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_CollectCoin" ID="{B56C0461-979F-419C-B49A-1BDEFE55935C}">
-					<ChildrenList>
-						<Action Name="" ID="{8C6F0E89-CC5A-4FF4-9093-10D314045AD3}" ShortID="907819295">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="CollectCoin" ID="{D0ECB469-F5E0-4526-88D7-6C6C2F8C871E}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_PlayerGotHit" ID="{8FDD300F-B2B3-4C63-B895-7A8110F0E02C}">
 					<ChildrenList>
 						<Action Name="" ID="{3825F244-4C7A-4C1B-B42C-7AFF20AA1172}" ShortID="289348819">
@@ -212,17 +201,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_GhostSound" ID="{B977ADC1-33BD-4D86-9BE7-10D22ACC684F}">
-					<ChildrenList>
-						<Action Name="" ID="{570EE191-E9CB-4BBE-9873-85DBD343351B}" ShortID="634025778">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="GhostSound" ID="{4CB37D01-F51C-4B15-9837-A18161FAD961}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Owl" ID="{A673A0A2-984C-428E-A677-EC2A14C65E28}">
 					<ChildrenList>
 						<Action Name="" ID="{C7D231E4-4AB4-49E2-8B5E-BA5CC99CCB82}" ShortID="729042186">
@@ -273,6 +251,28 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="TreeShoot" ID="{759FA543-BD8B-417E-8996-7AD1A2FD7739}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CollectCoin" ID="{CFD0C13B-9A38-47CC-A712-B8C6176275F9}">
+					<ChildrenList>
+						<Action Name="" ID="{6A9997DF-99FB-4140-B18B-5E05D5D62CBB}" ShortID="138994663">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CollectCoin" ID="{D0ECB469-F5E0-4526-88D7-6C6C2F8C871E}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_GolemSteps" ID="{1350426E-CD99-426C-858E-80FE2872EAEF}">
+					<ChildrenList>
+						<Action Name="" ID="{F26AC363-DC80-491C-9251-EE38C9598CCE}" ShortID="294496669">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GolemSteps" ID="{1B4652BE-CC28-46FC-BAF2-34E458641A16}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

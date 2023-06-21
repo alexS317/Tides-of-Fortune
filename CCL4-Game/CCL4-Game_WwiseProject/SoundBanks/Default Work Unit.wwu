@@ -8,8 +8,8 @@
 						<ObjectRef Name="Play_Success" ID="{637D9AA1-8F21-4075-B378-C2DD49F3BF83}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_PlayerAttack" ID="{99E5AC47-73B9-4138-9CB9-E79C352BC452}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SwordSwing" ID="{D1C8C9D2-1A3B-413D-8552-F25AD3964576}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_CollectCoin" ID="{B56C0461-979F-419C-B49A-1BDEFE55935C}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_PenguinGotHit" ID="{06C9D72D-A8E5-41FF-8D47-0744F1488EB7}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_GolemSteps" ID="{1350426E-CD99-426C-858E-80FE2872EAEF}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Owl" ID="{A673A0A2-984C-428E-A677-EC2A14C65E28}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_CollectMap" ID="{0EFFB579-4C2F-447A-8A24-E052372D6A52}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_CollectKey" ID="{C2A83182-2101-44A7-8730-AF776A884DD2}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
@@ -17,6 +17,7 @@
 						<ObjectRef Name="Play_PenguinSound" ID="{19E71890-C7DC-4661-A15B-053F3B4A9F7A}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_DrinkPotion" ID="{2A7030B0-70E5-467E-9FF9-C2705DD7C95A}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BgLevel1" ID="{9A2D4B78-F803-46E7-BE2E-ED1161B8E436}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_CollectCoin" ID="{CFD0C13B-9A38-47CC-A712-B8C6176275F9}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_PlayerFootSteps" ID="{0C3B2DD9-ECB1-47DC-9F76-9F8EE5C670C4}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Portal" ID="{B11E5738-75C5-47DE-A3A5-D7950CC4D883}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_TreeShoot" ID="{60396C7B-7D60-48C4-A775-6BFCBEE5C845}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
@@ -26,7 +27,6 @@
 						<ObjectRef Name="Play_BgLevel3" ID="{BF3121AB-44CA-4C70-8939-AA919CA6DC11}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BgMainMenu" ID="{B5FE43D4-1661-4D32-B3D1-BB4CF6645D01}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BgLevel2" ID="{9011975C-427D-4D46-BE9A-87229199FDCC}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_GhostSound" ID="{B977ADC1-33BD-4D86-9BE7-10D22ACC684F}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_OpenChest" ID="{D1826CA4-87C4-4F61-A93A-FA28DBB61CA3}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Button" ID="{919F2615-BFDD-4FA5-86EA-529B3F131820}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_PlayerJump" ID="{60416D2A-0A70-4FB2-8224-8E9314D19B6F}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>

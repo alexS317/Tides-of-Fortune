@@ -7,6 +7,8 @@ public class Ghost : MonoBehaviour
 {
      [SerializeField]
      private float damage;
+     
+     private uint ghostSoundID; 
 
     // public int health = 2;
 
@@ -14,7 +16,7 @@ public class Ghost : MonoBehaviour
 
     private void Start()
     {
-        AkSoundEngine.PostEvent("Play_GhostSound", gameObject);
+        ghostSoundID = AkSoundEngine.PostEvent("Play_GhostSound", gameObject);
     }
 
     public ParticleSystem deathParticles;
@@ -35,6 +37,9 @@ public class Ghost : MonoBehaviour
     private void DeadGhost()
     {
         print("BOOOOMM!!!");
+        
+        // Stop the ghosts sound
+        AkSoundEngine.StopPlayingID(ghostSoundID);
 
         // Disable the collider of the ghost
         GetComponent<Collider>().enabled = false;
@@ -44,5 +49,6 @@ public class Ghost : MonoBehaviour
 
         // Destroy the ghost game object
         Destroy(this.gameObject);
+        
     }
 }
