@@ -25,4 +25,6 @@ public class WoodenChest : MonoBehaviour
             this.GetComponent<Animator>().SetBool("opened", true);
         }
     }
+
+    //as
 }
