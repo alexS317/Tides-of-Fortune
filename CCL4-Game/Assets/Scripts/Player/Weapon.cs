@@ -9,15 +9,15 @@ public class Weapon : MonoBehaviour
     Collider weaponCollider;
     
 
-    private void OnTriggerEnter(Collider other)
-    {
+    //private void OnTriggerEnter(Collider other)
+   // {
         // Check if the collider is tagged as "Enemy"
-        if (other.tag =="Enemy")
-        {
+        //if (other.tag =="Enemy")
+        //{
             // Increase the Killcount
-            DataStorage.Instance.IncreaseKillCount();
-        }
-    }
+            //DataStorage.Instance.IncreaseKillCount();
+        //}
+    //}
 
     // Activate the weapon's hitbox collider
     public void ActivatHitBox()
