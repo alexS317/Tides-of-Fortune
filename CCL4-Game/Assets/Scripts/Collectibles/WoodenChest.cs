@@ -23,8 +23,6 @@ public class WoodenChest : MonoBehaviour
 
             // Triggering the chest opening animation
             this.GetComponent<Animator>().SetBool("opened", true);
-
-            // Open = true;
         }
     }
 }

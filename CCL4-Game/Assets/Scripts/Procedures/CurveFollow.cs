@@ -8,17 +8,16 @@ public class CurveFollow : MonoBehaviour
     [SerializeField] private Transform[] routes; // Input for the routes (curves) the object should follow
     [SerializeField] private float movementSpeed = 0.1f;
 
-    private Vector3 _objectPosition;
-    private int _routeToGo = 0;
-    private float _tParam = 0.0f;
-    private bool _coroutineAllowed = true;
+    private Vector3 objectPosition;
+    private int routeToGo = 0;
+    private float tParam = 0.0f;
+    private bool coroutineAllowed = true;
     private bool chestOpened = false;
     private WoodenChest chest;
 
     private void Start()
     {
         chest = GetComponentInParent<WoodenChest>();
-        // StartCoroutine(FollowBezierCurve(_routeToGo));
     }
 
     // Update is called once per frame
@@ -26,17 +25,17 @@ public class CurveFollow : MonoBehaviour
     {
         chestOpened = chest.Open;
         
-        // Start coroutine if it isn't running already
-        if (_coroutineAllowed && chestOpened)
+        // Start coroutine only if it isn't running already and the chest has opened
+        if (coroutineAllowed && chestOpened)
         {
-            StartCoroutine(FollowBezierCurve(_routeToGo));
+            StartCoroutine(FollowBezierCurve(routeToGo));
         }
     }
 
     // Move the object along the bezier curve
     private IEnumerator FollowBezierCurve(int routeNumber)
     {
-        _coroutineAllowed = false;
+        coroutineAllowed = false;
 
         // Get positions of the control points
         Vector3 p0 = routes[routeNumber].GetChild(0).position;
@@ -44,29 +43,27 @@ public class CurveFollow : MonoBehaviour
         Vector3 p2 = routes[routeNumber].GetChild(2).position;
         Vector3 p3 = routes[routeNumber].GetChild(3).position;
 
-        while (_tParam < 1)
+        while (tParam < 1)
         {
-            _tParam += movementSpeed * Time.deltaTime;
+            tParam += movementSpeed * Time.deltaTime;
 
             // Use bezier formula to calculate the object position on the curve
-            _objectPosition = (Mathf.Pow(1 - _tParam, 3) * p0 +
-                               3 * _tParam * Mathf.Pow(1 - _tParam, 2) * p1 +
-                               3 * Mathf.Pow(_tParam, 2) * (1 - _tParam) * p2 +
-                               Mathf.Pow(_tParam, 3) * p3);
+            objectPosition = (Mathf.Pow(1 - tParam, 3) * p0 +
+                               3 * tParam * Mathf.Pow(1 - tParam, 2) * p1 +
+                               3 * Mathf.Pow(tParam, 2) * (1 - tParam) * p2 +
+                               Mathf.Pow(tParam, 3) * p3);
 
-            transform.position = _objectPosition; // Set object position
+            transform.position = objectPosition; // Set object position
             yield return new WaitForEndOfFrame();
         }
 
-        _tParam = 0.0f;
-        _routeToGo += 1;
+        tParam = 0.0f;
+        routeToGo += 1;
 
-        // If the object has followed all routes, reset it to start again
-        if (_routeToGo > routes.Length - 1)
+        // If the object has followed all routes, reset it
+        if (routeToGo > routes.Length - 1)
         {
-            _routeToGo = 0;
+            routeToGo = 0;
         }
-
-        // _coroutineAllowed = true;
     }
 }

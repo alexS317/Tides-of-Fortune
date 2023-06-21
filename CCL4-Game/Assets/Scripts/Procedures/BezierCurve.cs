@@ -8,7 +8,7 @@ public class BezierCurve : MonoBehaviour
 
     private Vector3 _gizmoPosition; // Vector 3 for 3D curve
 
-    // Make the curve visible in the scene (makes it a lot easier to set it by moving the control points)
+    // Make the curve visible in the scene so the controlpoints can be set easier
     private void OnDrawGizmos()
     {
         for (float t = 0; t <= 1; t += 0.05f)
