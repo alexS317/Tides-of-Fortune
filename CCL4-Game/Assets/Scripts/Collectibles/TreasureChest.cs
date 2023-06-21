@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class TreasureChest : MonoBehaviour
 {
+    [SerializeField] private ParticleSystem EndChestOpenParticles;
+
     void OpenFinalChest(int nr)
     {
         AkSoundEngine.StopAll();
@@ -16,11 +18,15 @@ public class TreasureChest : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+
+        PlayVFX();
         // Only open if the player has the key
         if (DataStorage.Instance.KeyFound)
         {
             // Play the sound
             AkSoundEngine.PostEvent("Play_OpenChest", gameObject);
+
+            PlayVFX();
 
             // Set the "opened" parameter in the animator to true
             GetComponent<Animator>().SetBool("opened", true);
@@ -29,5 +35,10 @@ public class TreasureChest : MonoBehaviour
         {
             Debug.Log("Can't open without a key.");
         }
+    }
+
+    public void PlayVFX()
+    {
+        Instantiate(EndChestOpenParticles, transform.position, Quaternion.identity);
     }
 }

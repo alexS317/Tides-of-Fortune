@@ -12422,11 +12422,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2988892708052132144, guid: cc2bed728760a984abef196b74ad2b5c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7313483981920065941, guid: cc2bed728760a984abef196b74ad2b5c,
         type: 3}
       propertyPath: m_Name
       value: TreasureChest
       objectReference: {fileID: 0}
+    - target: {fileID: 7558730952700065259, guid: cc2bed728760a984abef196b74ad2b5c,
+        type: 3}
+      propertyPath: EndChestOpenParticles
+      value: 
+      objectReference: {fileID: 158965292696199016, guid: 8b889a2f11492cf46a2a729004820d88,
+        type: 3}
     - target: {fileID: 7941365952772997935, guid: cc2bed728760a984abef196b74ad2b5c,
         type: 3}
       propertyPath: m_RootOrder
@@ -12482,7 +12493,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6768759855380864115, guid: cc2bed728760a984abef196b74ad2b5c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cc2bed728760a984abef196b74ad2b5c, type: 3}
 --- !u!1 &1121458882 stripped
 GameObject:

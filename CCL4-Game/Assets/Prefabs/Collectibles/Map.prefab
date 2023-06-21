@@ -497,6 +497,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6507207351125269514, guid: 503fc9fe4cbd7e84ba8108b2da9bcbc3,
         type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6507207351125269514, guid: 503fc9fe4cbd7e84ba8108b2da9bcbc3,
+        type: 3}
       propertyPath: InitialModule.startSize.minScalar
       value: 0.5
       objectReference: {fileID: 0}
@@ -508,32 +513,32 @@ PrefabInstance:
     - target: {fileID: 6507207351125269514, guid: 503fc9fe4cbd7e84ba8108b2da9bcbc3,
         type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
-      value: 1
+      value: 0.2783019
       objectReference: {fileID: 0}
     - target: {fileID: 6507207351125269514, guid: 503fc9fe4cbd7e84ba8108b2da9bcbc3,
         type: 3}
       propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.9009434
+      value: 0.97113204
       objectReference: {fileID: 0}
     - target: {fileID: 6507207351125269514, guid: 503fc9fe4cbd7e84ba8108b2da9bcbc3,
         type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.9817425
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6507207351125269514, guid: 503fc9fe4cbd7e84ba8108b2da9bcbc3,
         type: 3}
       propertyPath: InitialModule.startColor.minColor.b
-      value: 0.7311321
+      value: 0.06074228
       objectReference: {fileID: 0}
     - target: {fileID: 6507207351125269514, guid: 503fc9fe4cbd7e84ba8108b2da9bcbc3,
         type: 3}
       propertyPath: InitialModule.startColor.minColor.g
-      value: 0.95255274
+      value: 0.82885754
       objectReference: {fileID: 0}
     - target: {fileID: 6507207351125269514, guid: 503fc9fe4cbd7e84ba8108b2da9bcbc3,
         type: 3}
       propertyPath: InitialModule.startColor.minColor.r
-      value: 1
+      value: 0.990566
       objectReference: {fileID: 0}
     - target: {fileID: 6507207351125269514, guid: 503fc9fe4cbd7e84ba8108b2da9bcbc3,
         type: 3}

@@ -69,6 +69,8 @@ public class DataStorage : MonoBehaviour
                 PlayerHealth = maxHealth; // Prevent health from going over the maximum
             Debug.Log("Health: " + PlayerHealth);
             TotalHealthPotions--;
+
+                       
             AkSoundEngine.PostEvent("Play_DrinkPotion", gameObject);
         }
         else

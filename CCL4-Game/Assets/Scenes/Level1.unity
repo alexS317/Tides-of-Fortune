@@ -4053,6 +4053,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5096402518299698350, guid: 2d5a7232508cb8e42894fe4c09bea179,
+        type: 3}
+      propertyPath: healingVFX
+      value: 
+      objectReference: {fileID: 4678103677468820507, guid: 1245b8d2997d5b34fb1637be70a7eb05,
+        type: 3}
     - target: {fileID: 5096402518299698352, guid: 2d5a7232508cb8e42894fe4c09bea179,
         type: 3}
       propertyPath: m_Name

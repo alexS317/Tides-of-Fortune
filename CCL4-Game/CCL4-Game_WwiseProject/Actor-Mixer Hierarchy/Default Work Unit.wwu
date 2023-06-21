@@ -1336,6 +1336,19 @@
 								<RandomSequenceContainer Name="GolemSteps" ID="{1B4652BE-CC28-46FC-BAF2-34E458641A16}" ShortID="750716313">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{15C2417A-1E66-4C51-BF63-B1DCEC1F2BB0}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="280"/>
+															<Property Name="Min" Type="Real64" Value="-253"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -1360,6 +1373,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="GolemStep1" ID="{4F137144-2F16-4130-A2A2-4A5E8659B54C}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.160189237544729"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.557605284888522"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>GolemStep1.wav</AudioFile>
 													<MediaIDList>
@@ -1383,6 +1401,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="GolemStep2" ID="{BE39E7EA-068B-4EFE-887C-C22F09C1C2CB}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.741213414074686"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>GolemStep2.wav</AudioFile>
 													<MediaIDList>
@@ -1406,6 +1429,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="GolemStep3" ID="{5460CF95-5194-4073-8DB6-CE25F23507C2}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.264153166083389"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.539903300433854"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>GolemStep3.wav</AudioFile>
 													<MediaIDList>

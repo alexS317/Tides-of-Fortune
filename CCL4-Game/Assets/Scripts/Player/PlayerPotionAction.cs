@@ -10,7 +10,11 @@ public class PlayerPotionAction : MonoBehaviour
     void OnHealthPotion()
     {
         // Increase the player's health
-        DataStorage.Instance.IncreasePlayerHealth();
-        Instantiate(healingVFX, transform.position, Quaternion.identity);
+        if(DataStorage.Instance.TotalHealthPotions > 0)
+        {
+            DataStorage.Instance.IncreasePlayerHealth();
+            Instantiate(healingVFX, transform.position, Quaternion.identity);
+        }
+        
     }
 }

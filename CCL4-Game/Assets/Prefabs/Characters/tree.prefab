@@ -161,6 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b073261973a3eb4cb739870ec2e3b7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <enemyType>k__BackingField: 0
   health: 6
   resistance: 0
   animator: {fileID: 5913546635049698198}
@@ -203,6 +204,8 @@ MonoBehaviour:
   BerryObject: {fileID: 6822655763958065249, guid: af550d2ecf348b545905cdb531de17f7,
     type: 3}
   berryCenter: {fileID: 5804998440609814799}
+  playerObject: {fileID: 3762484621804947511, guid: 65cf31d106a27d340a93180fb314a214,
+    type: 3}
 --- !u!114 &2071382595633538820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,6 +218,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 003a4adfddf1f334aae3cbce39f82ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &4940517147600594241 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4040985779903849658, guid: 3a93ccba02d6277468bf6119770ee029,
+    type: 3}
+  m_PrefabInstance: {fileID: 250995400567733767}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &5913546635049698198 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 3a93ccba02d6277468bf6119770ee029,
@@ -227,3 +236,146 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 250995400567733767}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3497910132106496453
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7046546871470206926}
+    m_Modifications:
+    - target: {fileID: 8144037599045065202, guid: 8502e14517f94a64c85dda186c926969,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144037599045065202, guid: 8502e14517f94a64c85dda186c926969,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144037599045065202, guid: 8502e14517f94a64c85dda186c926969,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144037599045065202, guid: 8502e14517f94a64c85dda186c926969,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144037599045065202, guid: 8502e14517f94a64c85dda186c926969,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144037599045065202, guid: 8502e14517f94a64c85dda186c926969,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144037599045065202, guid: 8502e14517f94a64c85dda186c926969,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144037599045065202, guid: 8502e14517f94a64c85dda186c926969,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144037599045065202, guid: 8502e14517f94a64c85dda186c926969,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144037599045065202, guid: 8502e14517f94a64c85dda186c926969,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144037599045065202, guid: 8502e14517f94a64c85dda186c926969,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9017484664307500583, guid: 8502e14517f94a64c85dda186c926969,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree Berry Particles
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8502e14517f94a64c85dda186c926969, type: 3}
+--- !u!1001 &6798304037550388310
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4940517147600594241}
+    m_Modifications:
+    - target: {fileID: 8144037599045065202, guid: 8502e14517f94a64c85dda186c926969,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144037599045065202, guid: 8502e14517f94a64c85dda186c926969,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144037599045065202, guid: 8502e14517f94a64c85dda186c926969,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144037599045065202, guid: 8502e14517f94a64c85dda186c926969,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144037599045065202, guid: 8502e14517f94a64c85dda186c926969,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144037599045065202, guid: 8502e14517f94a64c85dda186c926969,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144037599045065202, guid: 8502e14517f94a64c85dda186c926969,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144037599045065202, guid: 8502e14517f94a64c85dda186c926969,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144037599045065202, guid: 8502e14517f94a64c85dda186c926969,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144037599045065202, guid: 8502e14517f94a64c85dda186c926969,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144037599045065202, guid: 8502e14517f94a64c85dda186c926969,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144037599045065202, guid: 8502e14517f94a64c85dda186c926969,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9017484664307500583, guid: 8502e14517f94a64c85dda186c926969,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree Berry Particles
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8502e14517f94a64c85dda186c926969, type: 3}
