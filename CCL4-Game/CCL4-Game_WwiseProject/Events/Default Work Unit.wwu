@@ -267,6 +267,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_TreeShoot" ID="{60396C7B-7D60-48C4-A775-6BFCBEE5C845}">
+					<ChildrenList>
+						<Action Name="" ID="{E4757FA2-4D49-4433-ABD3-B213B5B6C1E9}" ShortID="259438289">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TreeShoot" ID="{759FA543-BD8B-417E-8996-7AD1A2FD7739}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

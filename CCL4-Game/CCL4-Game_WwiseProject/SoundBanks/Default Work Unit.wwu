@@ -19,6 +19,7 @@
 						<ObjectRef Name="Play_BgLevel1" ID="{9A2D4B78-F803-46E7-BE2E-ED1161B8E436}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_PlayerFootSteps" ID="{0C3B2DD9-ECB1-47DC-9F76-9F8EE5C670C4}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Portal" ID="{B11E5738-75C5-47DE-A3A5-D7950CC4D883}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_TreeShoot" ID="{60396C7B-7D60-48C4-A775-6BFCBEE5C845}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_GameOver" ID="{1119707B-27DA-4A4A-BD79-1F1A03155FCE}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_CollectPotion" ID="{8E17F27B-0E32-4ADB-A49D-9CDC576FB199}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_PlayerGotHit" ID="{8FDD300F-B2B3-4C63-B895-7A8110F0E02C}" WorkUnitID="{087E77EB-DF2F-445E-A768-DCF0F82CA058}" Origin="Manual" Filter="7"/>

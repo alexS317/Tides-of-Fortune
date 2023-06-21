@@ -1445,6 +1445,36 @@
 									</ChildrenList>
 									<ObjectLists/>
 								</RandomSequenceContainer>
+								<Sound Name="TreeShoot" ID="{759FA543-BD8B-417E-8996-7AD1A2FD7739}" ShortID="595762010">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>60</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8245366-1EBA-4165-9D82-FB54400CC14E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TreeShoot" ID="{69D5026F-47BF-49C4-A62D-6DC4C53E334D}">
+											<Language>SFX</Language>
+											<AudioFile>TreeShoot.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="725458026"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="TreeShoot" ID="{69D5026F-47BF-49C4-A62D-6DC4C53E334D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Others" ID="{C9744848-FF9C-46AA-9E68-DB93E8BA7011}" ShortID="1006437538">
