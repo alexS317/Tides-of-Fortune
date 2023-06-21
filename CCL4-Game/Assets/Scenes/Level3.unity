@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.005982359, g: 0.060136255, b: 0.19507308, a: 1}
+  m_IndirectSpecularColor: {r: 0.006013802, g: 0.06016229, b: 0.19518852, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -18965,6 +18965,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3554509138347704744, guid: 65cf31d106a27d340a93180fb314a214,
+        type: 3}
+      propertyPath: healingVFX
+      value: 
+      objectReference: {fileID: 4678103677468820507, guid: 1245b8d2997d5b34fb1637be70a7eb05,
+        type: 3}
     - target: {fileID: 3762484621804947510, guid: 65cf31d106a27d340a93180fb314a214,
         type: 3}
       propertyPath: m_RootOrder
