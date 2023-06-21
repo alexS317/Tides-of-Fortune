@@ -10,6 +10,7 @@ public class MainScreenActions : MonoBehaviour
         // Destroy GlobalData to reset game data
         Destroy(GameObject.Find("GlobalData"));
         
+        AkSoundEngine.StopAll();    // Stop all sounds so they won't be played over each other
         AkSoundEngine.PostEvent("Play_Button", gameObject);
 
         // Load Level1
@@ -26,7 +27,6 @@ public class MainScreenActions : MonoBehaviour
     public void MainMenu()
     {
         AkSoundEngine.StopAll();    // Stop all sounds so they won't be played over each other
-        
         AkSoundEngine.PostEvent("Play_Button", gameObject);
         
         // Load MainMenu
