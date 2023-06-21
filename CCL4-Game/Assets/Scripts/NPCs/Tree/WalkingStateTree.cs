@@ -10,7 +10,7 @@ public class WalkingStateTree : StateMachineBehaviour
     NavMeshAgent agent;
     Transform player;
     private float chaseRange = 10;
-    private float attackRange = 3;
+    //private float attackRange = 3;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
