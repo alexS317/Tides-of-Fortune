@@ -36,7 +36,7 @@ ModelImporter:
       name: PlayerCharacter|Attack
       takeName: PlayerCharacter|Attack
       internalID: 5050697112031128070
-      firstFrame: 0
+      firstFrame: 3.8
       lastFrame: 21
       wrapMode: 0
       orientationOffsetY: 0
