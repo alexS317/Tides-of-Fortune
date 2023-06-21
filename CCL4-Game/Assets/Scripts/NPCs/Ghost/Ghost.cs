@@ -5,6 +5,12 @@ using UnityEngine;
 
 public class Ghost : MonoBehaviour
 {
+     [SerializeField]
+     private float damage;
+
+    // public int health = 2;
+
+    // private int points;
 
     private void Start()
     {
@@ -20,12 +26,16 @@ public class Ghost : MonoBehaviour
         {
             DeadGhost();
 
-            // DataStorage.Instance.DecreasePlayerHealth(damage);
+            DataStorage.Instance.DecreasePlayerHealth(damage);
         }
     }
 
+    
+
     private void DeadGhost()
     {
+        print("BOOOOMM!!!");
+
         // Disable the collider of the ghost
         GetComponent<Collider>().enabled = false;
 
@@ -34,6 +44,5 @@ public class Ghost : MonoBehaviour
 
         // Destroy the ghost game object
         Destroy(this.gameObject);
-        print("BOOOOMM!!!");
     }
 }
