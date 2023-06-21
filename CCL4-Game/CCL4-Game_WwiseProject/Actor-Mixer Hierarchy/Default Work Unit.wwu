@@ -617,6 +617,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="CollectPotion" ID="{3EDF40D1-7BD9-4BEE-9220-78131AD2D780}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.229643348668947"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>CollectPotion.wav</AudioFile>
 											<MediaIDList>
@@ -660,7 +664,7 @@
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-6</Value>
+														<Value>-16</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -851,9 +855,10 @@
 									<ChildrenList>
 										<AudioFileSource Name="BackgroundLevel2" ID="{99F73634-BE34-471C-82B7-4344D5C7E679}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.266624592033345"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.449051944477214"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0140328732649128"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0280657465298262"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="8.78457866383548"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>CCLAudio\BackgroundLevel2.wav</AudioFile>
@@ -1142,7 +1147,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
+											<ObjectRef Name="background" ID="{61E45528-AD98-40FA-B5CB-544687BB211C}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8245366-1EBA-4165-9D82-FB54400CC14E}"/>
