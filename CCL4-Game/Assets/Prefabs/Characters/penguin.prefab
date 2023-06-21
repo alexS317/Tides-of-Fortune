@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
-  hitParticles: {fileID: 8567499164180954485, guid: e6a9b7360fdaf2442b5a9433d677ba3c,
+  hitParticles: {fileID: 6523699520211762466, guid: 0edef91621bb6b34384ccc9dbb98729c,
     type: 3}
 --- !u!65 &747723435357306790
 BoxCollider:
@@ -262,9 +262,7 @@ MonoBehaviour:
   health: 5
   resistance: 1
   animator: {fileID: 2931518174534073632}
-  hitParticels: {fileID: 6523699520211762466, guid: 0edef91621bb6b34384ccc9dbb98729c,
-    type: 3}
-  smashParticles: {fileID: 8567499164180954485, guid: e6a9b7360fdaf2442b5a9433d677ba3c,
+  hitParticels: {fileID: 8567499164180954485, guid: e6a9b7360fdaf2442b5a9433d677ba3c,
     type: 3}
 --- !u!114 &3532041858483258498
 MonoBehaviour:

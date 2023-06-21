@@ -22,14 +22,20 @@ public class WoodenChest : MonoBehaviour
         {
             // Play the sound event
             AkSoundEngine.PostEvent("Play_OpenChest", gameObject);
-
+            
             // Triggering the chest opening animation
             this.GetComponent<Animator>().SetBool("opened", true);
+            DisableChestCollider();
         }
     }
 
     public void PlayVFX()
     {
         Instantiate(chestOpenParticles, transform.position, Quaternion.identity);
+    }
+
+    private void DisableChestCollider()
+    {
+        this.GetComponent<Collider>().enabled = false;
     }
 }
