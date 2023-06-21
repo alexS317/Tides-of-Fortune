@@ -37,7 +37,6 @@ namespace AK
         static const AkUniqueID PLAY_SUCCESS = 3943614907U;
         static const AkUniqueID PLAY_SWORDSWING = 1746766985U;
         static const AkUniqueID PLAY_TREEMONSTERSOUND = 1690511569U;
-        static const AkUniqueID PLAY_TREESHOOT = 2589394147U;
     } // namespace EVENTS
 
     namespace STATES

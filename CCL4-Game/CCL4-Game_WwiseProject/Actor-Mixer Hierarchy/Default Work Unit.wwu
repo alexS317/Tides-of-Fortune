@@ -1227,29 +1227,6 @@
 						</Folder>
 						<Folder Name="EnemySounds" ID="{8AF1DF5B-A607-4431-8057-F95B5C9631E4}" ShortID="632489225">
 							<ChildrenList>
-								<Sound Name="GolemSound" ID="{07FC7327-8F8B-428E-BF37-0F29F5B584B8}" ShortID="793856539">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8245366-1EBA-4165-9D82-FB54400CC14E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="GolemSound" ID="{055B48BB-21FC-40C8-A11A-4808824F5272}">
-											<Language>SFX</Language>
-											<AudioFile>CCLAudio\GolemSound.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="872348939"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="GolemSound" ID="{055B48BB-21FC-40C8-A11A-4808824F5272}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="PenguinGotHit" ID="{1694B652-75CE-4644-8748-5BB8937A9F71}" ShortID="595847909">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
@@ -1386,6 +1363,88 @@
 										<ActiveSource Name="TreeMonsterSound" ID="{6A896531-0928-4F18-8393-75912DC2F4A5}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<RandomSequenceContainer Name="GolemSteps" ID="{1B4652BE-CC28-46FC-BAF2-34E458641A16}" ShortID="750716313">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8245366-1EBA-4165-9D82-FB54400CC14E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="GolemStep1" ID="{76A0CF51-FC5F-4952-942F-F9A656EEDD19}" ShortID="93547999">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8245366-1EBA-4165-9D82-FB54400CC14E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GolemStep1" ID="{4F137144-2F16-4130-A2A2-4A5E8659B54C}">
+													<Language>SFX</Language>
+													<AudioFile>GolemStep1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1024339074"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="GolemStep1" ID="{4F137144-2F16-4130-A2A2-4A5E8659B54C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="GolemStep2" ID="{6AD89386-BEEE-41EB-B77C-DD28E3637333}" ShortID="324513439">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8245366-1EBA-4165-9D82-FB54400CC14E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GolemStep2" ID="{BE39E7EA-068B-4EFE-887C-C22F09C1C2CB}">
+													<Language>SFX</Language>
+													<AudioFile>GolemStep2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="975922552"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="GolemStep2" ID="{BE39E7EA-068B-4EFE-887C-C22F09C1C2CB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="GolemStep3" ID="{AC483C83-79FD-4B03-BF20-225FF3289888}" ShortID="1021094750">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8245366-1EBA-4165-9D82-FB54400CC14E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GolemStep3" ID="{5460CF95-5194-4073-8DB6-CE25F23507C2}">
+													<Language>SFX</Language>
+													<AudioFile>GolemStep3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="802895896"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="GolemStep3" ID="{5460CF95-5194-4073-8DB6-CE25F23507C2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Others" ID="{C9744848-FF9C-46AA-9E68-DB93E8BA7011}" ShortID="1006437538">
@@ -1425,36 +1484,6 @@
 										<ActiveSource Name="Portal" ID="{EDE5CEF1-A893-4FBA-B20A-0A51413F60A7}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="creepy" ID="{808FDD60-61C6-4EE2-BC1A-EFB2AC1057D4}" ShortID="10295840">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-12</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B115578C-4065-4171-8F57-54607A50676F}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8245366-1EBA-4165-9D82-FB54400CC14E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="creepy" ID="{DF7D46D1-0BAA-446C-A19D-458386484111}">
-											<Language>SFX</Language>
-											<AudioFile>CCLAudio\creepy.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="341639565"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="creepy" ID="{DF7D46D1-0BAA-446C-A19D-458386484111}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="Button" ID="{BE716156-D115-42A3-B351-B62F8F5AC7E0}" ShortID="313103305">
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1466,6 +1495,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Button" ID="{0D3365E6-FB34-4056-932A-7E6D9597044E}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.19106130313397"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>CCLAudio\Button.wav</AudioFile>
 											<MediaIDList>
