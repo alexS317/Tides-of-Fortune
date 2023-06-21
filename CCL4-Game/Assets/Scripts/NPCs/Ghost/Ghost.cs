@@ -26,8 +26,6 @@ public class Ghost : MonoBehaviour
 
     private void DeadGhost()
     {
-        print("BOOOOMM!!!");
-
         // Disable the collider of the ghost
         GetComponent<Collider>().enabled = false;
 
@@ -36,5 +34,6 @@ public class Ghost : MonoBehaviour
 
         // Destroy the ghost game object
         Destroy(this.gameObject);
+        print("BOOOOMM!!!");
     }
 }

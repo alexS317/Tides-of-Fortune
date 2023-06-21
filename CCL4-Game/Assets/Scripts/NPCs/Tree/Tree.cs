@@ -10,6 +10,7 @@ public class Tree : MonoBehaviour
 
     public void ShootBerry()
     {
+        print("Eat berries");
         GameObject berry = Instantiate(BerryObject, berryCenter.position, transform.rotation);
 
 

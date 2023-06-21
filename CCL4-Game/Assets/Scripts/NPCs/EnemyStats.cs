@@ -26,7 +26,7 @@ public class EnemyStats : MonoBehaviour
             animator.SetTrigger("death");
             GetComponent<Collider>().enabled = false;
         }
-
+        Debug.Log("Enemy health: " + health);
     }
 
     public void PlayHitParticles()

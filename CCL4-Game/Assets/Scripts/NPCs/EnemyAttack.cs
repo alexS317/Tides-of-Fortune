@@ -20,6 +20,7 @@ public class EnemyAttack : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            print("AUUUU!!");
             // Enemy decreases player health
             Instantiate(hitParticles, transform.position, Quaternion.identity);
             DataStorage.Instance.DecreasePlayerHealth(damage);

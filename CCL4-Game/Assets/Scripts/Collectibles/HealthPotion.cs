@@ -13,7 +13,6 @@ public class HealthPotion : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             DataStorage.Instance.CollectHealthPotions();
-            //DataStorage.Instance.IncreasePlayerHealth();
             // Destroy the coin game object
             Destroy(this.gameObject);
         }
