@@ -20,7 +20,7 @@ public class TreasureChest : MonoBehaviour
         if (DataStorage.Instance.KeyFound)
         {
             // Play the sound
-            AkSoundEngine.PostEvent("Play_OpeningChest", gameObject);
+            AkSoundEngine.PostEvent("Play_OpenChest", gameObject);
 
             // Set the "opened" parameter in the animator to true
             GetComponent<Animator>().SetBool("opened", true);
