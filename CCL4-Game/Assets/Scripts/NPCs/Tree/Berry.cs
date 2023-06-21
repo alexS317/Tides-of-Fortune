@@ -12,6 +12,7 @@ public class Berry : MonoBehaviour
     void Start()
     {
         timer = 0;
+        AkSoundEngine.PostEvent("Play_TreeShoot", gameObject);
     }
 
     // Update is called once per frame
