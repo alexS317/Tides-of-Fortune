@@ -168,6 +168,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea333e197957407498fcc6a5de4c679b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chestOpenVFX: {fileID: 6642199199589531581, guid: 354b6251e950209409c75ab984acf000,
+    type: 3}
 --- !u!1 &4266514928244481969
 GameObject:
   m_ObjectHideFlags: 0
