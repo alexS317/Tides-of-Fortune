@@ -20,6 +20,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3174629258	Play_GameOver			\Default Work Unit\Play_GameOver	
 	3416405661	Play_OpenChest			\Default Work Unit\Play_OpenChest	
 	3597740845	Play_CollectPotion			\Default Work Unit\Play_CollectPotion	
+	3685071199	Play_GolemSteps			\Default Work Unit\Play_GolemSteps	
 	3703766381	Play_PlayerAttack			\Default Work Unit\Play_PlayerAttack	
 	3763555292	Play_PlayerGotHit			\Default Work Unit\Play_PlayerGotHit	
 	3817990921	Play_PlayerJump			\Default Work Unit\Play_PlayerJump	
@@ -92,6 +93,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	725458026	TreeShoot	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\TreeShoot_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\EnemySounds\TreeShoot		4749
 	776665753	OpenChest	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\OpenChest_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\OpenChest		10419
 	798696614	Button	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\Button_0783B6D5.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Others\Button		5107
+	802895896	GolemStep2	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\GolemStep3_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\EnemySounds\GolemSteps\GolemStep2		11018
 	812447936	GhostSound	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\GhostSound_33DDF687.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\EnemySounds\GhostSound		11521
 	825627106	BackgroundLevel2	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\BackgroundLevel2_CCFA0482.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\BackgroundLevel2		54129
 	832253283	Snow Step 2	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Snow Step 2_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\Movement\FootSteps\IceSteps\Snow Step 2		3583
@@ -104,6 +106,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	913869998	CollectPotion	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CollectPotion_1EFA6AFB.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\Collectibles\CollectPotion		5727
 	970975336	Footsteps_Grass+Dirt_2	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Footsteps_Grass+Dirt_2_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\Movement\FootSteps\GrassSteps\Footsteps_Grass+Dirt_2		5929
 	987280588	MainMenu	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\pirate_band_drunken_sailor_687E17AE.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\BackgroundMusic\MainMenu		217346
+	1024339074	GolemStep1	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\GolemStep1_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\EnemySounds\GolemSteps\GolemStep1		9328
 	1027483792	PenguinGotHit	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\Penguin1_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\EnemySounds\PenguinGotHit		2953
 	1035167289	PlayerAttack	C:\Users\julia\OneDrive\Documents\GitHub\creative-code-lab-4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CCLAudio\PlayerAttack1_B05EB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\sounds\PlayerSounds\PlayerAttack		13024
 

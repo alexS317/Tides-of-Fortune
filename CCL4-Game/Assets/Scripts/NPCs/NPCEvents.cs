@@ -11,10 +11,10 @@ public class NPCEvents : MonoBehaviour
         AkSoundEngine.PostEvent("Play_TreeMonsterSound", gameObject);
     }
     
-    /*void GolemStep(int number)
+    void GolemStep(int number)
     {
-        AkSoundEngine.PostEvent("Play_GolemSound", gameObject);
-    }*/
+        AkSoundEngine.PostEvent("Play_GolemSteps", gameObject);
+    }
 
     // Update is called once per frame
     void Update()
