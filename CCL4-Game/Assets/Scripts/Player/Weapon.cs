@@ -22,18 +22,22 @@ public class Weapon : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // Check if the collider is tagged as "Enemy"
         if (other.tag =="Enemy")
         {
+            // Increase the Killcount
             DataStorage.Instance.IncreaseKillCount();
         }
     }
 
+    // Activate the weapon's hitbox collider
     public void ActivatHitBox()
     {
         print("hitbox activate");
         weaponCollider.enabled = true;
     }
 
+    // Deactivate the weapon's hitbox collider
     public void DeactivateHitBox()
     {
 

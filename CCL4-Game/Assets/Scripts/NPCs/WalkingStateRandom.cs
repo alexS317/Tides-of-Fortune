@@ -48,6 +48,7 @@ public class WalkingStateRandom : StateMachineBehaviour
         }
         else
         {
+            // If the timer exceeds 8 seconds, stop walking
             //agent.speed = 1.2f;
             if (timer > 8)
             {
@@ -75,6 +76,4 @@ public class WalkingStateRandom : StateMachineBehaviour
     {
         agent.SetDestination(agent.transform.position);
     }
-
-  
 }

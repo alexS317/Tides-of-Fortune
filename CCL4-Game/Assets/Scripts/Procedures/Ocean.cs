@@ -11,7 +11,7 @@ public class Ocean : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             AkSoundEngine.StopAll();    // Stop all sounds from previous scene
-            SceneManager.LoadSceneAsync("GameOver");
+            SceneManager.LoadSceneAsync("GameOver"); // Load the GameOver scene
         }
     }
 }

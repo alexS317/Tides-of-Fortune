@@ -5,6 +5,7 @@ using UnityEngine;
 public class NPCEvents : MonoBehaviour
 {
     // Start is called before the first frame update
+    // Play the sound of the footstep based on the animation
     void TreeStep(int number)
     {
         AkSoundEngine.PostEvent("Play_TreeMonsterSound", gameObject);

@@ -22,11 +22,13 @@ public class Inventory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Get the Text field for each collectible
         healthPotionText = healthPotionSlot.GetComponentInChildren<TextMeshProUGUI>();
         coinText = coinSlot.GetComponentInChildren<TextMeshProUGUI>();
         mapText = mapSlot.GetComponentInChildren<TextMeshProUGUI>();
         keyText = keySlot.GetComponentInChildren<TextMeshProUGUI>();
 
+        // Don't show the inventory slots initially
         healthPotionSlot.SetActive(false);
         coinSlot.SetActive(false);
         mapSlot.SetActive(false);
@@ -36,6 +38,7 @@ public class Inventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Update the inventory slots based on the item count
         ShowIcon(healthPotionSlot, healthPotionText, DataStorage.Instance.TotalHealthPotions);
         ShowIcon(coinSlot, coinText, DataStorage.Instance.TotalCoins);
         ShowIcon(mapSlot, mapText, DataStorage.Instance.TotalMaps);
@@ -44,6 +47,7 @@ public class Inventory : MonoBehaviour
 
     void ShowIcon(GameObject slot, TextMeshProUGUI textField, int itemCount)
     {
+        // Show or hide the inventory slot based on the item count
         if (itemCount > 0)
         {
             slot.SetActive(true);
