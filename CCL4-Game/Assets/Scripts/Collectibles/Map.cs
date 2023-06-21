@@ -14,5 +14,5 @@ public class Map : MonoBehaviour
             DataStorage.Instance.IncreaseTotalMaps();
             Destroy(this.gameObject);
         }
-    }
+    } 
 }

@@ -8,6 +8,8 @@ public class CurveFollow : MonoBehaviour
     [SerializeField] private Transform[] routes; // Input for the routes (curves) the object should follow
     [SerializeField] private float movementSpeed = 0.1f;
 
+    [SerializeField] GameObject mapTrail;
+
     private Vector3 objectPosition;
     private int routeToGo = 0;
     private float tParam = 0.0f;
@@ -28,6 +30,7 @@ public class CurveFollow : MonoBehaviour
         // Start coroutine only if it isn't running already and the chest has opened
         if (coroutineAllowed && chestOpened)
         {
+            ActivatePlayVFX();
             StartCoroutine(FollowBezierCurve(routeToGo));
         }
     }
@@ -65,5 +68,12 @@ public class CurveFollow : MonoBehaviour
         {
             routeToGo = 0;
         }
+    }
+
+
+    private void ActivatePlayVFX()
+    {
+        mapTrail.gameObject.SetActive(true);
+
     }
 }

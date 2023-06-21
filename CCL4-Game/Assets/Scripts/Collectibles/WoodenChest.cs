@@ -7,6 +7,8 @@ public class WoodenChest : MonoBehaviour
 {
     public bool Open { get; private set; } = false;
 
+    [SerializeField] private ParticleSystem chestOpenParticles;
+
     void OpenChest(int nr)
     {
         // Set the Open property to true
@@ -26,5 +28,8 @@ public class WoodenChest : MonoBehaviour
         }
     }
 
-    //as
+    public void PlayVFX()
+    {
+        Instantiate(chestOpenParticles, transform.position, Quaternion.identity);
+    }
 }
