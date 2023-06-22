@@ -9,7 +9,10 @@ public class WalkingState : StateMachineBehaviour
     List<Transform> wayPoints = new List<Transform>();
     NavMeshAgent agent;
     Transform player;
+
+    [SerializeField]
     private float chaseRange = 10;
+    [SerializeField] 
     private float attackRange = 3;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state

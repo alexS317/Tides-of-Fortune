@@ -31,6 +31,7 @@ public class CurveFollow : MonoBehaviour
         if (coroutineAllowed && chestOpened)
         {
             ActivatePlayVFX();
+            PlaySound();
             StartCoroutine(FollowBezierCurve(routeToGo));
         }
     }
@@ -75,5 +76,10 @@ public class CurveFollow : MonoBehaviour
     {
         mapTrail.gameObject.SetActive(true);
 
+    }
+
+    private void PlaySound()
+    {
+        AkSoundEngine.PostEvent("Play_MapGlitterEffect", gameObject);
     }
 }

@@ -7,6 +7,8 @@ public class AttackState : StateMachineBehaviour
     Transform player;
     [SerializeField] private float outerattackRange = 3;
 
+
+
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -29,6 +31,7 @@ public class AttackState : StateMachineBehaviour
         if (distanceToPlayer > outerattackRange)
         {
             animator.SetBool("isAttacking", false);
+            
         }
     }
 

@@ -292,6 +292,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_GhostGaspy" ID="{FBA6E5C5-013E-4B7D-8DCA-E6D2231B8E0D}">
+					<ChildrenList>
+						<Action Name="" ID="{09BD6C84-6CBB-4729-A014-AD0FD8235CF6}" ShortID="171609164">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GhostGaspy" ID="{DD32C540-A79A-404A-A28C-597B10DCE9D6}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MapGlitterEffect" ID="{8802F858-D3EB-4885-BAC9-8990BE460A58}">
+					<ChildrenList>
+						<Action Name="" ID="{318FA148-810D-4895-AC3A-2C5D6490A13F}" ShortID="384570132">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MapGlitterEffect" ID="{E458066E-FDD4-4D05-85C7-60BFF291406D}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ShimmeringPortal" ID="{301E2968-31EE-4B5F-A555-06056B322E04}">
+					<ChildrenList>
+						<Action Name="" ID="{C2E5B9AF-5502-48D1-811E-874A75B82465}" ShortID="285075152">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ShimmeringPortal" ID="{563FF46E-F487-4222-B91F-DC30FC185774}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

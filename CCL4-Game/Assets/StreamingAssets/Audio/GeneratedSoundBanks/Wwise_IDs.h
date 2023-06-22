@@ -24,7 +24,10 @@ namespace AK
         static const AkUniqueID PLAY_COLLECTPOTION = 3597740845U;
         static const AkUniqueID PLAY_DRINKPOTION = 976135773U;
         static const AkUniqueID PLAY_GAMEOVER = 3174629258U;
+        static const AkUniqueID PLAY_GHOSTGASPY = 2796218055U;
+        static const AkUniqueID PLAY_GHOSTSOUNDS = 2220168863U;
         static const AkUniqueID PLAY_GOLEMSTEPS = 3685071199U;
+        static const AkUniqueID PLAY_MAPGLITTEREFFECT = 1722860872U;
         static const AkUniqueID PLAY_OPENCHEST = 3416405661U;
         static const AkUniqueID PLAY_OWL = 2859161640U;
         static const AkUniqueID PLAY_PENGUINGOTHIT = 3018978351U;
@@ -34,6 +37,7 @@ namespace AK
         static const AkUniqueID PLAY_PLAYERGOTHIT = 3763555292U;
         static const AkUniqueID PLAY_PLAYERJUMP = 3817990921U;
         static const AkUniqueID PLAY_PORTAL = 2424882924U;
+        static const AkUniqueID PLAY_SHIMMERINGPORTAL = 2885481475U;
         static const AkUniqueID PLAY_SUCCESS = 3943614907U;
         static const AkUniqueID PLAY_SWORDSWING = 1746766985U;
         static const AkUniqueID PLAY_TREEMONSTERSOUND = 1690511569U;
