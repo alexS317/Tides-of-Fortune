@@ -9,7 +9,9 @@ public class Ghost : MonoBehaviour
      private float damage;
      
      private uint ghostSoundID; 
-
+    
+    [SerializeField]
+    private ParticleSystem deathParticles;
     // public int health = 2;
 
     // private int points;
@@ -19,7 +21,7 @@ public class Ghost : MonoBehaviour
         ghostSoundID = AkSoundEngine.PostEvent("Play_GhostSound", gameObject);
     }
 
-    public ParticleSystem deathParticles;
+    
 
     private void OnCollisionEnter(Collision collision)
     {

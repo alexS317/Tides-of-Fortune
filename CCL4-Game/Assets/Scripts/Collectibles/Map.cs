@@ -12,6 +12,9 @@ public class Map : MonoBehaviour
             // Count both total maps and maps per level
             LevelStorage.Instance.IncreaseMaps();
             DataStorage.Instance.IncreaseTotalMaps();
+
+            AkSoundEngine.PostEvent("Stop_MapGlitterEffect", gameObject);
+
             Destroy(this.gameObject);
         }
     } 

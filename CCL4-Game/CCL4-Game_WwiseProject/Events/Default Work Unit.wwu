@@ -325,6 +325,31 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_GhostSounds" ID="{58294563-3CD3-47B6-9DE6-9AF20270CECB}">
+					<ChildrenList>
+						<Action Name="" ID="{BF267803-8C60-4177-BB63-71015E2C208A}" ShortID="463025322">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GhostSounds" ID="{3918F5CA-0982-47CE-859B-C67E4F94C9F0}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_MapGlitterEffect" ID="{F05DE7E2-BE47-480D-8D85-928482539905}">
+					<ChildrenList>
+						<Action Name="" ID="{4387AD10-EB79-47F5-926D-C342F4FAFB22}" ShortID="294709346">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MapGlitterEffect" ID="{E458066E-FDD4-4D05-85C7-60BFF291406D}" WorkUnitID="{111BF508-748A-4F28-AB12-9F9702B8BF55}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

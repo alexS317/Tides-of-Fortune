@@ -9,6 +9,11 @@ public class LevelChangePortal : MonoBehaviour
     [SerializeField] private string levelName;
     [field: SerializeField] public int RequiredMaps { get; private set; }
 
+    private void Start()
+    {
+        AkSoundEngine.PostEvent("Play_ShimmeringPortal", gameObject);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
